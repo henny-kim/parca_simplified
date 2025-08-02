@@ -1,0 +1,370 @@
+CMML CLINICAL DATA - ATTRIBUTION SUMMARY
+==================================================
+
+AZACITIDINE
+-----------
+
+1. PMID 37422688
+   Citation: Short Nicholas J, Muftuoglu Muharrem, Ong Faustine et al. A phase 1/2 study of azacitidine, venetocl...
+   Key Findings: In the CMML cohort, the overall response rate was 75%, with 12.5% achieving complete remission (CR) and 62.5% achieving morphologic CR with or without hematologic improvement (mCR with or without HI).
+   Patient Population: Patients with MDS or chronic myelomonocytic leukemia (CMML) after failure of hypomethylating agents. 7 of 8 patients (87%) were high or very high risk by the IPSS-R.
+   Treatment: Azacitidine 75 mg/m², venetoclax, and pevonedistat; specific dosing and schedule for venetoclax and pevonedistat not detailed in provided abstract.
+   Data Location: Abstract
+   Complete Response: 12.5%
+   Partial Response: 62.5%
+   Supporting Quotes:
+     - "In the MDS/CMML cohort, 7 patients (87%) were high or very high risk by the IPSS-R...."
+     - "The overall response rate was 75% (CR 13%; mCR with or without HI 50%; HI 13%)...."
+   URL: https://pubmed.ncbi.nlm.nih.gov/37422688/
+
+2. PMID 34985762
+   Citation: Patnaik Mrinal M, Tefferi Ayalew Chronic myelomonocytic leukemia: 2022 update on diagnosis, risk str...
+   Key Findings: Hypomethylating agents such as 5-azacitidine and decitabine have overall response rates of ~40%-50% and complete remission rates of ~7%-17% in CMML patients.  Allogeneic stem cell transplant is the only potentially curative option, but has significant morbidity and mortality.
+   Patient Population: Patients with Chronic Myelomonocytic Leukemia (CMML)
+   Treatment: Hypomethylating agents such as 5-azacitidine and decitabine.  Allogeneic stem cell transplant is mentioned as a potentially curative option.
+   Data Location: Abstract
+   Complete Response: 7.0%
+   Supporting Quotes:
+     - "Hypomethylating agents such as 5-azacitidine and decitabine are commonly used, with overall response..."
+     - "Allogeneic stem cell transplant is the only potentially curative option but is associated with signi..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/34985762/
+
+3. PMID 33275673
+   Citation: Patnaik Mrinal M, Lasho Terra Myelodysplastic syndrome/myeloproliferative neoplasm overlap syndromes...
+   Key Findings: CMML is the most frequent MDS/MPN overlap neoplasm, with a median overall survival of <36 months.  Adverse prognostic factors include increasing age, high WBC, circulating immature myeloid cells, anemia, thrombocytopenia, and truncating ASXL1 mutations. Hypomethylating agents (azacitidine, decitabine, oral decitabine/cedazuridine) have overall response rates of 40-50% and complete remission rates of <20%.
+   Patient Population: CMML patients, primarily presenting in the 7th decade of life with male preponderance.
+   Treatment: Hypomethylating agents such as azacitidine, decitabine and oral decitabine/cedazuridine are FDA approved for CMML.
+   Data Location: Abstract
+   Overall Survival: 36 months
+   Supporting Quotes:
+     - "CMML usually presents in the 7th decade of life, with a male preponderance and is associated with a ..."
+     - "Adverse prognosticators in CMML include increasing age, high WBC, presence of circulating immature m..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/33275673/
+
+4. PMID 24522248
+   Citation: Pleyer Lisa, Germing Ulrich, Sperr Wolfgang R et al. Azacitidine in CMML: matched-pair analyses of d...
+   Key Findings: Azacitidine showed a trend towards improved two-year survival (62% vs 41% with best supportive care, p=0.067) and longer overall survival when used as first-line therapy compared to hydroxyurea (p=0.072, median OS 27.7 vs 6.2 months). Overall response rate was 70% (including 22% complete responses) according to IWG criteria. Monocyte count and cytogenetics negatively impacted survival.
+   Patient Population: 48 CMML patients treated with azacitidine.  The study used matched-pair analyses comparing azacitidine to best supportive care and azacitidine first-line to hydroxyurea first-line.
+   Treatment: The abstract does not specify azacitidine dosing, schedule, or combination therapies.
+   Data Location: Abstract
+   Complete Response: 22%
+   Supporting Quotes:
+     - "Overall response rates were high (70% according to IWG-criteria, including 22% complete responses)...."
+     - "Matched-pair analyses revealed a trend for higher two-year-survival for azacitidine as compared to b..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/24522248/
+
+5. PMID 38939343
+   Citation: Mądry Krzysztof, Lis Karol, Sienkiewicz Elzbieta et al. No advantage of antimicrobial prophylaxis in...
+   Key Findings: The study included 22 CMML patients (7.1% of the total cohort).  No CMML-specific outcomes (response rates, survival) are reported.
+   Patient Population: 22 CMML patients treated with azacitidine;  57.6% of the overall cohort were male; median age at azacitidine treatment commencement was 71 (range, 18-95) years.
+   Treatment: Azacitidine treatment;  Antibacterial, antifungal, and antiviral prophylaxis was used in 66.0%, 29.3%, and 25.7% of patients, respectively.  Specific dosing and schedule not detailed for CMML patients.
+   Data Location: Abstract, Results section
+   Supporting Quotes:
+     - "We collected data on 307 patients, 57.6 % males, treated with azacitidine: AML (37.8%), MDS (55.0%),..."
+     - "The median age at azacitidine treatment commencement was 71 (range, 18-95) years...."
+   URL: https://pubmed.ncbi.nlm.nih.gov/38939343/
+
+6. PMID 39300079
+   Citation: Kantarjian Hagop, Borthakur Gautam, Daver Naval et al. Current status and research directions in acu...
+   Key Findings: Decitabine-cedazuridine (a fully absorbable decitabine formulation) was approved as an alternative to parenteral hypomethylating agents in myelodysplastic syndrome and chronic myelomonocytic leukemia.
+   Patient Population: The abstract mentions decitabine-cedazuridine's approval in chronic myelomonocytic leukemia (CMML), but provides no specific CMML patient data regarding outcomes.
+   Treatment: The abstract mentions that decitabine-cedazuridine is a fully absorbable formulation approved as an alternative to parenteral hypomethylating agents in CMML, but does not provide details on dosing or schedules.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "two oral hypomethylating agents (oral poorly absorbable azacitidine; fully absorbable decitabine-ced..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/39300079/
+
+7. PMID 31221030
+   Citation: Kunacheewa Chutima, Thongthang Pakaporn, Ungprasert Patompong et al. A systematic review and meta He...
+   Key Findings: The meta-analysis included CMML patients treated with azacitidine plus lenalidomide, but did not report CMML-specific outcomes separately from AML and high-risk MDS patients.  The overall pooled CR rate across all three disease types was 33%.
+   Patient Population: Patients with chronic myelomonocytic leukemia (CMML) who received azacitidine in combination with lenalidomide.
+   Treatment: Azacitidine plus lenalidomide; specific dosing and scheduling not detailed in the provided abstract.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "The addition of lenalidomide (LEN) to azacitidine (AZA) may further improve the outcomes of acute my..."
+     - "This meta-analysis aimed to evaluate efficacy and adverse effects of AZA plus LEN for the treatment ..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/31221030/
+
+8. PMID 35405632
+   Citation: Triguero A, Xicoy B, Zamora L et al. Response to azacitidine in patients with chronic myelomonocytic...
+   Key Findings: Overall response rate to azacitidine in CMML patients at cycles 4-6 was 58%.  Almost half achieved transfusion independence, and one quarter showed clinical benefit, regardless of CMML subtype or CPSS risk group. Toxicity was higher in the MD-CMML subtype.
+   Patient Population: 91 patients with CMML treated with at least one cycle of AZA from the Spanish Registry of MDS.  The study included patients with various CMML French-American-British (FAB) and World Health Organization (WHO) subtypes and CMML Specific Prognosis Scoring (CPSS) risk groups.
+   Treatment: At least one cycle of azacitidine. Response rate evaluated between cycle 4 and 6.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "The overall response rate at cycle 4-6 was 58%...."
+     - "Almost half of the patients achieved transfusion independence and one quarter showed clinical benefi..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/35405632/
+
+9. PMID 35728048
+   Citation: Adès Lionel, Girshova Larisa, Doronin Vadim A et al. Pevonedistat plus azacitidine vs azacitidine al...
+   Key Findings: The study included 27 patients with higher-risk CMML.  No specific CMML outcomes (e.g., OS, EFS, response rates) were reported separately from the overall study population.
+   Patient Population: Patients with newly diagnosed higher-risk chronic myelomonocytic leukemia (n = 27).
+   Treatment: Pevonedistat + azacitidine vs azacitidine monotherapy
+   Data Location: Abstract
+   Supporting Quotes:
+     - "PANTHER is a global, randomized phase 3 trial of pevonedistat+azacitidine (n = 227) vs azacitidine m..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/35728048/
+
+10. PMID 35852697
+   Citation: Hagino Takeshi, Sato Tomohiko, Saga Reina et al. Myeloid leukemoid reaction after initial azacitidin...
+   Key Findings: A single case of CMML patient experiencing marked myeloid leukocytosis after initial azacitidine therapy.  No specific CMML outcomes (response rates, survival) are reported.
+   Patient Population: One 80-year-old Japanese man with chronic myelomonocytic leukemia (CMML).
+   Treatment: The abstract only mentions that the patient received initial azacitidine therapy.  No details on dosage, schedule, or combination therapy are provided.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "We herein report the case of an 80-year-old Japanese man with chronic myelomonocytic leukemia (CMML)..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/35852697/
+
+==================================================
+DECITABINE
+----------
+
+1. PMID 38450850
+   Citation: Patnaik Mrinal M, Tefferi Ayalew Chronic myelomonocytic leukemia: 2024 update on diagnosis, risk str...
+   Key Findings: A phase 3 study (DACOTA) comparing hydroxyurea and decitabine in high-risk MP-CMML showed similar overall survival at 23.1 months for hydroxyurea and 18.4 months for decitabine, despite higher response rates for decitabine (56% vs. 31%).
+   Patient Population: High-risk MP-CMML patients
+   Treatment: Hydroxyurea vs. Decitabine in a phase 3 trial (DACOTA)
+   Data Location: Abstract
+   Supporting Quotes:
+     - "a recent phase-3 study (DACOTA) comparing hydroxyurea and decitabine, in high-risk MP-CMML, showed s..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/38450850/
+
+2. PMID 34985762
+   Citation: Patnaik Mrinal M, Tefferi Ayalew Chronic myelomonocytic leukemia: 2022 update on diagnosis, risk str...
+   Key Findings: Hypomethylating agents such as 5-azacitidine and decitabine show overall response rates of ~40-50% and complete remission rates of ~7-17% in CMML patients.  Allogeneic stem cell transplant is the only potentially curative option, but has significant morbidity and mortality.
+   Patient Population: Patients with Chronic Myelomonocytic Leukemia (CMML)
+   Treatment: Hypomethylating agents such as 5-azacitidine and decitabine.  Allogeneic stem cell transplant is mentioned as a potentially curative option.
+   Data Location: Abstract
+   Complete Response: 7.0%
+   Supporting Quotes:
+     - "Hypomethylating agents such as 5-azacitidine and decitabine are commonly used, with overall response..."
+     - "Allogeneic stem cell transplant is the only potentially curative option but is associated with signi..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/34985762/
+
+3. PMID 33275673
+   Citation: Patnaik Mrinal M, Lasho Terra Myelodysplastic syndrome/myeloproliferative neoplasm overlap syndromes...
+   Key Findings: CMML is the most frequent MDS/MPN overlap neoplasm, with a median overall survival of <36 months.  Adverse prognostic factors include increasing age, high WBC, circulating immature myeloid cells, anemia, thrombocytopenia, and truncating ASXL1 mutations. Hypomethylating agents (azacitidine, decitabine, oral decitabine/cedazuridine) have overall response rates of 40-50% and complete remission rates of <20%.
+   Patient Population: CMML patients, primarily presenting in the 7th decade of life with male preponderance.
+   Treatment: Hypomethylating agents such as azacitidine, decitabine and oral decitabine/cedazuridine are FDA approved for CMML.
+   Data Location: Abstract
+   Overall Survival: 36 months
+   Supporting Quotes:
+     - "CMML usually presents in the 7th decade of life, with a male preponderance and is associated with a ..."
+     - "Adverse prognosticators in CMML include increasing age, high WBC, presence of circulating immature m..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/33275673/
+
+4. PMID 32285126
+   Citation: Garcia-Manero Guillermo, Griffiths Elizabeth A, Steensma David P et al. Oral cedazuridine/decitabine...
+   Key Findings: The study included patients with CMML, but did not report CMML-specific outcomes separately from the overall MDS/CMML population.  Overall clinical response rate was 60%, including 17 (21%) complete responses.  No CMML-specific response rates or survival data were provided.
+   Patient Population: Adults with International Prognostic Scoring System intermediate-1/2- or high-risk myelodysplastic syndromes (MDS) or chronic myelomonocytic leukemia (CMML).
+   Treatment: Patients were randomized 1:1 to receive oral cedazuridine/decitabine or IV decitabine in cycle 1, followed by crossover to the other treatment in cycle 2. All patients received oral cedazuridine/decitabine in subsequent cycles.  Cedazuridine and decitabine were given initially as separate capsules and then as a single fixed-dose combination (FDC) tablet.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "Adults with International Prognostic Scoring System intermediate-1/2- or high-risk myelodysplastic s..."
+     - "Clinical responses were observed in 48 patients (60%), including 17 (21%) with complete response...."
+   URL: https://pubmed.ncbi.nlm.nih.gov/32285126/
+
+5. PMID 36455187
+   Citation: Itzykson Raphael, Santini Valeria, Thepot Sylvain et al. Decitabine Versus Hydroxyurea for Advanced ...
+   Key Findings: Frontline treatment with decitabine did not improve event-free survival (EFS) compared to hydroxyurea in patients with advanced myeloproliferative CMML.
+   Patient Population: Newly diagnosed myeloproliferative CMML patients with advanced disease.
+   Treatment: Patients were randomly assigned 1:1 to intravenous DAC (20 mg/m2 daily for 5 days every 4 weeks) or oral HY (500 mg twice daily).
+   Data Location: Abstract
+   Supporting Quotes:
+     - "One-hundred seventy patients received DAC (n = 84) or HY (n = 86)...."
+     - "Compared with HY, frontline treatment with DAC did not improve EFS in patients with advanced myelopr..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/36455187/
+
+6. PMID 33904891
+   Citation: Patel Anand A, Cahill Kirk, Saygin Caner et al. Cedazuridine/decitabine: from preclinical to clinica...
+   Key Findings: Phase 2 data confirmed bioequivalence of C-DEC when compared with parenteral decitabine, and a larger phase 3 trial has demonstrated similar results, leading to the FDA approval of C-DEC for use in ... CMML.
+   Patient Population: Patients with CMML in Phase 2 and Phase 3 trials.  Specific details on patient characteristics (e.g., number of patients, risk stratification) are not provided in the abstract.
+   Treatment: A combination of oral decitabine 35 mg with oral cedazuridine 100 mg was established as the recommended phase 2 dose.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "A combination of oral decitabine 35 mg with oral cedazuridine 100 mg was established as the recommen..."
+     - "Phase 2 data confirmed bioequivalence of C-DEC when compared with parenteral decitabine, and a large..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/33904891/
+
+7. PMID 17881052
+   Citation: Wijermans P W, Rüter B, Baer M R et al. Efficacy of decitabine in the treatment of patients with chr...
+   Key Findings: Overall response rate (ORR) of 25% (14% CR + 11% PR) in 31 CMML patients treated with decitabine. Hematologic improvement in 11% and stable disease in 39%.  Adverse events similar to other hematologic malignancies.
+   Patient Population: 31 patients diagnosed with CMML; average age 70.2 years, 71% male. Baseline WBC >20,000 in 29% and baseline bone marrow blasts >5% in 39%.
+   Treatment: Decitabine; details of dosing and schedule not specified in the provided abstract.
+   Data Location: Abstract
+   Complete Response: 14%
+   Partial Response: 11%
+   Supporting Quotes:
+     - "A total of 31 patients diagnosed with CMML are included in this review...."
+     - "The ORR was 25% (14% CR+11% PR)...."
+   URL: https://pubmed.ncbi.nlm.nih.gov/17881052/
+
+8. PMID 33709786
+   Citation: Thota Swapna, Oganesian Aram, Azab Mohammad et al. Role of cedazuridine/decitabine in the management...
+   Key Findings: The review mentions that C-DEC is FDA approved for intermediate or high-risk MDS and CMML, but provides no specific CMML clinical outcome data.
+   Patient Population: Newly diagnosed or previously treated intermediate or high-risk (by international prognostic scoring system) CMML patients.
+   Treatment: Oral fixed drug combination of decitabine and cedazuridine.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "This drug was recently approved by the US FDA, Australian TGA and Health Canada for newly diagnosed ..."
+     - "In this review, we detail the pharmacokinetic and clinical activity of C-DEC in the management of MD..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/33709786/
+
+9. PMID 39300079
+   Citation: Kantarjian Hagop, Borthakur Gautam, Daver Naval et al. Current status and research directions in acu...
+   Key Findings: Decitabine-cedazuridine (a fully absorbable formulation) was approved as an alternative to parenteral hypomethylating agents in myelodysplastic syndrome and chronic myelomonocytic leukemia, but is commonly used in AML.
+   Patient Population: The abstract mentions decitabine-cedazuridine's approval for CMML, but provides no specific CMML patient data regarding outcomes.
+   Treatment: The abstract mentions that decitabine-cedazuridine is an oral, fully absorbable formulation, approved as an alternative to parenteral hypomethylating agents in CMML (and MDS).
+   Data Location: Abstract
+   Supporting Quotes:
+     - "two oral hypomethylating agents (oral poorly absorbable azacitidine; fully absorbable decitabine-ced..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/39300079/
+
+10. PMID 36653885
+   Citation: Sheel Ankur, Bae Junu, Asada Ashlee et al. Reversible cardiomyopathy in a patient with chronic myelo...
+   Key Findings: One 85-year-old female with CMML developed reversible cardiomyopathy and heart failure after 5 cycles of decitabine/cedazuridine.  Symptoms and cardiac function recovered after drug discontinuation.
+   Patient Population: One 85-year-old Caucasian female with CMML.
+   Treatment: 5 cycles of decitabine/cedazuridine; oral combination therapy.
+   Data Location: Abstract and Case section
+   Supporting Quotes:
+     - "This case study presents an 85 year-old Caucasian female with CMML who developed cardiomyopathy and ..."
+     - "Furthermore, her symptoms and cardiac function recovered upon discontinuation of the drug...."
+   URL: https://pubmed.ncbi.nlm.nih.gov/36653885/
+
+11. PMID 33807279
+   Citation: Bewersdorf Jan Philipp, Zeidan Amer M Risk-Adapted, Individualized Treatment Strategies of Myelodysp...
+   Key Findings: Early results from tagraxofusp for CMML appear encouraging, but confirmatory randomized trials are needed to assess safety and efficacy.
+   Patient Population: The specific patient population for tagraxofusp in CMML is not detailed in the abstract.
+   Treatment: The abstract does not provide details on dosing, schedule, or combination therapies for tagraxofusp in CMML.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "Although early results from novel molecularly driven agents such as ... tagraxofusp, tipifarnib, and..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/33807279/
+
+12. PMID 39024804
+   Citation: Wang Kaiyue, He Zhangxu, Jin Gang et al. Targeting DNA methyltransferases for cancer therapy. Bioorg...
+   Key Findings: Azacytidine and Decitabine are FDA and EMA approved for the treatment of CMML.
+   Patient Population: The abstract mentions CMML patients as one of the groups treated with Azacytidine and Decitabine, but provides no further details on the patient population.
+   Treatment: The abstract only mentions that Azacytidine and Decitabine are used for treatment, without specifying dosage, schedule, or combination therapies.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "Currently, nucleoside DNMT inhibitors such as Azacytidine and Decitabine have been approved by the F..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/39024804/
+
+==================================================
+HYDROXYUREA
+-----------
+
+1. PMID 38450850
+   Citation: Patnaik Mrinal M, Tefferi Ayalew Chronic myelomonocytic leukemia: 2024 update on diagnosis, risk str...
+   Key Findings: A phase 3 study (DACOTA) comparing hydroxyurea and decitabine in high-risk MP-CMML showed similar overall survival at 23.1 months for hydroxyurea and 18.4 months for decitabine, despite higher response rates for decitabine (56% vs. 31%).
+   Patient Population: High-risk MP-CMML patients
+   Treatment: Hydroxyurea vs. Decitabine in a phase 3 trial (DACOTA)
+   Data Location: Abstract
+   Supporting Quotes:
+     - "a recent phase-3 study (DACOTA) comparing hydroxyurea and decitabine, in high-risk MP-CMML, showed s..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/38450850/
+
+2. PMID 40613931
+   Citation: Sastow Dahniel, Syal Arjun, Tremblay Douglas Contemporary CMML Risk Stratification and Management. C...
+   Key Findings: Lenzilumab (anti-GM-CSF) and IO-202 (anti-LILRB4) showed promising early efficacy signals in CMML but need further study.  Established treatments (hypomethylating agents, hydroxyurea, ruxolitinib) offer limited survival benefits.
+   Patient Population: The abstract does not specify the patient population for the lenzilumab or IO-202 studies.  The abstract mentions that established treatments provide limited survival benefits in CMML.
+   Treatment: The abstract only mentions lenzilumab (anti-GM-CSF) and IO-202 (anti-LILRB4) as novel therapies and established treatments including hypomethylating agents, hydroxyurea, and ruxolitinib. No dosing or scheduling details are provided.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "These include lenzilumab (anti-GM-CSF) and IO-202 (anti-LILRB4), which have demonstrated promising e..."
+     - "Established treatments, which include hypomethylating agents and hydroxyurea as well as the JAK1/2 i..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/40613931/
+
+3. PMID 36455187
+   Citation: Itzykson Raphael, Santini Valeria, Thepot Sylvain et al. Decitabine Versus Hydroxyurea for Advanced ...
+   Key Findings: Frontline treatment with decitabine did not improve event-free survival (EFS) compared to hydroxyurea in patients with advanced myeloproliferative CMML.
+   Patient Population: Newly diagnosed myeloproliferative CMML patients with advanced disease.
+   Treatment: Patients were randomly assigned 1:1 to intravenous DAC (20 mg/m2 daily for 5 days every 4 weeks) or oral HY (500 mg twice daily).
+   Data Location: Abstract
+   Supporting Quotes:
+     - "One-hundred seventy patients received DAC (n = 84) or HY (n = 86)...."
+     - "Compared with HY, frontline treatment with DAC did not improve EFS in patients with advanced myelopr..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/36455187/
+
+4. PMID 33126392
+   Citation: Hu Lianbo, Zheng Bingrong, Fu Lijuan et al. Chronic myelomonocytic leukemia (CMML)-0 with pleural ef...
+   Key Findings: Pleural effusion resolved and chest pain relieved after treatment with azacitidine and hydroxyurea in a single CMML-0 patient.
+   Patient Population: One 44-year-old woman with CMML-0 and pleural effusion as the first manifestation.
+   Treatment: Azacitidine 75 mg/m² daily for 2 cycles, followed by hydroxyurea 500 mg/day orally.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "PATIENT CONCERNS: Here we reported a rare case of CMML-0 with pleural effusion as the first manifest..."
+     - "INTERVENTIONS: The patient was treated with azacitidine 75 mg/m d for 2 cycles, followed by daily or..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/33126392/
+
+5. PMID 11077120
+   Citation: Strupp C, Germing U, Trommer I et al. Pericardial effusion in chronic myelomonocytic leukemia (CMML)...
+   Key Findings: A single case of CMML patient with pericardial effusion treated with pericardiocentesis, mitoxantrone intracardially, and subxiphoid pericardiotomy.  Hydroxyurea was ineffective for leukocytosis. The patient died within 2 weeks of treatment.
+   Patient Population: One 70-year-old female with CMML and pericardial effusion.
+   Treatment: Pericardiocentesis, intracardial mitoxantrone, subxiphoid pericardiotomy, and hydroxyurea.  The patient had a poor response to mitoxantrone and hydroxyurea was ineffective.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "A case of a 70-year-old female with CMML is reported, who developed a severe pericardial effusion af..."
+     - "She underwent pericardiocentesis and subsequent intracardial instillation of mitoxantrone with poor ..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/11077120/
+
+6. PMID 30169461
+   Citation: Mora Elvira, Sanz Guillermo F Current management of patients with chronic myelomonocytic leukemia. C...
+   Key Findings: Current treatment for CMML remains unsatisfactory. Allogeneic hematopoietic cell transplantation is the only curative option but is applicable to a minority of patients. Higher-risk patients with MDS-like characteristics are treated with HMAs, while those with myeloproliferative features receive hydroxyurea or HMAs; however, neither substantially modifies CMML's natural history.  Somatic mutations impact survival but don't predict response to current drugs.  Incorporating somatic mutations into prognostic scoring systems improves outcome prediction.
+   Patient Population: Patients with chronic myelomonocytic leukemia (CMML), categorized by risk (higher-risk with MDS-like characteristics, those with myeloproliferative features).
+   Treatment: Higher-risk patients displaying MDS-like characteristics are treated with hypomethylating agents (HMAs). Those with myeloproliferative features generally receive hydroxyurea or HMAs.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "Current treatment for CMML remains unsatisfactory...."
+     - "Allogeneic hematopoietic cell transplantation is the only curative option but is applicable to a min..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/30169461/
+
+7. PMID 38106568
+   Citation: Lafargue Marie-Camille, Bobot Mickaël, Rennke Helmut G et al. Chronic Myelomonocytic Leukemia Patien...
+   Key Findings: The two most frequent renal complications in CMML patients with kidney injury were lysozyme-induced nephropathy and renal infiltration by CMML. Kidney involvement should be closely monitored in patients with CMML.
+   Patient Population: Patients with CMML with acute kidney injury (AKI), chronic kidney disease (CKD), and urine abnormalities.
+   Treatment: None
+   Data Location: Abstract
+   Supporting Quotes:
+     - "Sixteen patients (males,..."
+     - "In this cohort of patients with CMML with a kidney injury, the 2 most frequent renal complications w..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/38106568/
+
+8. PMID 12057067
+   Citation: Bennett John M Chronic myelomonocytic leukemia. Current treatment options in oncology (2002)...
+   Key Findings: Median survival for CMML patients is approximately 2 years. Hydroxyurea is the treatment of choice when the proliferative phase prevails. Allogeneic bone marrow transplantation should be considered for younger, high-risk patients.  Combination AML-type therapy followed by autologous stem cell or marrow transplant is an alternative if a donor is unavailable.
+   Patient Population: Patients with CMML; median age 70 years;  high-risk patients considered for transplantation.
+   Treatment: Hydroxyurea for patients in the proliferative phase; allogeneic bone marrow transplantation for younger high-risk patients; combination AML-type therapy followed by autologous stem cell or marrow transplant if a donor is unavailable.
+   Data Location: Abstract
+   Overall Survival: 24 months
+   Supporting Quotes:
+     - "The median age of patients with CMML is 70 years; the median survival is approximately 2 years...."
+     - "When the proliferative phase prevails, hydroxyurea is the treatment of choice...."
+   URL: https://pubmed.ncbi.nlm.nih.gov/12057067/
+
+9. PMID 37300657
+   Citation: Rezazadeh Alexandra, Deininger Michael, Atallah Ehab Proposals for Clinical Trials in Chronic Myelom...
+   Key Findings: Hypomethylating agents, the mainstay of therapy for CMML, induce complete remissions in less than 20% of patients and do not prolong survival compared to hydroxyurea. Allogeneic stem cell transplant (ASCT) is potentially curative but few patients qualify due to advanced age and/or comorbidities.
+   Patient Population: Patients with Chronic Myelomonocytic Leukemia (CMML), mostly older individuals.
+   Treatment: Hypomethylating agents and hydroxyurea are mentioned as treatments.  Specific details on dosing and schedules are not provided.
+   Data Location: Abstract
+   Supporting Quotes:
+     - "Hypomethylating agents are the mainstay of therapy but induce complete remissions in less than 20% o..."
+     - "Allogeneic stem cell transplant (ASCT) is potentially curative, but few patients qualify due to adva..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/37300657/
+
+10. PMID 24507815
+   Citation: Itzykson Raphael, Fenaux Pierre, Solary Eric Chronic myelomonocytic leukemia: myelodysplastic or mye...
+   Key Findings: Median survival for CMML is 3 years (36 months).  20-30% of patients die from progression to AML. ASXL1 mutation predicts outcome.
+   Patient Population: Patients with CMML, diagnosed after age 50, with male predominance.  The abstract mentions CMML-1 and CMML-2 distinctions based on blast cell percentage.
+   Treatment: Hydroxyurea is used in myeloproliferative forms of CMML. Demethylating agents may be efficient in more aggressive forms.
+   Data Location: Abstract
+   Overall Survival: 36 months
+   Supporting Quotes:
+     - "Median survival is 3 years, with patients dying from progression to AML (20-30%) or from cytopenias...."
+     - "Hydroxyurea, which is the conventional cytoreductive agent, is used in myeloproliferative forms, and..."
+   URL: https://pubmed.ncbi.nlm.nih.gov/24507815/
+
+==================================================
