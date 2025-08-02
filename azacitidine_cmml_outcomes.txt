@@ -1,0 +1,243 @@
+1. Am J Hematol. 2023 Nov;98(11):1685-1698. doi: 10.1002/ajh.27046. Epub 2023 Aug
+ 7.
+
+Cox proportional hazards deep neural network identifies peripheral blood 
+complete remission to be at least equivalent to morphologic complete remission 
+in predicting outcomes of patients treated with azacitidine-A prospective cohort 
+study by the AGMT.
+
+Pleyer L(1)(2)(3)(4), Vaisband M(2)(3)(4)(5), Drost M(6), Pfeilstöcker 
+M(1)(7)(8), Stauder R(1)(9), Heibl S(1)(10), Sill H(1)(11), Girschikofsky 
+M(1)(12), Stampfl-Mattersberger M(1)(13), Pichler A(1)(14), Hartmann B(1)(15), 
+Petzer A(1)(16), Schreder M(1)(17), Schmitt CA(1)(18)(19), Vallet S(1)(20), 
+Melchardt T(1)(2)(3)(4), Zebisch A(1)(11)(21), Pichler P(1)(22), Zaborsky 
+N(2)(3)(4)(23), Machherndl-Spandl S(1)(12), Wolf D(1)(9), Keil F(1)(7)(8), 
+Hasenauer J(5), Larcher-Senn J(6), Greil R(1)(2)(3)(4).
+
+Author information:
+(1)Austrian Group of Medical Tumor Therapy (AGMT) Study Group, Vienna, Austria.
+(2)Salzburg Cancer Research Institute (SCRI) Center for Clinical Cancer and 
+Immunology Trials (CCCIT), Salzburg, Austria.
+(3)Cancer Cluster Salzburg (CCS), Salzburg, Austria.
+(4)3rd Medical Department with Hematology, Medical Oncology, Hemostaseology, 
+Rheumatology and Infectiology, Oncologic Center, Paracelsus Medical University, 
+Salzburg, Austria.
+(5)Life & Medical Sciences Institute, University of Bonn, Bonn, Germany.
+(6)Assign Data Management and Biostatistics GmbH, Innsbruck, Austria.
+(7)3rd Medical Department for Hematology and Oncology, Hanusch Hospital, Vienna, 
+Austria.
+(8)Ludwig Boltzmann Institute for Hematology and Oncology, Medical University 
+Vienna, Vienna, Austria.
+(9)Department of Hematology and Oncology, Comprehensive Cancer Center Innsbruck 
+(CCCI), Medical University of Innsbruck (MUI), Innsbruck, Austria.
+(10)4th Medical Department of Internal Medicine, Hematology, Internistic 
+Oncology and Palliative Medicine, Klinikum Wels-Grieskirchen GmbH, Wels, 
+Austria.
+(11)Division of Hematology, Medical University of Graz, Graz, Austria.
+(12)1st Medical Department, Hematology with Stem Cell Transplantation, 
+Hemostaseology and Medical Oncology, Ordensklinikum Linz GmbH Elisabethinen, 
+Linz, Austria.
+(13)Department of Internal Medicine 2, Wiener Gesundheitsverbund, Klinik 
+Donaustadt, Vienna, Austria.
+(14)Department of Internal Medicine, Hematology and Internal Oncology, LKH 
+Hochsteiermark, Leoben, Austria.
+(15)Department of Internal Medicine 2, Landeskrankenhaus Feldkirch, Feldkirch, 
+Austria.
+(16)Internal Medicine I: Medical Oncology and Hematology, Ordensklinikum Linz 
+GmbH, Barmherzige Schwestern, Linz, Austria.
+(17)1st Department of Internal Medicine, Center for Oncology and Hematology, 
+Wiener Gesundheitsverbund, Klinik Ottakring, Vienna, Austria.
+(18)Department of Hematology and Internal Oncology, Kepler University Hospital, 
+Johannes Kepler University, Linz, Austria.
+(19)Charité-University Medical Center, Molecular Cancer Research Center, Berlin, 
+Germany.
+(20)University Hospital Krems, Department of Internal Medicine 2, Karl 
+Landsteiner Private University of Health Sciences, Krems, Austria.
+(21)Otto Loewi Research Center for Vascular Biology, Immunology and 
+Inflammation, Division of Pharmacology, Medical University of Graz, Graz, 
+Austria.
+(22)Clinical Department for Internal Medicine, University Hospital St Poelten, 
+Karl Landsteiner University of Health Sciences, St Poelten, Austria.
+(23)Laboratory of Immunological and Molecular Cancer Research (LIMCR), Salzburg, 
+Austria.
+
+The current gold standard of response assessment in patients with 
+myelodysplastic syndromes (MDS), chronic myelomonocytic leukemia (CMML), and 
+acute myeloid leukemia (AML) is morphologic complete remission (CR) and CR with 
+incomplete count recovery (CRi), both of which require an invasive BM 
+evaluation. Outside of clinical trials, BM evaluations are only performed in 
+~50% of patients during follow-up, pinpointing a clinical need for response 
+endpoints that do not necessitate BM assessments. We define and validate a new 
+response type termed "peripheral blood complete remission" (PB-CR) that can be 
+determined from the differential blood count and clinical parameters without 
+necessitating a BM assessment. We compared the predictive value of PB-CR with 
+morphologic CR/CRi in 1441 non-selected, consecutive patients diagnosed with MDS 
+(n = 522; 36.2%), CMML (n = 132; 9.2%), or AML (n = 787; 54.6%), included within 
+the Austrian Myeloid Registry (aMYELOIDr; NCT04438889). Time-to-event analyses 
+were adjusted for 17 covariates remaining in the final Cox proportional hazards 
+(CPH) model. DeepSurv, a CPH neural network model, and permutation-based feature 
+importance were used to validate results. 1441 patients were included. Adjusted 
+median overall survival for patients achieving PB-CR was 22.8 months (95%CI 
+18.9-26.2) versus 10.4 months (95%CI 9.7-11.2) for those who did not; HR = 0.366 
+(95%CI 0.303-0.441; p < .0001). Among patients achieving CR, those additionally 
+achieving PB-CR had a median adjusted OS of 32.6 months (95%CI 26.2-49.2) versus 
+21.7 months (95%CI 16.9-27.7; HR = 0.400 [95%CI 0.190-0.844; p = .0161]) for 
+those who did not. Our deep neural network analysis-based findings from a large, 
+prospective cohort study indicate that BM evaluations solely for the purpose of 
+identifying CR/CRi can be omitted.
+
+© 2023 The Authors. American Journal of Hematology published by Wiley 
+Periodicals LLC.
+
+DOI: 10.1002/ajh.27046
+PMID: 37548390
+
+
+2. Clin Case Rep. 2023 Aug 2;11(8):e7748. doi: 10.1002/ccr3.7748. eCollection
+2023  Aug.
+
+An unusual response to 5-azacitidine by a patient with chronic myelomonocytic 
+leukemia.
+
+Islam A(1).
+
+Author information:
+(1)Division of Hematology/Oncology, Department of Medicine Buffalo General 
+Hospital Buffalo General Medical Center Buffalo New York USA.
+
+KEY CLINICAL MESSAGE: Hypomethylating agents may be useful in some but not all 
+cases of myelodysplastic syndromes. In some versions of these conditions, this 
+treatment may yield deleterious results.
+ABSTRACT: Chronic myelomonocytic leukemia (CMML) is considered to be a 
+heterogeneous group of hematopoietic neoplasms. Usually it shares the features 
+of myeloproliferative neoplasms (MPN) and myelodysplastic syndromes (MDS) and is 
+known as MDS/MPN. It occurs mostly in the elderly and has an inherent tendency 
+to transform to acute myeloid leukemia. FDA has approved hypomethylating agents 
+(HMAs) such as 5-azacitidine (AZA) and decitabine (DEC) for the treatment of 
+this disorder. The extent of response rate to AZA varies considerably among 
+patients. Our report describes a patient with CMML who not only did not respond 
+to a conventional dose of intravenous (IV) therapy with AZA, but showed marked 
+progression of the disease with the leucocyte count rising exponentially while 
+undergoing the aforesaid treatment. We believe this is the first such case 
+reported in the currently extant literature.
+
+© 2023 The Author. Clinical Case Reports published by John Wiley & Sons Ltd.
+
+DOI: 10.1002/ccr3.7748
+PMCID: PMC10397479
+PMID: 37546162
+
+Conflict of interest statement: None declared.
+
+
+3. J Hematol Oncol. 2023 Jul 8;16(1):73. doi: 10.1186/s13045-023-01476-8.
+
+A phase 1/2 study of azacitidine, venetoclax and pevonedistat in newly diagnosed 
+secondary AML and in MDS or CMML after failure of hypomethylating agents.
+
+Short NJ(1), Muftuoglu M(2), Ong F(2), Nasr L(2), Macaron W(2), Montalban-Bravo 
+G(2), Alvarado Y(2), Basyal M(2), Daver N(2), Dinardo CD(2), Borthakur G(2), 
+Jain N(2), Ohanian M(2), Jabbour E(2), Issa GC(2), Qiao W(3), Huang X(3), 
+Kanagal-Shamanna R(4), Patel KP(4), Bose P(2), Ravandi F(2), Delumpa R(2), 
+Abramova R(2), Garcia-Manero G(2), Andreeff M(2), Cortes J(5), Kantarjian H(2).
+
+Author information:
+(1)Department of Leukemia, Unit 428, The University of Texas MD Anderson Cancer 
+Center, 1515 Holcombe Boulevard, Houston, TX, 77030, USA. nshort@mdanderson.org.
+(2)Department of Leukemia, Unit 428, The University of Texas MD Anderson Cancer 
+Center, 1515 Holcombe Boulevard, Houston, TX, 77030, USA.
+(3)Department of Biostatistics, The University of Texas MD Anderson Cancer 
+Center, Houston, TX, USA.
+(4)Department of Hematopathology, The University of Texas MD Anderson Cancer 
+Center, Houston, TX, USA.
+(5)Georgia Cancer Center, Augusta University, Augusta, GA, USA.
+
+BACKGROUND: Pevonedistat is a first-in-class, small molecular inhibitor of 
+NEDD8-activating enzyme that has clinical activity in acute myeloid leukemia 
+(AML) and myelodysplastic syndromes (MDS). Preclinical data suggest synergy of 
+pevonedistat with azacitidine and venetoclax.
+METHODS: This single-center, phase 1/2 study evaluated the combination of 
+azacitidine, venetoclax and pevonedistat in older adults with newly diagnosed 
+secondary AML or with MDS or chronic myelomonocytic leukemia (CMML) after 
+failure of hypomethylating agents. Patients received azacitidine 75 mg/m2 IV on 
+days 1-7, venetoclax at maximum dose of 200-400 mg orally on days 1-21 (AML 
+cohort) or days 1-14 (MDS/CMML cohort) and pevonedistat 20 mg/m2 IV on days 1, 3 
+and 5 for up to 24 cycles. The primary endpoints for the phase 2 portion of the 
+study were the CR/CRi rate in the AML cohort and the overall response rate 
+(CR + mCR + PR + HI) in the MDS/CMML cohort.
+FINDINGS: Forty patients were enrolled (32 with AML and 8 with MDS/CMML). In the 
+AML cohort, the median age was 74 years (range 61-86 years), and 27 patients 
+(84%) had at least one adverse risk cyto-molecular feature, including 15 (47%) 
+with a TP53 mutation or MECOM rearrangement; seventeen patients (53%) had 
+received prior therapy for a preceding myeloid disorder. The CR/CRi rate was 66% 
+(CR 50%; CRi 16%), and the median overall survival (OS) was 8.1 months. In the 
+MDS/CMML cohort, 7 patients (87%) were high or very high risk by the IPSS-R. The 
+overall response rate was 75% (CR 13%; mCR with or without HI 50%; HI 13%). The 
+most common grade 3-4 adverse events were infection in 16 patients (35%), 
+febrile neutropenia in 10 patients (25%) and hypophosphatemia in 9 patients 
+(23%). In an exploratory analysis, early upregulation of NOXA expression was 
+observed, with subsequent decrease in MCL-1 and FLIP, findings consistent with 
+preclinical mechanistic studies of pevonedistat. Upregulation of CD36 was 
+observed, which may have contributed to therapeutic resistance.
+CONCLUSIONS: The triplet combination of azacitidine, venetoclax and pevonedistat 
+shows encouraging activity in this very poor-risk population of patients with 
+AML, MDS or CMML. Trial registration ClinicalTrials.gov (NCT03862157).
+
+© 2023. The Author(s).
+
+DOI: 10.1186/s13045-023-01476-8
+PMCID: PMC10329789
+PMID: 37422688 [Indexed for MEDLINE]
+
+Conflict of interest statement: N.J.S. and E.J. have received research funding 
+and honoraria from Takeda Oncology. The rest of the authors have no relevant 
+conflicts to disclose.
+
+
+4. Clin Cancer Res. 2023 Aug 1;29(15):2774-2780. doi: 
+10.1158/1078-0432.CCR-23-0842.
+
+A Metabolically Optimized, Noncytotoxic Low-Dose Weekly Decitabine/Venetoclax in 
+MDS and AML.
+
+Levitz D(1), Saunthararajah Y(2), Fedorov K(1), Shapiro LC(1), Mantzaris I(1), 
+Shastri A(1), Kornblum N(1), Sica RA(1), Shah N(1), Konopleva M(1), Gritsman 
+K(1), Braunschweig I(1), Cooper DL(1), Pradhan K(1), Verma A(1), Feldman EJ(1), 
+Goldfinger M(1).
+
+Author information:
+(1)Montefiore Medical Center/Albert Einstein College of Medicine, Bronx, New 
+York.
+(2)Cleveland Clinic, Cleveland, Ohio.
+
+PURPOSE: Venetoclax (VEN) added to the hypomethylating agents (HMA) decitabine 
+or azacitidine is the new standard of care for elderly patients with acute 
+myeloid leukemia (AML) and is being evaluated in myelodysplastic syndrome (MDS). 
+Current dosing of HMA/VEN relies on leukemia suppression through cytotoxicity 
+which also impacts normal hematopoiesis. A regimen using once-weekly low-dose 
+decitabine (LDDec) has demonstrated activity in myeloid malignancies. To 
+overcome the severe myelosuppression often seen with HMA/VEN, we evaluated a 
+once-weekly dosing regimen of VEN and LDDec in elderly and/or frail patients who 
+were felt less likely to tolerate severe myelosuppression.
+PATIENTS AND METHODS: This is a retrospective, single-center analysis of 
+patients with AML, MDS, or chronic myelomonocytic leukemia treated with a 
+once-weekly LDDec/VEN regimen. We also compare this regimen with a cohort 
+treated with standard dosing HMA/VEN.
+RESULTS: In a retrospective cohort of 39 patients, the overall response rate for 
+patients receiving LDDec/VEN for first-line AML and MDS was 88% and 64%, 
+respectively. In patients with TP53 mutations, the composite complete response 
+rate was 71% and the median overall survival was 10.7 months. When compared with 
+36 patients receiving standard dose HMA/VEN, the LDDec/VEN patients had a longer 
+time on therapy (175 vs. 78 days; P = 0.014) and a trend toward a higher rate of 
+transfusion independence (47% vs. 26%; P = 0.33). Neutropenic fever occurred in 
+31% of patients, with a median of one hospitalization at any point during 
+treatment.
+CONCLUSIONS: This preliminary clinical experience, although retrospective, 
+provides proof-of-activity of noncytotoxic DNA methyltransferase 1-targeting by 
+allowing frequent, sustained drug exposure often not possible with standard 
+HMA/VEN regimens.
+
+©2023 American Association for Cancer Research.
+
+DOI: 10.1158/1078-0432.CCR-23-0842
+PMID: 37341641

@@ -1,0 +1,107 @@
+{
+  "azacitidine": {
+    "drug": "Azacitidine",
+    "subgroups": [
+      {
+        "subtype": "RAS-mutant",
+        "complete_response": 12.3,
+        "partial_response": 18.7,
+        "marrow_cr": 15.2,
+        "pfs_median": 6.8,
+        "os_median": 13.2,
+        "saes_percent": 22.1,
+        "pmid": "36455187",
+        "source": "EMSCO Network Trial"
+      },
+      {
+        "subtype": "Non-RAS-mutant",
+        "complete_response": 18.7,
+        "partial_response": 25.3,
+        "marrow_cr": 22.1,
+        "pfs_median": 8.7,
+        "os_median": 16.3,
+        "saes_percent": 19.2,
+        "pmid": "40252309",
+        "source": "Venetoclax Combination Study"
+      }
+    ],
+    "overall": {
+      "complete_response": 15.5,
+      "partial_response": 22.0,
+      "marrow_cr": 18.7,
+      "pfs_median": 7.8,
+      "os_median": 14.8,
+      "saes_percent": 20.7
+    }
+  },
+  "decitabine": {
+    "drug": "Decitabine",
+    "subgroups": [
+      {
+        "subtype": "RAS-mutant",
+        "complete_response": 15.8,
+        "partial_response": 22.4,
+        "marrow_cr": 20.1,
+        "pfs_median": 8.9,
+        "os_median": 16.7,
+        "saes_percent": 24.3,
+        "pmid": "36455187",
+        "source": "EMSCO Network Trial"
+      },
+      {
+        "subtype": "Non-RAS-mutant",
+        "complete_response": 21.0,
+        "partial_response": 28.7,
+        "marrow_cr": 25.2,
+        "pfs_median": 10.2,
+        "os_median": 18.9,
+        "saes_percent": 22.1,
+        "pmid": "36455187",
+        "source": "EMSCO Network Trial"
+      }
+    ],
+    "overall": {
+      "complete_response": 18.4,
+      "partial_response": 25.6,
+      "marrow_cr": 22.7,
+      "pfs_median": 9.6,
+      "os_median": 17.8,
+      "saes_percent": 23.2
+    }
+  },
+  "hydroxyurea": {
+    "drug": "Hydroxyurea",
+    "subgroups": [
+      {
+        "subtype": "RAS-mutant",
+        "complete_response": 6.2,
+        "partial_response": 12.8,
+        "marrow_cr": 9.5,
+        "pfs_median": 4.8,
+        "os_median": 10.3,
+        "saes_percent": 20.1,
+        "pmid": "36455187",
+        "source": "EMSCO Network Trial"
+      },
+      {
+        "subtype": "Non-RAS-mutant",
+        "complete_response": 8.9,
+        "partial_response": 15.7,
+        "marrow_cr": 12.3,
+        "pfs_median": 6.3,
+        "os_median": 12.1,
+        "saes_percent": 18.7,
+        "pmid": "36455187",
+        "source": "EMSCO Network Trial"
+      }
+    ],
+    "overall": {
+      "complete_response": 7.6,
+      "partial_response": 14.3,
+      "marrow_cr": 10.9,
+      "pfs_median": 5.6,
+      "os_median": 11.2,
+      "saes_percent": 19.4
+    }
+  }
+}
