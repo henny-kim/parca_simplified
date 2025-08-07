@@ -666,15 +666,15 @@ class CMMLResearchExtractor:
         safety_data = [o.sae_frequency for o in outcomes if o.sae_frequency is not None]
         
         # Get sample sizes for context
-        sample_sizes = [o.sample_size for o in outcomes if o.sample_size is not None]
+        sample_sizes = [o.cmml_sample_size for o in outcomes if o.cmml_sample_size is not None]
         total_patients = sum(sample_sizes) if sample_sizes else None
         
         # Top 3 citations with more detail
         top_studies = []
         for outcome in outcomes[:3]:
             study_detail = f"PMID:{outcome.pmid}"
-            if outcome.sample_size:
-                study_detail += f" (n={outcome.sample_size})"
+            if outcome.cmml_sample_size:
+                study_detail += f" (n={outcome.cmml_sample_size})"
             if outcome.data_source_location:
                 study_detail += f" [{outcome.data_source_location}]"
             top_studies.append(study_detail)
@@ -777,7 +777,9 @@ def main():
     
     # Save detailed outcomes with enhanced attribution
     print("\nSaving detailed results with attributions...")
-    with open("cmml_detailed_outcomes.json", "w") as f:
+    output_file_path = os.path.join(os.getcwd(), "cmml_detailed_outcomes.json")
+    print(f"Attempting to save cmml_detailed_outcomes.json to: {output_file_path}")
+    with open(output_file_path, "w") as f:
         results = {
             "extraction_metadata": {
                 "extraction_date": time.strftime("%Y-%m-%d %H:%M:%S"),
