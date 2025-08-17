@@ -1,104 +1,50 @@
-# Clinical Outcomes Data Extractor for CMML Drugs
+# CMML Drug Analysis Dashboard
 
-This repository contains Python scripts that use AI-like pattern matching and PubMed API to extract structured clinical outcomes data for drugs used in Chronic Myelomonocytic Leukemia (CMML).
-
-## Scripts
-
-### 1. `clinical_data_extractor.py`
-Basic script that extracts data for azacitidine in CMML.
-
-### 2. `advanced_clinical_extractor.py`
-Advanced script that extracts and compares data for all three drugs:
-- Azacitidine
-- Decitabine  
-- Hydroxyurea
+A comprehensive web dashboard for analyzing clinical efficacy and adverse events data for CMML (Chronic Myelomonocytic Leukemia) treatments.
 
 ## Features
 
-- **PubMed API Integration**: Automatically searches PubMed for relevant studies
-- **AI-like Pattern Matching**: Uses regex patterns to extract clinical data from abstracts
-- **Structured Data Extraction**: Extracts response rates, survival outcomes, and adverse events
-- **Comparative Analysis**: Generates comparative reports between drugs
-- **Citation Tracking**: Links all data points to their source studies
+- **Clinical Efficacy Data**: Complete response rates, overall response rates, progression-free survival, and overall survival data
+- **Adverse Events Analysis**: Comprehensive adverse events data extracted using LLM technology
+- **Drug Comparison**: Side-by-side comparison of Azacitidine, Decitabine, and Hydroxyurea
+- **Interactive Interface**: Click on metrics to view source papers and detailed information
+- **Real-time Data**: Live data loading with cache busting
 
-## Installation
+## Data Sources
 
-1. Install required packages:
-```bash
-pip install -r requirements.txt
-```
+- **Azacitidine**: 169 papers (75 with clinical data, 18 with adverse events)
+- **Decitabine**: 125 papers (51 with clinical data, comprehensive adverse events)
+- **Hydroxyurea**: 4 papers with clinical and adverse events data
 
-2. (Optional) Get a PubMed API key for higher rate limits:
-   - Visit: https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/
-   - Add your API key to the script
+## Technologies Used
+
+- HTML5, CSS3, JavaScript (ES6+)
+- Vercel for deployment
+- LLM-extracted clinical data
+- PubMed integration
+
+## Deployment
+
+This dashboard is deployed on Vercel and accessible via web browser.
+
+## Data Files
+
+- `simple_dashboard.html` - Main dashboard interface
+- `updated_dashboard_data.json` - Aggregated dashboard data
+- `clinical_efficacy_azacitidine.json` - Azacitidine clinical efficacy data
+- `adverse_event_comprehensive.json` - Comprehensive adverse events data
+- `Decitabine_extracted.json` - Decitabine clinical data
+- `Hydroxyurea_extracted.json` - Hydroxyurea clinical data
 
 ## Usage
 
-### Basic Script (Azacitidine only)
-```bash
-python clinical_data_extractor.py
-```
+1. Open the dashboard in a web browser
+2. View paper counts and summary statistics
+3. Click on drug cards to see detailed metrics
+4. Click on specific metrics to view source papers
+5. Use modal popups to explore detailed paper information
 
-### Advanced Script (All three drugs)
-```bash
-python advanced_clinical_extractor.py
-```
+## Research Context
 
-## Output Files
-
-The scripts generate:
-1. **Markdown Report**: Structured clinical outcomes report
-2. **JSON Data**: Raw extracted data for further analysis
-3. **Console Summary**: Quick overview of extracted data points
-
-## Extracted Data Types
-
-### Response Rates
-- Overall Response Rate (ORR)
-- Complete Response (CR)
-- Partial Response (PR)
-- Marrow CR (mCR)
-- Hematologic Improvement (HI)
-
-### Survival Outcomes
-- Median Overall Survival (OS)
-- Median Progression-Free Survival (PFS)
-- Median Event-Free Survival (EFS)
-
-### Adverse Events
-- Grade 3-4 Neutropenia
-- Grade 3-4 Thrombocytopenia
-- Febrile Neutropenia
-- Anemia
-- Infections
-
-## Example Output
-
-The advanced script generates a comparative table like:
-
-| Drug | ORR (%) | CR (%) | Median OS (months) | Median PFS (months) | Studies |
-|------|---------|--------|-------------------|-------------------|---------|
-| Azacitidine | 45.2 | 15.8 | 16.3 | 8.7 | 12 |
-| Decitabine | 52.1 | 18.4 | 18.9 | 10.2 | 8 |
-| Hydroxyurea | 35.7 | 8.9 | 12.1 | 6.3 | 5 |
-
-## Limitations
-
-1. **Pattern Matching**: Relies on consistent text patterns in abstracts
-2. **Data Quality**: Depends on how data is reported in publications
-3. **Rate Limits**: PubMed API has rate limits (3 requests/second without API key)
-4. **Abstract Only**: Only analyzes abstracts, not full papers
-
-## Customization
-
-You can modify the scripts to:
-- Add new drugs by updating the `drugs` dictionary
-- Add new data extraction patterns
-- Change search queries
-- Modify output formats
-
-## Citation
-
-When using this data, please cite the original studies identified by the PMIDs in the reports. # parca__cmml
-# parca_cmml
-# parca_gemini_cmml
+This dashboard provides evidence-based insights for CMML treatment decisions, combining clinical efficacy and safety data from peer-reviewed literature.
+# parca_cmml_final
