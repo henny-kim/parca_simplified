@@ -1,0 +1,85 @@
+[
+  {
+    "pmid": "2052066",
+    "citation": "Wolff-Kormann PG et al. Successful treatment with hydroxyurea of ocular involvement in chronic myelomonocytic leukemia.. The New England journal of medicine (1991 Jul 18)",
+    "title": "Successful treatment with hydroxyurea of ocular involvement in chronic myelomonocytic leukemia.",
+    "abstract": "",
+    "has_efficacy_data": true,
+    "complete_response": null,
+    "overall_response_rate": null,
+    "progression_free_survival_median": null,
+    "overall_survival_median": null,
+    "number_of_patients": 5,
+    "treatment_cycles": null,
+    "adverse_events": {
+      "any_adverse_events": "Myelosuppression (in all 5 patients, requiring dose reduction in 2),  mild gastrointestinal symptoms, and fatigue.",
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": [
+        "Myelosuppression",
+        "Gastrointestinal symptoms",
+        "Fatigue"
+      ],
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "Efficacy data other than number of patients treated is not explicitly stated. Adverse events are described qualitatively; specific counts or percentages for SAEs, grade 3-4 events, or treatment discontinuation are not provided."
+  },
+  {
+    "pmid": "8839839",
+    "citation": "Wattel E et al. A randomized trial of hydroxyurea versus VP16 in adult chronic myelomonocytic leukemia. Groupe Fran\u00e7ais des My\u00e9lodysplasies and European CMML Group.. Blood (1996 Oct 1)",
+    "title": "A randomized trial of hydroxyurea versus VP16 in adult chronic myelomonocytic leukemia. Groupe Fran\u00e7ais des My\u00e9lodysplasies and European CMML Group.",
+    "abstract": "We performed a randomized study of hydroxyurea (HY) versus VP16 in advanced chronic myelomonocytic leukemia (CMML) patients with CMML (according to French-American-British group criteria) and either documented visceral involvement (excluding liver and spleen infiltration) or at least 2 of the following: (1) neutrophils > 16 x 10(9)/I (2) Hemoglobin < 10 g/dL (3) platelets < 100 x 10(9)/L (4) marrow blasts > 5% (5) spleen > 5 cm below costal margin were eligible for this trial. Initial dosage was 1 g/d for HY and 150 mg/week for VP16, orally (doubled in case of visceral involvement). Doses were scheduled to be escalated up to HY 4 g/d and VP16 600 mg/week in the absence of response, and finally adjusted to maintain white blood cells (WBCs) between 5 and 10 x 10(9)/L. Crossing over was scheduled only in case of life threatening visceral involvement or major progression. The major endpoint of the study was survival. The study was closed on first interim analysis that showed a superiority of HY over VP16, after inclusion of 105 pts (HY arm: 53, VP16 arm: 52). Results of the second interim analysis, performed 7 months later, are presented here. Median age was 71 (range 38 to 91), median WBC count 20.10(9)/L (range 10 to 187). Thirteen pts had visceral involvement (3 serous effusions, 8 cutaneous infiltrations, 1 kidney, 1 bone infiltrations). Initial characteristics were similar in the HY and VP16 groups. Median follow up was 11 months in both groups (range 1 to 43+). Response to treatment was seen in 60% of the pts in the HY group, versus 36%, respectively, in the VP16 group (P = .02). Time to response was significantly shorter in the HY group (2.1 v 3.5 months, in the VP16 group, P = .003) and response duration was significantly longer in the HY group (median 24 v 9 months, in the VP16 group, P = .0004). The response rate of patients with visceral involvement was 3 out of 7 in the VP16 arm versus 5 out of 6 in the HY group. Three of the 10 pts crossed over from HY to VP16 responded as compared to 6 pts of the 11 pts crossed over from VP16 to HY. HY yielded better response on leukocytosis (P = .002). The effect on splenomegaly platelets, on hemoglobin level and transfusion requirement was similar in the 2 treatment groups. A significantly higher incidence of alopecia was noted in the VP16 arm (20% v 3%, P = .03). Fourteen (27%) and 20 (38%) patients in the HY and the VP16 group respectively, progressed to acute myeloid leukemia (difference NS). Twenty five (53%) and 44 (83%) patients in the HY and the VP16 group, respectively, had died (P = .002). Median actuarial survival was 20 months in the HY arm, versus 9 months in the VP16 arm (P < 10(-4)). Main factors associated with poor survival were allocation to the VP16 arm, \"unfavorable\" karyotype (ie, monosomy 7 or complex abnormalities) and anemia. In the HY group, unfavorable karyotype (P = .006), and low hemoglobin level (P = .004) were significantly associated with low response rates. Prognostic factors for poor survival in the HY group were also unfavorable karyotype (P = .001), and low hemoglobin level (P < 10(-4). In conclusion, we found that HY gave higher response rates and better survival than VP16 in advanced CMML. However, even with HY responses were only partial and survival was generally poor. This stresses the need for new agents in the treatment of CMML, that will have to be compared with HY in future randomized studies. FAU - Wattel, E",
+    "has_efficacy_data": false,
+    "adverse_events": {},
+    "extraction_notes": "JSON parsing error: Expecting ',' delimiter: line 5 column 2784 (char 3171)"
+  },
+  {
+    "pmid": "36455187",
+    "citation": "Itzykson R et al. Decitabine Versus Hydroxyurea for Advanced Proliferative Chronic Myelomonocytic Leukemia: Results of a Randomized Phase III Trial Within the EMSCO Network.. Journal of clinical oncology : official journal of the American Society of Clinical Oncology (2023 Apr 1)",
+    "title": "Decitabine Versus Hydroxyurea for Advanced Proliferative Chronic Myelomonocytic Leukemia: Results of a Randomized Phase III Trial Within the EMSCO Network.",
+    "abstract": "PURPOSE: Hydroxyurea (HY) is a reference treatment of advanced myeloproliferative neoplasms. We conducted a randomized phase III trial comparing decitabine (DAC) and HY in advanced myeloproliferative chronic myelomonocytic leukemias (CMML). PATIENTS AND METHODS: Newly diagnosed myeloproliferative CMML patients with advanced disease were randomly assigned 1:1 to intravenous DAC (20 mg/m(2)/d days 1-5) or HY (1-4 g/d) in 28-day cycles. The primary end point was event-free survival (EFS), events being death and acute myelomonocytic leukemia (AML) transformation or progression. RESULTS: One-hundred seventy patients received DAC (n = 84) or HY (n = 86). Median age was 72 and 74 years, and median WBC count 32.5 x 10(9)/L and 31.2 x 10(9)/L in the DAC and HY arms, respectively. Thirty-three percent of DAC and 31% of HY patients had CMML-2. Patients received a median of five DAC and six HY cycles. With a median follow-up of 17.5 months, median EFS was 12.1 months in the DAC arm and 10.3 months in the HY arm (hazard ratio [HR], 0.83; 95% CI, 0.59 to 1.16; P = .27). There was no significant interaction between treatment effect and blast or platelet count, anemia, CMML Prognostic Scoring System, Groupe Francophone des Myelodysplasies, or CMML Prognostic Scoring System-mol risk. Fifty-three (63%) DAC patients achieved a response compared with 30 (35%) HY patients (P = .0004). Median duration of response was similar in both arms (DAC, 16.3 months; HY, 17.4 months; P = .90). Median overall survival was 18.4 months in the DAC arm and 21.9 months in the HY arm (P = .67). Compared with HY, DAC significantly reduced the risk of CMML progression or transformation to acute myelomonocytic leukemia (cause-specific HR, 0.62; 95% CI, 0.41 to 0.94; P = .005) at the expense of death without progression or transformation (cause-specific HR, 1.55; 95% CI, 0.82 to 2.9; P = .04). CONCLUSION: Compared with HY, frontline treatment with DAC did not improve EFS in patients with advanced myeloproliferative CMML (ClinicalTrials.gov identifier: NCT02214407). FAU - Itzykson, Raphael",
+    "has_efficacy_data": true,
+    "complete_response": null,
+    "overall_response_rate": 35,
+    "progression_free_survival_median": 10.3,
+    "overall_survival_median": 21.9,
+    "number_of_patients": 86,
+    "treatment_cycles": 6,
+    "adverse_events": {
+      "any_adverse_events": null,
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": [],
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "No adverse event data for hydroxyurea was reported in the abstract."
+  },
+  {
+    "pmid": "26666606",
+    "citation": "Imai H et al. Hydroxyurea-induced Pneumonitis in a Patient with Chronic Myelomonocytic Leukemia: An Autopsy Case.. Internal medicine (Tokyo, Japan) (2015)",
+    "title": "Hydroxyurea-induced Pneumonitis in a Patient with Chronic Myelomonocytic Leukemia: An Autopsy Case.",
+    "abstract": "We describe the case of an 85-year-old man diagnosed with chronic myelomonocytic leukemia whose disease was treated with hydroxyurea for 3 months. He developed respiratory symptoms that were extensively investigated. Despite the intensive treatment, he died of respiratory failure eleven days later. An autopsy revealed diffuse interstitial inflammation of both lungs consistent with drug-induced inflammation. A drug lymphocyte stimulation test was positive for hydroxyurea. Taken together these findings demonstrated that severe interstitial pneumonitis was induced by this drug. Physicians using hydroxyurea must be aware of its potentially life-threatening pulmonary toxicity. FAU - Imai, Hisao",
+    "has_efficacy_data": false,
+    "complete_response": null,
+    "overall_response_rate": null,
+    "progression_free_survival_median": null,
+    "overall_survival_median": null,
+    "number_of_patients": 1,
+    "treatment_cycles": 3,
+    "adverse_events": {
+      "any_adverse_events": "Respiratory symptoms, interstitial pneumonitis, respiratory failure",
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": [
+        "Respiratory symptoms",
+        "interstitial pneumonitis",
+        "respiratory failure"
+      ],
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": 1
+    },
+    "extraction_notes": "The study is a case report, therefore no efficacy data is available. Only adverse event information for a single patient is provided. Treatment duration is specified as 3 months."
+  }
+]

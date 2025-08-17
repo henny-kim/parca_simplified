@@ -1,0 +1,240 @@
+{
+  "total_papers": 125,
+  "papers_with_efficacy": 51,
+  "efficacy_rate": 40.8,
+  "complete_response": {
+    "count": 21,
+    "mean": 21.714285714285715,
+    "median": 19.0,
+    "min": 7.0,
+    "max": 58.0,
+    "values": [
+      21.0,
+      28.0,
+      7.0,
+      21.0,
+      7.0,
+      7.0,
+      17.0,
+      41.0,
+      7.0,
+      10.0,
+      11.0,
+      19.0,
+      10.0,
+      14.0,
+      43.0,
+      58.0,
+      35.0,
+      11.0,
+      34.0,
+      27.0,
+      28.0
+    ]
+  },
+  "overall_response_rate": {
+    "count": 33,
+    "mean": 52.56666666666667,
+    "median": 47.5,
+    "min": 17.0,
+    "max": 100.0,
+    "values": [
+      76.0,
+      64.0,
+      90.0,
+      80.0,
+      95.0,
+      47.5,
+      33.9,
+      43.0,
+      45.0,
+      74.0,
+      60.0,
+      47.5,
+      41.0,
+      35.0,
+      52.0,
+      100.0,
+      75.0,
+      35.0,
+      19.4,
+      26.4,
+      38.0,
+      39.0,
+      35.0,
+      63.0,
+      30.0,
+      25.0,
+      69.0,
+      70.0,
+      41.0,
+      73.0,
+      17.0,
+      54.0,
+      41.0
+    ]
+  },
+  "progression_free_survival": {
+    "count": 7,
+    "mean": 13.614285714285714,
+    "median": 10.7,
+    "min": 5.4,
+    "max": 28.3,
+    "values": [
+      28.3,
+      10.0,
+      18.0,
+      10.7,
+      14.0,
+      5.4,
+      8.9
+    ]
+  },
+  "overall_survival": {
+    "count": 32,
+    "mean": 18.4221875,
+    "median": 17.95,
+    "min": 4.3,
+    "max": 38.33,
+    "values": [
+      35.7,
+      19.0,
+      24.0,
+      23.1,
+      17.4,
+      21.6,
+      13.0,
+      10.7,
+      7.8,
+      13.7,
+      24.0,
+      14.3,
+      36.0,
+      24.0,
+      31.0,
+      13,
+      24.0,
+      8.2,
+      14.78,
+      7.3,
+      18.5,
+      12.0,
+      24,
+      4.3,
+      8.6,
+      22.0,
+      19.0,
+      22,
+      17.2,
+      10.5,
+      38.33,
+      10.5
+    ]
+  },
+  "patient_numbers": {
+    "total_patients": {
+      "count": 40,
+      "sum": 6273,
+      "mean": 156.825,
+      "median": 59.5
+    },
+    "cmml_patients": {
+      "count": 24,
+      "sum": 2776,
+      "mean": 115.66666666666667,
+      "median": 25.0
+    }
+  },
+  "supporting_quotes_count": 111,
+  "key_findings": [
+    {
+      "pmid": "40524338",
+      "citation": "Michael R Savona et al. Efficacy and safety of oral decitabine/cedazuridine in the chronic myelomonocytic leukaemia subpopulations from phase 2 and 3 studies.. British journal of haematology (2025 Jun)",
+      "summary": "The study showed an overall response rate of 76% in 33 CMML patients treated with decitabine/cedazuridine, with a 21% complete response rate. Median overall survival was 35.7 months, and median transformation-free survival was 28.3 months.",
+      "orr": 76.0,
+      "os": 35.7,
+      "pfs": 28.3
+    },
+    {
+      "pmid": "40164584",
+      "citation": "Alex Bataller et al. Oral decitabine cedazuridine with and without venetoclax in higher-risk myelodysplastic syndromes or chronic myelomonocytic leukemia: a propensity score-matched study.. Blood cancer journal (2025 Mar)",
+      "summary": "The addition of venetoclax to decitabine-cedazuridine improved overall response rate (90% vs 64%),  progression-free survival (18 months vs 10 months), although overall survival difference was not statistically significant (24 months vs 19 months).",
+      "orr": {
+        "DEC-C": 64.0,
+        "DEC-C-Ven": 90.0
+      },
+      "os": {
+        "DEC-C": 19.0,
+        "DEC-C-Ven": 24.0
+      },
+      "pfs": {
+        "DEC-C": 10.0,
+        "DEC-C-Ven": 18.0
+      }
+    },
+    {
+      "pmid": "38450850",
+      "citation": "Mrinal M Patnaik et al. Chronic myelomonocytic leukemia: 2024 update on diagnosis, risk stratification and management.. American journal of hematology (2024 Jun)",
+      "summary": "The DACOTA study showed an overall survival of 23.1 months for patients receiving hydroxyurea and 18.4 months for those receiving decitabine in high-risk MP-CMML.  Response rates were higher with decitabine (56%) compared to hydroxyurea (31%), although specific response types (CR, PR, mCR, ORR) are not detailed.",
+      "orr": null,
+      "os": 23.1,
+      "pfs": null
+    },
+    {
+      "pmid": "38387931",
+      "citation": "Xiao Li et al. [Clinical Efficacy of Hypomethylating Agent Therapy in Patients with Chronic Myelomonocytic Leukemia].. Zhongguo shi yan xue ye xue za zhi (2024 Feb)",
+      "summary": "The study showed an 80% overall response rate with a 28% complete remission rate among 25 CMML patients treated with hypomethylating agents. Median overall survival was 17.4 months.  Progression to AML was observed in some patients who achieved CR.",
+      "orr": 80.0,
+      "os": 17.4,
+      "pfs": null
+    },
+    {
+      "pmid": "38316133",
+      "citation": "Alex Bataller et al. Oral decitabine plus cedazuridine and venetoclax in patients with higher-risk myelodysplastic syndromes or chronic myelomonocytic leukaemia: a single-centre, phase 1/2 study.. The Lancet. Haematology (2024 Mar)",
+      "summary": "The study showed a high overall response rate (ORR) of 95% in 39 patients.  However,  no data on complete response, partial response, progression-free survival, or overall survival was provided.",
+      "orr": 95.0,
+      "os": null,
+      "pfs": null
+    },
+    {
+      "pmid": "37754496",
+      "citation": "John Paul Yun et al. Decitabine/Cedazuridine in the Management of Myelodysplastic Syndrome and Chronic Myelomonocytic Leukemia in Canada.. Current oncology (Toronto, Ont.) (2023 Aug)",
+      "summary": "The study reports median overall survival (OS) of 21.6 months and median progression-free survival (PFS) of 10.7 months for 651 patients who started treatment with DEC-C.  Response rates were not reported.",
+      "orr": null,
+      "os": 21.6,
+      "pfs": 10.7
+    },
+    {
+      "pmid": "37495538",
+      "citation": "Tomoyuki Saga et al. Prognostic Value of Pretreatment Fetal Hemoglobin Levels in Patients with Myelodysplastic Syndromes and Acute Myeloid Leukemia Treated with Azacitidine: A Single-center Retrospective Study.. Internal medicine (Tokyo, Japan) (2024 Mar)",
+      "summary": "The study shows that elevated pretreatment HbF levels correlate with a higher hematologic improvement rate (76.9% vs 25%) and better overall survival (median 21.0 vs 13.0 months) in patients with MDS/AML treated with azacitidine.  Specific response rates (CR, PR, mCR, ORR) are not provided.",
+      "orr": null,
+      "os": 13.0,
+      "pfs": null
+    },
+    {
+      "pmid": "37341641",
+      "citation": "David Levitz et al. A Metabolically Optimized, Noncytotoxic Low-Dose Weekly Decitabine/Venetoclax in MDS and AML.. Clinical cancer research : an official journal of the American Association for Cancer Research (2023 Aug)",
+      "summary": "The study reports overall response rates of 88% and 64% for AML and MDS patients respectively, treated with LDDec/VEN.  A 71% composite complete response rate and a median overall survival of 10.7 months were observed in patients with TP53 mutations.  The total number of patients was 39 for the LDDec/VEN arm and an additional 36 in the standard dose HMA/VEN arm.",
+      "orr": null,
+      "os": 10.7,
+      "pfs": null
+    },
+    {
+      "pmid": "36801588",
+      "citation": "Tugcan Alp Kirkizlar et al. Incidence and predisposing factors of infection in patients treated with hypomethylating agents.. Leukemia research (2023 Apr)",
+      "summary": "The study reports a median overall survival of 7.8 months in non-infected patients and 6.83 months in infected patients treated with hypomethylating agents.  No response rates were reported.",
+      "orr": null,
+      "os": 7.8,
+      "pfs": null
+    },
+    {
+      "pmid": "35093134",
+      "citation": "Nicholas J Short et al. Impact of frontline treatment approach on outcomes in patients with secondary AML with prior hypomethylating agent exposure.. Journal of hematology & oncology (2022 Jan)",
+      "summary": "The study shows that HMA plus venetoclax resulted in higher CR/CRi rates (39% and 25%) and superior OS compared to other treatments.  A median OS of 13.7 months was observed in patients with non-adverse risk karyotype receiving HMA plus venetoclax.  The study focuses on secondary AML, with CMML being one of the antecedent hematologic disorders, but doesn't provide separate efficacy data for CMML patients.",
+      "orr": null,
+      "os": 13.7,
+      "pfs": null
+    }
+  ]
+}

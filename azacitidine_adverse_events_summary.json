@@ -1,0 +1,52 @@
+{
+  "total_papers": 156,
+  "papers_with_ae_data": 60,
+  "papers_with_extractable_ae": 58,
+  "adverse_event_counts": {
+    "myelosuppression": {
+      "papers": 16,
+      "patients": 49
+    },
+    "death": {
+      "papers": 9,
+      "patients": 33
+    },
+    "pulmonary": {
+      "papers": 7,
+      "patients": 7
+    },
+    "infection": {
+      "papers": 10,
+      "patients": 155
+    },
+    "skin": {
+      "papers": 6,
+      "patients": 7
+    },
+    "gastrointestinal": {
+      "papers": 5,
+      "patients": 38
+    },
+    "fatigue": {
+      "papers": 2,
+      "patients": 5
+    },
+    "insomnia": {
+      "papers": 1,
+      "patients": 1
+    },
+    "transfusion": {
+      "papers": 2,
+      "patients": 2
+    },
+    "fever": {
+      "papers": 1,
+      "patients": 1
+    },
+    "weight": {
+      "papers": 1,
+      "patients": 1
+    }
+  },
+  "dashboard_summary": "Myelosuppression: 16 papers, 49 patients; Infection: 10 papers, 155 patients; Death: 9 papers, 33 patients; Pulmonary: 7 papers, 7 patients; Skin: 6 papers, 7 patients; Gastrointestinal: 5 papers, 38 patients; Fatigue: 2 papers, 5 patients; Transfusion: 2 papers, 2 patients; Insomnia: 1 papers, 1 patients; Fever: 1 papers, 1 patients; Weight: 1 papers, 1 patients"
+}

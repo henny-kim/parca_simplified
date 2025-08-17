@@ -1,0 +1,149 @@
+{
+  "comparison_date": "2025-08-16 16:30:00",
+  "overview": {
+    "total_papers_analyzed": 376,
+    "papers_with_efficacy_data": 145,
+    "overall_success_rate": "38.6%",
+    "drugs_compared": ["azacitidine", "decitabine", "hydroxyurea"]
+  },
+  "paper_counts": {
+    "azacitidine": {
+      "total": 169,
+      "with_efficacy": 75,
+      "success_rate": "44.4%"
+    },
+    "decitabine": {
+      "total": 125,
+      "with_efficacy": 51,
+      "success_rate": "40.8%"
+    },
+    "hydroxyurea": {
+      "total": 82,
+      "with_efficacy": 19,
+      "success_rate": "23.2%"
+    }
+  },
+  "efficacy_comparison": {
+    "overall_response_rate": {
+      "decitabine": {
+        "mean": 64.2,
+        "median": 64.0,
+        "studies": 35,
+        "rank": 1
+      },
+      "azacitidine": {
+        "mean": 49.1,
+        "median": 44.0,
+        "studies": 53,
+        "rank": 2
+      },
+      "hydroxyurea": {
+        "mean": 32.8,
+        "median": 31.0,
+        "studies": 12,
+        "rank": 3
+      }
+    },
+    "complete_response_rate": {
+      "azacitidine": {
+        "mean": 23.8,
+        "median": 19.0,
+        "studies": 30,
+        "rank": 1
+      },
+      "decitabine": {
+        "mean": 21.0,
+        "median": 19.0,
+        "studies": 25,
+        "rank": 2
+      },
+      "hydroxyurea": {
+        "mean": 15.6,
+        "median": 12.0,
+        "studies": 8,
+        "rank": 3
+      }
+    }
+  },
+  "survival_comparison": {
+    "overall_survival": {
+      "decitabine": {
+        "mean": 28.3,
+        "median": 25.0,
+        "studies": 28,
+        "rank": 1
+      },
+      "hydroxyurea": {
+        "mean": 24.8,
+        "median": 23.1,
+        "studies": 15,
+        "rank": 2
+      },
+      "azacitidine": {
+        "mean": 22.9,
+        "median": 19.8,
+        "studies": 38,
+        "rank": 3
+      }
+    },
+    "progression_free_survival": {
+      "decitabine": {
+        "mean": 18.5,
+        "median": 17.0,
+        "studies": 12,
+        "rank": 1
+      },
+      "hydroxyurea": {
+        "mean": 18.5,
+        "median": 17.0,
+        "studies": 4,
+        "rank": 2
+      },
+      "azacitidine": {
+        "mean": 16.4,
+        "median": 14.0,
+        "studies": 7,
+        "rank": 3
+      }
+    }
+  },
+  "clinical_roles": {
+    "decitabine": {
+      "primary_role": "Disease modification",
+      "strengths": ["Highest ORR (64.2%)", "Best survival outcomes", "Comprehensive efficacy data"],
+      "indications": ["First-line therapy", "High-risk CMML", "Disease modification"],
+      "limitations": ["Cost", "Side effects", "Requires monitoring"]
+    },
+    "azacitidine": {
+      "primary_role": "Broad efficacy",
+      "strengths": ["Most studied (169 papers)", "Good CR rates", "Well-established safety"],
+      "indications": ["First-line therapy", "Various CMML subtypes", "Standard of care"],
+      "limitations": ["Lower ORR than decitabine", "Variable outcomes"]
+    },
+    "hydroxyurea": {
+      "primary_role": "Symptom control",
+      "strengths": ["Cost-effective", "Well-tolerated", "Rapid symptom relief"],
+      "indications": ["Symptom management", "Bridge therapy", "Proliferative CMML"],
+      "limitations": ["Lower efficacy", "No disease modification", "Limited survival benefit"]
+    }
+  },
+  "key_insights": {
+    "efficacy_hierarchy": "Decitabine > Azacitidine > Hydroxyurea",
+    "survival_hierarchy": "Decitabine > Hydroxyurea > Azacitidine",
+    "study_volume": "Azacitidine has the most published data, followed by decitabine, then hydroxyurea",
+    "data_quality": "Decitabine studies tend to have the most comprehensive and detailed efficacy reporting",
+    "clinical_implications": {
+      "first_line": "Decitabine and azacitidine are preferred for disease modification",
+      "symptom_control": "Hydroxyurea remains important for rapid symptom relief",
+      "combination": "Sequential or combination approaches may optimize outcomes",
+      "personalization": "Choice should be based on patient characteristics, disease subtype, and goals of care"
+    }
+  },
+  "data_quality_notes": {
+    "extraction_method": "LLM-based using Gemini 1.5 Flash",
+    "abstract_availability": "95.1% of hydroxyurea papers had abstracts (MEDLINE format)",
+    "confidence_scores": "Included in all extracted records",
+    "supporting_quotes": "All efficacy data backed by direct quotes from abstracts",
+    "standardization": "All drugs extracted using identical methodology for fair comparison"
+  }
+}

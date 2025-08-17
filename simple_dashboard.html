@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>CMML Drug Analysis - Simple View</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            margin: 0;
+            background: white;
+            border-radius: 0;
+            box-shadow: none;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+        }
+        .header p {
+            margin: 15px 0 0 0;
+            opacity: 0.9;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+        .efficacy-banner {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 20px 30px;
+            margin: 0;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.1em;
+            box-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 60px;
+            max-width: 100%;
+        }
+        .drug-card {
+            background: white;
+            border: none;
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            min-width: 0;
+        }
+
+        .drug-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        .drug-title {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            letter-spacing: -0.5px;
+        }
+        .metric-group {
+            margin-bottom: 30px;
+        }
+        .metric-group h3 {
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        .metric-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 16px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 12px;
+            border: 1px solid transparent;
+            min-height: 60px;
+        }
+        .metric-row:hover {
+            background-color: #f8f9fa;
+            border-color: #e0e0e0;
+            transform: translateX(5px);
+        }
+        .metric-row:last-child {
+            margin-bottom: 0;
+        }
+        .metric-label {
+            font-weight: 500;
+            color: #666;
+            font-size: 1.1em;
+            flex: 1;
+            min-width: 250px;
+            max-width: 250px;
+        }
+        .metric-value {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.1em;
+            text-align: left;
+            flex: 2;
+            min-width: 300px;
+            word-wrap: break-word;
+            line-height: 1.5;
+            white-space: normal;
+            overflow-wrap: break-word;
+        }
+        .click-hint {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 20px;
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .summary-stats {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 40px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .summary-stats h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        .paper-counts {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+        .count-item {
+            background: white;
+            padding: 25px 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+            min-width: 180px;
+        }
+        .count-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+        .count-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .count-label {
+            color: #666;
+            font-size: 1em;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+        .combined-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            position: relative;
+        }
+
+        .combined-card .drug-title {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+        .combined-card .metric-label {
+            color: rgba(255,255,255,0.9);
+        }
+        .combined-card .metric-value {
+            color: white;
+        }
+        .combined-card .click-hint {
+            background: rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.8);
+            border-left-color: rgba(255,255,255,0.3);
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 2% auto;
+            padding: 0;
+            border-radius: 20px;
+            width: 95%;
+            max-width: 1200px;
+            max-height: 90vh;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+        }
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .close {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+        .close:hover {
+            opacity: 0.7;
+        }
+        .modal-body {
+            padding: 40px;
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .paper-list {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        .paper-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            padding: 25px;
+            background: #fafafa;
+            transition: all 0.3s ease;
+        }
+        .paper-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .paper-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        .paper-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .paper-data {
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #667eea;
+        }
+        .data-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .data-row:last-child {
+            margin-bottom: 0;
+        }
+        .data-label {
+            font-weight: 500;
+            color: #555;
+            min-width: 150px;
+            flex-shrink: 0;
+        }
+        .data-value {
+            font-weight: 600;
+            color: #333;
+            flex: 1;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        /* Special styles for adverse events modal */
+        .modal-content.adverse-events {
+            max-width: 1400px;
+            width: 98%;
+        }
+        
+        .modal-content.adverse-events .paper-item {
+            padding: 30px;
+        }
+        
+        .modal-content.adverse-events .data-row {
+            margin-bottom: 12px;
+        }
+        
+        .comprehensive-summary {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        
+        .comprehensive-summary h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .ae-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .ae-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+
+        
+        .ae-type {
+            font-weight: 600;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .ae-details {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .paper-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .paper-link:hover {
+            text-decoration: underline;
+        }
+        .drug-categories {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        .no-data {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CMML Drug Analysis</h1>
+            <p>Comprehensive analysis of Azacitidine, Decitabine, and Hydroxyurea in CMML treatment</p>
+        </div>
+        
+
+        
+        <div class="summary-stats">
+            <h2>Paper Analysis Summary</h2>
+            <div class="paper-counts" id="paper-counts">
+                <div class="loading">Loading data...</div>
+            </div>
+        </div>
+        
+        <div class="stats-grid" id="stats-grid">
+            <div class="loading">Loading data...</div>
+        </div>
+    </div>
+
+    <!-- Modal for showing paper details -->
+    <div id="paperModal" class="modal">
+        <div class="modal-content" id="modalContentContainer">
+            <div class="modal-header">
+                <h2 id="modalTitle">Paper Details</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent" class="paper-list">
+                    <!-- Content will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let clinicalEfficacyData = null;  // Clinical efficacy data (new LLM-extracted)
+        let summarizedData = null;        // Calculated metrics (means/medians)
+        let pubmedData = null;            // Full paper counts
+        let adverseEventData = null;      // LLM-extracted adverse events
+        let decitabineData = null;        // Decitabine clinical efficacy data
+        let hydroxyureaData = null;       // Hydroxyurea clinical efficacy data
+        let decitabineAdverseEventsData = null; // Decitabine adverse events data
+
+        async function loadData() {
+            try {
+                // Load updated dashboard data with cache busting
+                const timestamp = new Date().getTime();
+                console.log('Loading data with timestamp:', timestamp);
+                const [updatedResponse, clinicalEfficacyResponse, pubmedResponse, adverseEventResponse, decitabineResponse, hydroxyureaResponse, decitabineAdverseEventsResponse] = await Promise.all([
+                    fetch(`updated_dashboard_data.json?t=${timestamp}`),
+                    fetch(`clinical_efficacy_azacitidine.json?t=${timestamp}`),
+                    fetch(`pubmed_all_cmml_papers.json?t=${timestamp}`),
+                    fetch(`adverse_event_comprehensive.json?t=${timestamp}`),
+                    fetch(`Decitabine_extracted.json?t=${timestamp}`),
+                    fetch(`Hydroxyurea_extracted.json?t=${timestamp}`),
+                    fetch(`Decitabine_adverse_events_extracted.json?t=${timestamp}`)
+                ]);
+                
+                summarizedData = await updatedResponse.json();
+                window.summarizedData = summarizedData; // Make it globally accessible
+                clinicalEfficacyData = await clinicalEfficacyResponse.json();
+                pubmedData = await pubmedResponse.json();
+                adverseEventData = await adverseEventResponse.json();
+                decitabineData = await decitabineResponse.json();
+                hydroxyureaData = await hydroxyureaResponse.json();
+                decitabineAdverseEventsData = await decitabineAdverseEventsResponse.json();
+                
+                console.log('Data loaded:', {
+                    decitabineAdverseEventsData: decitabineAdverseEventsData?.length,
+                    adverseEventData: adverseEventData?.azacitidine?.length,
+                    clinicalEfficacyData: clinicalEfficacyData?.length
+                });
+                
+                displayData(summarizedData);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('stats-grid').innerHTML = '<div class="loading">Error loading data. Please check the console.</div>';
+            }
+        }
+
+        function displayData(data) {
+            // Use metadata from summarized data if available, otherwise fallback
+            const metadata = data._metadata || {};
+            const comprehensiveCounts = metadata.comprehensive_paper_counts || {};
+            const clinicalCounts = metadata.clinical_data_paper_counts || {};
+            
+            // Paper counts from papers that actually have extracted data
+            const azacitidineCount = clinicalCounts.azacitidine || 75;
+            const decitabineCount = clinicalCounts.decitabine || 51;
+            const hydroxyureaCount = clinicalCounts.hydroxyurea || 3;
+            const totalUniqueCount = (azacitidineCount + decitabineCount + hydroxyureaCount);
+            
+
+
+            // Display paper counts
+            const paperCounts = document.getElementById('paper-counts');
+            paperCounts.innerHTML = `
+                <div class="count-item" onclick="showPapersByDrug('azacitidine')">
+                    <span class="count-number">${azacitidineCount}</span>
+                    <span class="count-label">Azacitidine Papers</span>
+                </div>
+                <div class="count-item" onclick="showPapersByDrug('decitabine')">
+                    <span class="count-number">${decitabineCount}</span>
+                    <span class="count-label">Decitabine Papers</span>
+                </div>
+                <div class="count-item" onclick="showPapersByDrug('hydroxyurea')">
+                    <span class="count-number">${hydroxyureaCount}</span>
+                    <span class="count-label">Hydroxyurea Papers</span>
+                </div>
+                <div class="count-item" onclick="showAllPapers()">
+                    <span class="count-number">${totalUniqueCount}</span>
+                    <span class="count-label">Total Unique Papers</span>
+                </div>
+            `;
+
+            // Display drug data
+            const statsGrid = document.getElementById('stats-grid');
+            statsGrid.innerHTML = '';
+
+            // Azacitidine
+            if (data.azacitidine) {
+                statsGrid.appendChild(createDrugCard('Azacitidine', data.azacitidine, 'azacitidine'));
+            }
+
+            // Decitabine
+            if (data.decitabine) {
+                statsGrid.appendChild(createDrugCard('Decitabine', data.decitabine, 'decitabine'));
+            }
+
+            // Hydroxyurea
+            if (data.hydroxyurea) {
+                statsGrid.appendChild(createDrugCard('Hydroxyurea', data.hydroxyurea, 'hydroxyurea'));
+            }
+
+            // Combined Azacitidine + Decitabine
+            if (data.azacitidine_decitabine_combined) {
+                statsGrid.appendChild(createDrugCard('Azacitidine + Decitabine', data.azacitidine_decitabine_combined, 'combined', true));
+            }
+        }
+
+        function createDrugCard(drugName, drugData, drugKey, isCombined = false) {
+            const card = document.createElement('div');
+            card.className = `drug-card ${isCombined ? 'combined-card' : ''}`;
+            
+            // Check if this drug has a status (indicating it's being processed)
+            const status = drugData.status;
+            const isProcessing = status && (status.includes('progress') || status.includes('Pending'));
+            
+            let cardContent = `<div class="drug-title">${drugName}</div>`;
+            
+            if (isProcessing) {
+                cardContent += `
+                    <div class="status-banner" style="background: #fff3cd; color: #856404; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center; font-weight: 500;">
+                        🔄 ${status}
+                    </div>
+                `;
+            }
+            
+            cardContent += `
+                <div class="metric-group">
+                    <h3>Efficacy</h3>
+                    <div class="metric-row" onclick="showPapersByMetric('${drugKey}', 'complete_response')">
+                        <span class="metric-label">Complete Response (CR)</span>
+                        <span class="metric-value">${formatValue(drugData.efficacy?.cr_mean)}% (mean) / ${formatValue(drugData.efficacy?.cr_median)}% (median)</span>
+                    </div>
+                    <div class="metric-row" onclick="showPapersByMetric('${drugKey}', 'overall_response')">
+                        <span class="metric-label">Overall Response Rate (ORR)</span>
+                        <span class="metric-value">${formatValue(drugData.efficacy?.orr_mean)}% (mean) / ${formatValue(drugData.efficacy?.orr_median)}% (median)</span>
+                    </div>
+                </div>
+                
+                <div class="metric-group">
+                    <h3>Survival</h3>
+                    <div class="metric-row" onclick="showPapersByMetric('${drugKey}', 'pfs')">
+                        <span class="metric-label">Progression-Free Survival (PFS)</span>
+                        <span class="metric-value">${formatValue(drugData.survival?.pfs_mean)} months (mean) / ${formatValue(drugData.survival?.pfs_median)} months (median)</span>
+                    </div>
+                    <div class="metric-row" onclick="showPapersByMetric('${drugKey}', 'os')">
+                        <span class="metric-label">Overall Survival (OS)</span>
+                        <span class="metric-value">${formatValue(drugData.survival?.os_mean)} months (mean) / ${formatValue(drugData.survival?.os_median)} months (median)</span>
+                    </div>
+                </div>
+                
+                <div class="metric-group">
+                    <h3>Safety</h3>
+                    <div class="metric-row" onclick="showPapersByMetric('${drugKey}', 'adverse_events')">
+                        <span class="metric-label">Comprehensive Adverse Events</span>
+                        <span class="metric-value">${drugData.safety?.adverse_events_summary ? formatAdverseEventsSummary(drugData.safety.adverse_events_summary) : 'Data not available'}</span>
+                    </div>
+                </div>
+                
+                <div class="metric-group">
+                    <h3>Therapy Duration</h3>
+                    <div class="metric-row" onclick="showPapersByMetric('${drugKey}', 'therapy_duration')">
+                        <span class="metric-label">Duration of Therapy (Cycles)</span>
+                        <span class="metric-value">${formatValue(drugData.therapy_duration?.cycles_mean)} cycles (mean) / ${formatValue(drugData.therapy_duration?.cycles_median)} cycles (median)</span>
+                    </div>
+                </div>
+                
+                <div class="click-hint">Click any metric to see source papers</div>
+            `;
+            
+            card.innerHTML = cardContent;
+            return card;
+        }
+
+        function formatValue(value) {
+            if (value === null || value === undefined || isNaN(value)) {
+                return 'N/A';
+            }
+            if (typeof value === 'object') {
+                return 'N/A';
+            }
+            return typeof value === 'number' ? value.toFixed(1) : value;
+        }
+
+        function formatAdverseEventsSummary(summary) {
+            if (!summary) return 'Data not available';
+            
+            // Split the summary into individual items
+            const items = summary.split('; ').map(item => item.trim()).filter(item => item);
+            
+            // Show more items (up to 6-8) for better visibility
+            const displayItems = items.slice(0, 8);
+            const formattedItems = displayItems.map(item => {
+                const parts = item.split(': ');
+                if (parts.length >= 2) {
+                    const aeType = parts[0];
+                    const details = parts[1];
+                    return `${aeType} (${details})`;
+                }
+                return item;
+            });
+            
+            let result = formattedItems.join('; ');
+            
+            // If there are more items, add a note
+            if (items.length > 8) {
+                result += `; +${items.length - 8} more (click for details)`;
+            } else {
+                result += ' (click for details)';
+            }
+            
+            return result;
+        }
+
+        function truncateText(text, maxLength = 100) {
+            if (!text || text.length <= maxLength) {
+                return text;
+            }
+            return text.substring(0, maxLength) + '...';
+        }
+
+        function formatCitation(citation) {
+            if (!citation) return '';
+            
+            // If citation is already a clean string, return it
+            if (typeof citation === 'string' && !citation.includes("'name':")) {
+                return citation;
+            }
+            
+            // If citation is a JSON object or string with JSON structure, parse and format it
+            try {
+                let citationObj;
+                if (typeof citation === 'string') {
+                    // Try to parse JSON string
+                    citationObj = JSON.parse(citation.replace(/'/g, '"'));
+                } else {
+                    citationObj = citation;
+                }
+                
+                // Extract author name
+                let authorName = '';
+                if (citationObj.name) {
+                    authorName = citationObj.name;
+                } else if (citationObj.authors && citationObj.authors.length > 0) {
+                    authorName = citationObj.authors[0];
+                }
+                
+                // Extract title and journal info
+                let title = citationObj.title || '';
+                let journal = citationObj.journal || citationObj.fulljournalname || '';
+                let pubdate = citationObj.pubdate || '';
+                
+                // Format the citation
+                if (authorName && title) {
+                    return `${authorName} et al. ${title}. ${journal} (${pubdate})`;
+                } else if (title) {
+                    return title;
+                } else {
+                    return citation;
+                }
+            } catch (e) {
+                // If parsing fails, return the original citation
+                return citation;
+            }
+        }
+
+        function showPapersByDrug(drugKey) {
+            // Use clinical efficacy data for azacitidine, decitabine data for decitabine, hydroxyurea data for hydroxyurea, adverse event data for others
+            let papers = [];
+            let modalTitle = '';
+            
+            if (drugKey === 'azacitidine' && clinicalEfficacyData) {
+                papers = clinicalEfficacyData.filter(paper => paper.has_efficacy_data);
+                modalTitle = `Azacitidine Papers - Clinical Efficacy Data (${papers.length} papers with data)`;
+            } else if (drugKey === 'decitabine' && decitabineData) {
+                papers = decitabineData.filter(paper => paper.has_efficacy_data);
+                modalTitle = `Decitabine Papers - Clinical Efficacy Data (${papers.length} papers with data)`;
+            } else if (drugKey === 'hydroxyurea' && hydroxyureaData) {
+                papers = hydroxyureaData.filter(paper => paper.has_efficacy_data);
+                modalTitle = `Hydroxyurea Papers - Clinical Efficacy Data (${papers.length} papers with data)`;
+            } else if (adverseEventData && adverseEventData[drugKey] && adverseEventData[drugKey].length > 0) {
+                papers = adverseEventData[drugKey].filter(paper => paper.has_ae_data);
+                modalTitle = `${drugKey.charAt(0).toUpperCase() + drugKey.slice(1)} Papers - Adverse Events Data (${papers.length} papers with data)`;
+            } else if (adverseEventData && adverseEventData[drugKey]) {
+                // Show comprehensive summary for drugs without individual paper data
+                papers = [];
+                modalTitle = `${drugKey.charAt(0).toUpperCase() + drugKey.slice(1)} - Comprehensive Adverse Events Summary`;
+            } else {
+                alert(`No data available for ${drugKey}.`);
+                return;
+            }
+            
+            showModal(modalTitle, papers);
+        }
+
+        function showPapersByMetric(drugKey, metricType) {
+            // Use clinical efficacy data for azacitidine, decitabine data for decitabine, hydroxyurea data for hydroxyurea, adverse event data for others
+            let papers = [];
+            
+            // For adverse events, show all papers for the drug
+            if (metricType === 'adverse_events') {
+                if (drugKey === 'decitabine' && decitabineAdverseEventsData) {
+                    papers = decitabineAdverseEventsData.filter(paper => paper.has_adverse_event_data);
+                } else if (drugKey === 'azacitidine' && adverseEventData && adverseEventData[drugKey] && adverseEventData[drugKey].length > 0) {
+                    papers = adverseEventData[drugKey].filter(paper => paper.has_ae_data);
+                } else if (drugKey === 'hydroxyurea' && hydroxyureaData) {
+                    papers = hydroxyureaData.filter(paper => paper.has_efficacy_data);
+                } else {
+                    papers = [];
+                }
+            } else if (drugKey === 'azacitidine' && clinicalEfficacyData) {
+                papers = clinicalEfficacyData.filter(paper => paper.has_efficacy_data);
+            } else if (drugKey === 'decitabine' && decitabineData) {
+                papers = decitabineData.filter(paper => paper.has_efficacy_data);
+            } else if (drugKey === 'hydroxyurea' && hydroxyureaData) {
+                papers = hydroxyureaData.filter(paper => paper.has_efficacy_data);
+            } else if (adverseEventData && adverseEventData[drugKey]) {
+                papers = adverseEventData[drugKey];
+            } else {
+                alert('No data available for this metric.');
+                return;
+            }
+            
+            const metricLabels = {
+                'complete_response': 'Complete Response (CR)',
+                'overall_response': 'Overall Response Rate (ORR)',
+                'pfs': 'Progression-Free Survival (PFS)',
+                'os': 'Overall Survival (OS)',
+                'sae': 'Serious Adverse Events (SAE)',
+                'adverse_events': 'Comprehensive Adverse Events',
+                'therapy_duration': 'Therapy Duration'
+            };
+
+            const modalTitle = `${drugKey.charAt(0).toUpperCase() + drugKey.slice(1)} - ${metricLabels[metricType] || metricType}`;
+            
+            // Filter papers that have data for this metric
+            const relevantPapers = papers.filter(paper => {
+                switch(metricType) {
+                    case 'complete_response':
+                        return paper.complete_response !== null && paper.complete_response !== undefined;
+                    case 'overall_response':
+                        return paper.overall_response_rate !== null && paper.overall_response_rate !== undefined;
+                    case 'pfs':
+                        return paper.progression_free_survival_median !== null && paper.progression_free_survival_median !== undefined;
+                    case 'os':
+                        return paper.overall_survival_median !== null && paper.overall_survival_median !== undefined;
+                    case 'sae':
+                        return paper.sae_frequency !== null && paper.sae_frequency !== undefined;
+                    case 'adverse_events':
+                        return paper.has_ae_data === true;
+                    case 'therapy_duration':
+                        return paper.treatment_details && paper.treatment_details.includes('cycle');
+                    default:
+                        return true;
+                }
+            });
+            
+            // Debug: Log the filtering results
+            console.log(`Filtering for ${metricType}:`, {
+                totalPapers: papers.length,
+                relevantPapers: relevantPapers.length,
+                samplePaper: relevantPapers.length > 0 ? relevantPapers[0] : 'No papers found',
+                drugKey: drugKey,
+                dataSource: drugKey === 'azacitidine' ? 'clinicalEfficacyData' : 
+                           drugKey === 'decitabine' ? 'decitabineData' : 
+                           drugKey === 'hydroxyurea' ? 'hydroxyureaData' : 'adverseEventData'
+            });
+
+            showModal(modalTitle, relevantPapers, metricType);
+        }
+
+        function showPapersByDrug(drugKey) {
+            if (drugKey === 'azacitidine' && clinicalEfficacyData) {
+                const papers = clinicalEfficacyData.filter(paper => paper.has_efficacy_data);
+                showModal(`Azacitidine Papers - Clinical Efficacy Data (${papers.length} papers)`, papers);
+            } else if (drugKey === 'decitabine' && decitabineData) {
+                const papers = decitabineData.filter(paper => paper.has_efficacy_data);
+                showModal(`Decitabine Papers - Clinical Efficacy Data (${papers.length} papers)`, papers);
+            } else if (drugKey === 'hydroxyurea' && hydroxyureaData) {
+                const papers = hydroxyureaData.filter(paper => paper.has_efficacy_data);
+                showModal(`Hydroxyurea Papers - Clinical Efficacy Data (${papers.length} papers)`, papers);
+            } else if (adverseEventData && adverseEventData[drugKey]) {
+                const papers = adverseEventData[drugKey];
+                const drugName = drugKey.charAt(0).toUpperCase() + drugKey.slice(1);
+                showModal(`${drugName} Papers (${papers.length} papers)`, papers);
+            } else {
+                alert(`No data available for ${drugKey}.`);
+            }
+        }
+
+        function showAllPapers() {
+            if (!adverseEventData && !clinicalEfficacyData && !decitabineData && !hydroxyureaData) {
+                alert('No data available.');
+                return;
+            }
+
+            // Collect all papers from clinical efficacy data and adverse event data
+            const allPapers = [
+                ...(clinicalEfficacyData?.filter(p => p.has_efficacy_data) || []),
+                ...(decitabineData?.filter(p => p.has_efficacy_data) || []),
+                ...(hydroxyureaData?.filter(p => p.has_efficacy_data) || []),
+                ...(adverseEventData?.hydroxyurea || [])
+            ];
+
+            // Deduplicate by PMID, but keep track of which drugs each paper is associated with
+            const uniquePapers = [];
+            const seenPmids = new Set();
+            
+            allPapers.forEach(paper => {
+                if (!seenPmids.has(paper.pmid)) {
+                    // Add drug category information to the paper
+                    const paperWithDrugs = { ...paper };
+                    paperWithDrugs.drug_categories = [];
+                    
+                    // Check which drug categories this paper appears in
+                    if (clinicalEfficacyData?.some(p => p.pmid === paper.pmid && p.has_efficacy_data)) {
+                        paperWithDrugs.drug_categories.push('Azacitidine');
+                    }
+                    if (decitabineData?.some(p => p.pmid === paper.pmid && p.has_efficacy_data)) {
+                        paperWithDrugs.drug_categories.push('Decitabine');
+                    }
+                    if (hydroxyureaData?.some(p => p.pmid === paper.pmid && p.has_efficacy_data)) {
+                        paperWithDrugs.drug_categories.push('Hydroxyurea');
+                    }
+                    if ((adverseEventData?.hydroxyurea || []).some(p => p.pmid === paper.pmid)) {
+                        if (!paperWithDrugs.drug_categories.includes('Hydroxyurea')) {
+                            paperWithDrugs.drug_categories.push('Hydroxyurea');
+                        }
+                    }
+                    
+                    uniquePapers.push(paperWithDrugs);
+                    seenPmids.add(paper.pmid);
+                }
+            });
+
+            showModal(`All Papers (${uniquePapers.length} unique papers, ${allPapers.length} total entries)`, uniquePapers);
+        }
+
+        function showModal(title, papers, metricType = null) {
+            const modal = document.getElementById('paperModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
+            const modalContainer = document.getElementById('modalContentContainer');
+            
+            // Apply special styling for adverse events modal
+            if (metricType === 'adverse_events') {
+                modalContainer.classList.add('adverse-events');
+            } else {
+                modalContainer.classList.remove('adverse-events');
+            }
+
+            modalTitle.textContent = title;
+
+            let content = '';
+            
+            if (papers.length === 0) {
+                // For adverse events, show comprehensive summary if no individual papers found
+                if (metricType === 'adverse_events') {
+                    const drugKey = title.split(' - ')[0].toLowerCase();
+                    const aeSummary = window.summarizedData?.[drugKey]?.safety?.adverse_events_summary;
+                    if (aeSummary) {
+                        content = `
+                            <div class="comprehensive-summary">
+                                <h3>Comprehensive Adverse Events Summary</h3>
+                                <p>Based on analysis of all available papers for ${drugKey.charAt(0).toUpperCase() + drugKey.slice(1)} in CMML treatment:</p>
+                                <div class="ae-breakdown">
+                        `;
+                        const aeItems = aeSummary.split('; ').map(item => item.trim()).filter(item => item);
+                        aeItems.forEach(item => {
+                            const parts = item.split(': ');
+                            if (parts.length >= 2) {
+                                const aeType = parts[0];
+                                const details = parts[1];
+                                content += `
+                                    <div class="ae-item">
+                                        <span class="ae-type">${aeType}</span>
+                                        <span class="ae-details">${details}</span>
+                                    </div>
+                                `;
+                            } else {
+                                content += `<div class="ae-item"><span class="ae-details">${item}</span></div>`;
+                            }
+                        });
+                        content += `
+                                </div>
+                                <p style="margin-top: 20px; font-style: italic; color: #666;">
+                                    Note: This summary represents aggregated data from multiple studies. 
+                                    Individual paper details may vary based on study design and patient populations.
+                                </p>
+                            </div>
+                        `;
+                    } else {
+                        content = '<div class="no-data">No adverse events data available for this drug.</div>';
+                    }
+                } else {
+                    content = '<div class="no-data">No papers found with data for this metric.</div>';
+                }
+            } else {
+                papers.forEach((paper, index) => {
+                    const drugCategories = paper.drug_categories ? 
+                        `<span class="drug-categories">Drugs: ${paper.drug_categories.join(', ')}</span> | ` : '';
+                    
+                    content += `
+                        <div class="paper-item">
+                            <div class="paper-title">${formatCitation(paper.citation) || `Paper ${index + 1}`}</div>
+                            <div class="paper-meta">
+                                ${drugCategories}PMID: ${paper.pmid} | 
+                                <a href="${paper.url}" target="_blank" class="paper-link">View on PubMed</a>
+                            </div>
+                            <div class="paper-data">
+                                ${getMetricDisplay(paper, metricType)}
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            modalContent.innerHTML = content;
+            modal.style.display = 'block';
+        }
+
+        function getMetricDisplay(paper, metricType) {
+            if (!metricType) {
+                // Show all available data - check both clinical efficacy and adverse events
+                let display = '';
+                
+                // Clinical efficacy data (new structure)
+                if (paper.complete_response !== null && paper.complete_response !== undefined) display += `<div class="data-row"><span class="data-label">Complete Response:</span> <span class="data-value">${paper.complete_response}%</span></div>`;
+                if (paper.overall_response_rate !== null && paper.overall_response_rate !== undefined) display += `<div class="data-row"><span class="data-label">Overall Response Rate:</span> <span class="data-value">${paper.overall_response_rate}%</span></div>`;
+                if (paper.progression_free_survival_median !== null && paper.progression_free_survival_median !== undefined) display += `<div class="data-row"><span class="data-label">PFS Median:</span> <span class="data-value">${paper.progression_free_survival_median} months</span></div>`;
+                if (paper.overall_survival_median !== null && paper.overall_survival_median !== undefined) display += `<div class="data-row"><span class="data-label">OS Median:</span> <span class="data-value">${paper.overall_survival_median} months</span></div>`;
+                if (paper.total_patients !== null && paper.total_patients !== undefined) display += `<div class="data-row"><span class="data-label">Total Patients:</span> <span class="data-value">${paper.total_patients}</span></div>`;
+                
+                // Legacy data structure (for adverse events)
+                if (paper.partial_response !== null && paper.partial_response !== undefined) display += `<div class="data-row"><span class="data-label">Partial Response:</span> <span class="data-value">${paper.partial_response}%</span></div>`;
+                if (paper.pfs_median !== null && paper.pfs_median !== undefined) display += `<div class="data-row"><span class="data-label">PFS Median (Legacy):</span> <span class="data-value">${paper.pfs_median} months</span></div>`;
+                if (paper.os_median !== null && paper.os_median !== undefined) display += `<div class="data-row"><span class="data-label">OS Median (Legacy):</span> <span class="data-value">${paper.os_median} months</span></div>`;
+                if (paper.sae_frequency !== null && paper.sae_frequency !== undefined) display += `<div class="data-row"><span class="data-label">SAE Frequency:</span> <span class="data-value">${paper.sae_frequency}%</span></div>`;
+                
+                // Adverse events data from LLM extraction
+                if (paper.has_ae_data && paper.ae_summary) {
+                    display += `<div class="data-row"><span class="data-label">Adverse Events:</span> <span class="data-value">${paper.ae_summary}</span></div>`;
+                    if (paper.total_patients) display += `<div class="data-row"><span class="data-label">Study Size:</span> <span class="data-value">${paper.total_patients} patients</span></div>`;
+                }
+                
+                if (!display) display = '<div class="no-data">No specific metrics available</div>';
+                return display;
+            }
+
+            // Show specific metric
+            switch(metricType) {
+                case 'complete_response':
+                    return paper.complete_response !== null ? 
+                        `<div class="data-row"><span class="data-label">Complete Response:</span> <span class="data-value">${paper.complete_response}%</span></div>` :
+                        '<div class="no-data">No complete response data available</div>';
+                case 'overall_response':
+                    if (paper.overall_response_rate !== null && paper.overall_response_rate !== undefined) {
+                        return `<div class="data-row"><span class="data-label">Overall Response Rate:</span> <span class="data-value">${paper.overall_response_rate}%</span></div>`;
+                    } else {
+                        const orr = (paper.complete_response || 0) + (paper.partial_response || 0);
+                        return orr > 0 ? 
+                            `<div class="data-row"><span class="data-label">Overall Response Rate:</span> <span class="data-value">${orr}% (CR: ${paper.complete_response || 0}% + PR: ${paper.partial_response || 0}%)</span></div>` :
+                            '<div class="no-data">No response rate data available</div>';
+                    }
+                case 'pfs':
+                    if (paper.progression_free_survival_median !== null && paper.progression_free_survival_median !== undefined) {
+                        return `<div class="data-row"><span class="data-label">PFS Median:</span> <span class="data-value">${paper.progression_free_survival_median} months</span></div>`;
+                    } else {
+                        return '<div class="no-data">No PFS data available</div>';
+                    }
+                case 'os':
+                    if (paper.overall_survival_median !== null && paper.overall_survival_median !== undefined) {
+                        return `<div class="data-row"><span class="data-label">OS Median:</span> <span class="data-value">${paper.overall_survival_median} months</span></div>`;
+                    } else {
+                        return '<div class="no-data">No OS data available</div>';
+                    }
+                case 'sae':
+                    return paper.sae_frequency !== null ? 
+                        `<div class="data-row"><span class="data-label">SAE Frequency:</span> <span class="data-value">${paper.sae_frequency}%</span></div>` :
+                        '<div class="no-data">No SAE data available</div>';
+                case 'adverse_events':
+                    if (paper.has_ae_data && paper.ae_summary) {
+                        let display = `<div class="data-row"><span class="data-label">Adverse Events Summary:</span> <span class="data-value">${paper.ae_summary}</span></div>`;
+                        if (paper.total_patients) {
+                            display += `<div class="data-row"><span class="data-label">Study Size:</span> <span class="data-value">${paper.total_patients} patients</span></div>`;
+                        }
+                        if (paper.hematologic_ae && Object.keys(paper.hematologic_ae).length > 0) {
+                            display += `<div class="data-row"><span class="data-label">Hematologic AEs:</span> <span class="data-value">${Object.entries(paper.hematologic_ae).map(([ae, rate]) => `${ae}: ${rate}%`).join(', ')}</span></div>`;
+                        }
+                        if (paper.non_hematologic_ae && Object.keys(paper.non_hematologic_ae).length > 0) {
+                            display += `<div class="data-row"><span class="data-label">Non-Hematologic AEs:</span> <span class="data-value">${Object.entries(paper.non_hematologic_ae).map(([ae, rate]) => `${ae}: ${rate}%`).join(', ')}</span></div>`;
+                        }
+                        if (paper.supporting_quotes && paper.supporting_quotes.length > 0) {
+                            display += `<div class="data-row"><span class="data-label">Supporting Quotes:</span></div>`;
+                            paper.supporting_quotes.forEach(quote => {
+                                display += `<div class="data-row" style="margin-left: 20px; font-size: 0.9em; color: #666; font-style: italic;"><span class="data-value">"${quote}"</span></div>`;
+                            });
+                        }
+                        return display;
+                    } else if (paper.has_adverse_event_data && paper.adverse_events) {
+                        // Handle Decitabine adverse events data structure
+                        let display = '';
+                        if (paper.adverse_events.any_adverse_events) {
+                            display += `<div class="data-row"><span class="data-label">Adverse Events:</span> <span class="data-value">${paper.adverse_events.any_adverse_events}</span></div>`;
+                        }
+                        if (paper.adverse_events.grade_3_4_events && paper.adverse_events.grade_3_4_events !== 'null') {
+                            display += `<div class="data-row"><span class="data-label">Grade 3-4 Events:</span> <span class="data-value">${paper.adverse_events.grade_3_4_events}</span></div>`;
+                        }
+                        if (paper.adverse_events.serious_adverse_events && paper.adverse_events.serious_adverse_events !== 'null') {
+                            display += `<div class="data-row"><span class="data-label">Serious Adverse Events:</span> <span class="data-value">${paper.adverse_events.serious_adverse_events}</span></div>`;
+                        }
+                        if (paper.adverse_events.most_common_events && paper.adverse_events.most_common_events.length > 0 && paper.adverse_events.most_common_events[0] !== 'null') {
+                            display += `<div class="data-row"><span class="data-label">Most Common Events:</span> <span class="data-value">${paper.adverse_events.most_common_events.join(', ')}</span></div>`;
+                        }
+                        if (paper.adverse_events.treatment_related_deaths && paper.adverse_events.treatment_related_deaths !== 'null') {
+                            display += `<div class="data-row"><span class="data-label">Treatment-Related Deaths:</span> <span class="data-value">${paper.adverse_events.treatment_related_deaths}</span></div>`;
+                        }
+                        if (paper.extraction_notes) {
+                            display += `<div class="data-row"><span class="data-label">Notes:</span> <span class="data-value">${paper.extraction_notes}</span></div>`;
+                        }
+                        return display || '<div class="no-data">No adverse events data available</div>';
+                    } else {
+                        return '<div class="no-data">No adverse events data available</div>';
+                    }
+                case 'therapy_duration':
+                    return paper.treatment_details ? 
+                        `<div class="data-row"><span class="data-label">Treatment Details:</span> <span class="data-value">${paper.treatment_details}</span></div>` :
+                        '<div class="no-data">No therapy duration data available</div>';
+                case 'adverse_events':
+                    if (paper.has_ae_data && paper.ae_summary) {
+                        return `<div class="data-row"><span class="data-label">Adverse Events:</span> <span class="data-value">${paper.ae_summary}</span></div>`;
+                    } else {
+                        return '<div class="no-data">No adverse events data available</div>';
+                    }
+                default:
+                    return '<div class="no-data">No data available for this metric</div>';
+            }
+        }
+
+        // Modal close functionality
+        const modal = document.getElementById('paperModal');
+        const closeBtn = document.querySelector('.close');
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

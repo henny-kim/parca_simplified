@@ -1,0 +1,21 @@
+{
+  "name": "cmml-drug-analysis-dashboard",
+  "version": "1.0.0",
+  "description": "CMML Drug Analysis Dashboard with Clinical Efficacy and Adverse Events Data",
+  "main": "simple_dashboard.html",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "dev": "python -m http.server 8080"
+  },
+  "keywords": [
+    "cmml",
+    "drug-analysis",
+    "clinical-efficacy",
+    "adverse-events",
+    "azacitidine",
+    "decitabine",
+    "hydroxyurea"
+  ],
+  "author": "CMML Research Team",
+  "license": "MIT"
+}

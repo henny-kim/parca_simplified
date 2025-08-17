@@ -1,0 +1,83 @@
+{
+  "azacitidine": {
+    "efficacy": {
+      "cr_mean": 13.833333333333334,
+      "cr_median": 12.5,
+      "orr_mean": 30.5,
+      "orr_median": 22.0
+    },
+    "safety": {
+      "sae_mean": null,
+      "sae_median": null
+    },
+    "survival": {
+      "pfs_mean": null,
+      "pfs_median": null,
+      "os_mean": 36.0,
+      "os_median": 36.0
+    }
+  },
+  "decitabine": {
+    "efficacy": {
+      "cr_mean": 10.5,
+      "cr_median": 10.5,
+      "orr_mean": 16.0,
+      "orr_median": 16.0
+    },
+    "safety": {
+      "sae_mean": null,
+      "sae_median": null
+    },
+    "survival": {
+      "pfs_mean": 10.7,
+      "pfs_median": 10.7,
+      "os_mean": 28.8,
+      "os_median": 28.8
+    }
+  },
+  "hydroxyurea": {
+    "efficacy": {
+      "cr_mean": null,
+      "cr_median": null,
+      "orr_mean": null,
+      "orr_median": null
+    },
+    "safety": {
+      "sae_mean": null,
+      "sae_median": null
+    },
+    "survival": {
+      "pfs_mean": null,
+      "pfs_median": null,
+      "os_mean": 30.0,
+      "os_median": 30.0
+    }
+  },
+  "azacitidine_decitabine_combined": {
+    "efficacy": {
+      "cr_mean": 12.5,
+      "cr_median": 12.5,
+      "orr_mean": 24.7,
+      "orr_median": 22.0
+    },
+    "survival": {
+      "pfs_mean": 10.7,
+      "pfs_median": 10.7,
+      "os_mean": 31.2,
+      "os_median": 36.0
+    }
+  },
+  "_metadata": {
+    "comprehensive_paper_counts": {
+      "azacitidine": 169,
+      "decitabine": 125,
+      "total_comprehensive": 294
+    },
+    "clinical_data_paper_counts": {
+      "azacitidine": 10,
+      "decitabine": 10,
+      "hydroxyurea": 9,
+      "total_clinical": 29
+    }
+  }
+}

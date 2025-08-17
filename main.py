@@ -10,9 +10,10 @@ import os
 import re
 from urllib.parse import urljoin, quote
 import xml.etree.ElementTree as ET
+import argparse
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyCa_BkY76jkzTqL_TB6b4q17KqoJznu6uk"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 @dataclass
 class ClinicalOutcome:
@@ -58,6 +59,44 @@ class PubMedScraper:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         })
 
+    def fetch_pmc_fulltext(self, pmcid: str) -> Optional[str]:
+        """Try to fetch full text from PMC via E-utilities (XML) and fallback to HTML scraping."""
+        if not pmcid:
+            return None
+        # Normalize, accept forms like 'PMC1234567' or just the digits
+        pmc_id_value = pmcid.replace('PMC', '')
+        try:
+            # Try efetch for PMC NXML
+            fetch_url = f"{self.eutils_base}/efetch.fcgi"
+            params = {
+                'db': 'pmc',
+                'id': pmc_id_value,
+                'retmode': 'xml'
+            }
+            response = self.session.get(fetch_url, params=params)
+            response.raise_for_status()
+            try:
+                root = ET.fromstring(response.content)
+                body = root.find('.//body')
+                if body is not None:
+                    text = ''.join(body.itertext())
+                    return re.sub(r'\s+', ' ', text).strip()[:200000]  # cap to 200k chars
+            except ET.ParseError:
+                pass
+        except Exception:
+            pass
+        # Fallback to HTML scraping
+        try:
+            url = f"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC{pmc_id_value}/"
+            resp = self.session.get(url)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.content, 'html.parser')
+            article = soup.select_one('div#maincontent') or soup
+            text = article.get_text(separator=' ', strip=True)
+            return re.sub(r'\s+', ' ', text).strip()[:200000]
+        except Exception:
+            return None
+
     def search_with_eutils(self, query: str, max_results: int = 20) -> List[str]:
         """Use E-utilities API to search for PMIDs (no API key required for basic searches)"""
         try:
@@ -84,87 +123,78 @@ class PubMedScraper:
             return []
 
     def get_paper_details_eutils(self, pmids: List[str]) -> List[Dict]:
-        """Get paper details using E-utilities"""
+        """Get paper details using E-utilities (batched efetch across all PMIDs)."""
         if not pmids:
             return []
-            
         try:
-            # Fetch paper details
             fetch_url = f"{self.eutils_base}/efetch.fcgi"
-            params = {
-                'db': 'pubmed',
-                'id': ','.join(pmids[:20]),  # Limit to 20 papers
-                'retmode': 'xml'
-            }
-            
-            response = self.session.get(fetch_url, params=params)
-            response.raise_for_status()
-            
-            # Parse XML
-            root = ET.fromstring(response.content)
-            papers = []
-            
-            for article in root.findall('.//PubmedArticle'):
-                try:
-                    # Extract PMID
-                    pmid_elem = article.find('.//PMID')
-                    pmid = pmid_elem.text if pmid_elem is not None else None
-                    
-                    # Extract title
-                    title_elem = article.find('.//ArticleTitle')
-                    title = title_elem.text if title_elem is not None else "No title"
-                    
-                    # Extract abstract
-                    abstract_parts = []
-                    for abstract_elem in article.findall('.//AbstractText'):
-                        label = abstract_elem.get('Label', '')
-                        text = abstract_elem.text or ''
-                        if label:
-                            abstract_parts.append(f"{label}: {text}")
-                        else:
-                            abstract_parts.append(text)
-                    abstract = " ".join(abstract_parts)
-                    
-                    # Extract authors
-                    authors = []
-                    for author in article.findall('.//Author'):
-                        last_name = author.find('.//LastName')
-                        first_name = author.find('.//ForeName')
-                        if last_name is not None:
-                            author_name = last_name.text
-                            if first_name is not None:
-                                author_name += f" {first_name.text}"
-                            authors.append(author_name)
-                    
-                    author_str = ", ".join(authors[:3])
-                    if len(authors) > 3:
-                        author_str += " et al."
-                    
-                    # Extract journal info
-                    journal_elem = article.find('.//Journal/Title')
-                    journal = journal_elem.text if journal_elem is not None else "Unknown journal"
-                    
-                    year_elem = article.find('.//PubDate/Year')
-                    year = year_elem.text if year_elem is not None else "Unknown year"
-                    
-                    if pmid and title and abstract:
-                        papers.append({
-                            'pmid': pmid,
-                            'title': title,
-                            'abstract': abstract,
-                            'authors': author_str,
-                            'journal_info': f"{journal} ({year})",
-                            'year': year,
-                            'url': f"{self.base_url}/{pmid}/",
-                            'full_content': f"Title: {title}\n\nAuthors: {author_str}\n\nJournal: {journal} ({year})\n\nAbstract: {abstract}"
-                        })
-                        
-                except Exception as e:
-                    print(f"Error parsing article: {e}")
-                    continue
-            
+            papers: List[Dict] = []
+            # Batch efetch to avoid query length limits; PubMed supports large batches but be conservative
+            batch_size = 100
+            for i in range(0, len(pmids), batch_size):
+                batch_ids = pmids[i:i+batch_size]
+                params = {
+                    'db': 'pubmed',
+                    'id': ','.join(batch_ids),
+                    'retmode': 'xml'
+                }
+                response = self.session.get(fetch_url, params=params)
+                response.raise_for_status()
+                root = ET.fromstring(response.content)
+                for article in root.findall('.//PubmedArticle'):
+                    try:
+                        pmid_elem = article.find('.//PMID')
+                        pmid = pmid_elem.text if pmid_elem is not None else None
+                        title_elem = article.find('.//ArticleTitle')
+                        title = title_elem.text if title_elem is not None else "No title"
+                        # Abstract
+                        abstract_parts = []
+                        for abstract_elem in article.findall('.//AbstractText'):
+                            label = abstract_elem.get('Label', '')
+                            text = abstract_elem.text or ''
+                            if label:
+                                abstract_parts.append(f"{label}: {text}")
+                            else:
+                                abstract_parts.append(text)
+                        abstract = " ".join(abstract_parts)
+                        # Authors
+                        authors = []
+                        for author in article.findall('.//Author'):
+                            last_name = author.find('.//LastName')
+                            first_name = author.find('.//ForeName')
+                            if last_name is not None:
+                                author_name = last_name.text
+                                if first_name is not None:
+                                    author_name += f" {first_name.text}"
+                                authors.append(author_name)
+                        author_str = ", ".join(authors[:3])
+                        if len(authors) > 3:
+                            author_str += " et al."
+                        # Journal/year
+                        journal_elem = article.find('.//Journal/Title')
+                        journal = journal_elem.text if journal_elem is not None else "Unknown journal"
+                        year_elem = article.find('.//PubDate/Year')
+                        year = year_elem.text if year_elem is not None else "Unknown year"
+                        # Try to get PMCID for potential full text
+                        pmcid_elem = article.find(".//ArticleIdList/ArticleId[@IdType='pmc']")
+                        pmcid = pmcid_elem.text if pmcid_elem is not None else None
+                        if pmid and title and abstract:
+                            papers.append({
+                                'pmid': pmid,
+                                'title': title,
+                                'abstract': abstract,
+                                'authors': author_str,
+                                'journal_info': f"{journal} ({year})",
+                                'year': year,
+                                'url': f"{self.base_url}/{pmid}/",
+                                'pmcid': pmcid,
+                                'full_content': f"Title: {title}\n\nAuthors: {author_str}\n\nJournal: {journal} ({year})\n\nAbstract: {abstract}"
+                            })
+                    except Exception as e:
+                        print(f"Error parsing article: {e}")
+                        continue
+                time.sleep(0.34)  # ~3 req/sec respectful pacing
             return papers
-            
         except Exception as e:
             print(f"Error fetching paper details: {e}")
             return []
@@ -269,34 +299,36 @@ class PubMedScraper:
             return []
 
 class CMMLResearchExtractor:
-    def __init__(self, gemini_api_key: str):
+    def __init__(self, gemini_api_key: str, use_llm: bool = True):
         """Initialize the CMML research data extractor"""
-        genai.configure(api_key=gemini_api_key)
+        self.use_llm = use_llm and bool(gemini_api_key)
+        self.model = None
+        self.scraper = PubMedScraper()
+        
+        if self.use_llm:
+            genai.configure(api_key=gemini_api_key)
         
         # Try different model names in order of preference
-        model_names = [
-            'gemini-1.5-flash',
-            'gemini-1.5-pro', 
-            'gemini-pro',
-            'models/gemini-1.5-flash',
-            'models/gemini-1.5-pro',
-            'models/gemini-pro'
-        ]
-        
-        self.model = None
-        for model_name in model_names:
-            try:
-                self.model = genai.GenerativeModel(model_name)
-                print(f"Successfully initialized model: {model_name}")
-                break
-            except Exception as e:
-                print(f"Failed to initialize {model_name}: {e}")
-                continue
-        
-        if not self.model:
-            raise Exception("Could not initialize any Gemini model. Please check your API key and available models.")
-            
-        self.scraper = PubMedScraper()
+        if self.use_llm:
+            model_names = [
+                'gemini-1.5-flash',
+                'gemini-1.5-pro', 
+                'gemini-pro',
+                'models/gemini-1.5-flash',
+                'models/gemini-1.5-pro',
+                'models/gemini-pro'
+            ]
+            for model_name in model_names:
+                try:
+                    self.model = genai.GenerativeModel(model_name)
+                    print(f"Successfully initialized model: {model_name}")
+                    break
+                except Exception as e:
+                    print(f"Failed to initialize {model_name}: {e}")
+                    continue
+            if not self.model:
+                print("Warning: Could not initialize any Gemini model. Falling back to regex-based extraction.")
+                self.use_llm = False
         
         # Enhanced extraction prompt template focused on specific efficacy measures
         self.extraction_prompt = """
@@ -374,26 +406,21 @@ class CMMLResearchExtractor:
         """
 
     def extract_clinical_data(self, paper_content: str) -> Optional[Dict]:
-        """Use Gemini to extract clinical data from paper content"""
+        """Extract clinical data from paper content using LLM or regex fallback"""
+        if not self.use_llm or not self.model:
+            return self.extract_with_regex(paper_content)
         try:
             prompt = self.extraction_prompt.format(paper_content=paper_content)
-            
-            # Add generation config for more reliable JSON output
             generation_config = genai.types.GenerationConfig(
                 temperature=0.1,
                 max_output_tokens=2048
             )
-            
             response = self.model.generate_content(prompt, generation_config=generation_config)
-            
             if not response.text:
-                print("Empty response from Gemini")
-                return None
-            
-            # Parse JSON response with better error handling
+                print("Empty response from Gemini; falling back to regex")
+                return self.extract_with_regex(paper_content)
             json_start = response.text.find('{')
             json_end = response.text.rfind('}') + 1
-            
             if json_start != -1 and json_end != -1:
                 json_str = response.text[json_start:json_end]
                 try:
@@ -401,28 +428,114 @@ class CMMLResearchExtractor:
                 except json.JSONDecodeError as json_error:
                     print(f"JSON decode error: {json_error}")
                     print(f"Raw response: {response.text[:500]}...")
-                    return None
-                
-                # Filter out papers without CMML data
+                    return self.extract_with_regex(paper_content)
                 if not data.get('has_cmml_data', False):
                     return None
-                    
                 return data
             else:
-                print("No valid JSON found in response")
-                print(f"Raw response: {response.text[:500]}...")
-                return None
-                
+                print("No valid JSON found in response; falling back to regex")
+                return self.extract_with_regex(paper_content)
         except Exception as e:
             print(f"Error extracting data with Gemini: {e}")
-            # Check if it's an API quota or authentication issue
-            if "quota" in str(e).lower():
-                print("Gemini API quota exceeded. Try again later or check your billing.")
-            elif "authentication" in str(e).lower() or "api key" in str(e).lower():
-                print("Gemini API authentication failed. Check your API key.")
-            return None
+            return self.extract_with_regex(paper_content)
 
-    def process_drug_research(self, drug_name: str, additional_terms: str = "") -> List[ClinicalOutcome]:
+    def extract_with_regex(self, paper_content: str) -> Optional[Dict]:
+        text = paper_content
+        lower = text.lower()
+        if 'cmml' not in lower and 'chronic myelomonocytic leukemia' not in lower:
+            return None
+        def find_pct(patterns):
+            for rx in patterns:
+                m = re.search(rx, text, flags=re.IGNORECASE)
+                if m:
+                    try:
+                        return float(m.group(1))
+                    except Exception:
+                        continue
+            return None
+        def find_months(patterns):
+            for rx in patterns:
+                m = re.search(rx, text, flags=re.IGNORECASE)
+                if m:
+                    try:
+                        return float(m.group(1))
+                    except Exception:
+                        continue
+            return None
+        cr = find_pct([
+            r"\bcomplete\s+response[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"\bCR\b[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"([0-9]+(?:\.[0-9]+)?)%[^\n\r]*\b(complete\s+response|CR)\b"
+        ])
+        pr = find_pct([
+            r"\bpartial\s+response[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"\bPR\b[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"([0-9]+(?:\.[0-9]+)?)%[^\n\r]*\b(partial\s+response|PR)\b"
+        ])
+        mcr = find_pct([
+            r"\bmarrow\s+complete\s+response[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"\bmCR\b[^\d%]*([0-9]+(?:\.[0-9]+)?)%"
+        ])
+        mor = find_pct([
+            r"\bmarrow\s+optimal\s+response[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"\bmOR\b[^\d%]*([0-9]+(?:\.[0-9]+)?)%"
+        ])
+        orr = find_pct([
+            r"overall\s+response\s+rate[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"\bORR\b[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"([0-9]+(?:\.[0-9]+)?)%[^\n\r]*overall\s+response\s+rate"
+        ])
+        os_m = find_months([
+            r"median\s+overall\s+survival[^\d]*([0-9]+(?:\.[0-9]+)?)\s*months",
+            r"\bOS\b[^\d]*([0-9]+(?:\.[0-9]+)?)\s*months"
+        ])
+        pfs_m = find_months([
+            r"median\s+progression[- ]free\s+survival[^\d]*([0-9]+(?:\.[0-9]+)?)\s*months",
+            r"\bPFS\b[^\d]*([0-9]+(?:\.[0-9]+)?)\s*months"
+        ])
+        efs_m = find_months([
+            r"median\s+event[- ]free\s+survival[^\d]*([0-9]+(?:\.[0-9]+)?)\s*months",
+            r"\bEFS\b[^\d]*([0-9]+(?:\.[0-9]+)?)\s*months"
+        ])
+        sae = find_pct([
+            r"serious\s+adverse\s+events?[^\d%]*([0-9]+(?:\.[0-9]+)?)%",
+            r"\bSAEs?\b[^\d%]*([0-9]+(?:\.[0-9]+)?)%"
+        ])
+        # Minimal payload matching the LLM output keys used downstream
+        has_any = any(v is not None for v in [cr, pr, mcr, mor, os_m, pfs_m, efs_m, sae, orr])
+        if not has_any:
+            return None
+        return {
+            'drug_name': '',
+            'complete_response_rate': cr,
+            'partial_response_rate': pr,
+            'marrow_complete_response_rate': mcr,
+            'marrow_optimal_response_rate': mor,
+            'pfs_median_months': pfs_m,
+            'os_median_months': os_m,
+            'efs_median_months': efs_m,
+            'sae_frequency_percent': sae,
+            'ras_mutant_outcomes': {
+                'cr_rate': None, 'pr_rate': None, 'mcr_rate': None, 'mor_rate': None,
+                'os_median': None, 'pfs_median': None, 'efs_median': None, 'sae_rate': None
+            },
+            'non_ras_mutant_outcomes': {
+                'cr_rate': None, 'pr_rate': None, 'mcr_rate': None, 'mor_rate': None,
+                'os_median': None, 'pfs_median': None, 'efs_median': None, 'sae_rate': None
+            },
+            'cmml_sample_size': None,
+            'ras_mutant_sample_size': None,
+            'non_ras_mutant_sample_size': None,
+            'study_type': '',
+            'has_cmml_data': True,
+            'key_findings': '',
+            'patient_population': '',
+            'treatment_details': '',
+            'supporting_quotes': [],
+            'data_location': 'Abstract'
+        }
+
+    def process_drug_research(self, drug_name: str, additional_terms: str = "", max_results: int = 20, per_paper_sleep: float = 0.0) -> List[ClinicalOutcome]:
         """Process all research for a specific drug with improved search queries"""
         print(f"\n=== Processing {drug_name} research ===")
         
@@ -442,7 +555,7 @@ class CMMLResearchExtractor:
         seen_pmids = set()
         
         for query in queries:
-            papers = self.scraper.search_pubmed_advanced(query, max_results=10)
+            papers = self.scraper.search_pubmed_advanced(query, max_results=max_results)
             
             # Deduplicate by PMID
             for paper in papers:
@@ -463,32 +576,34 @@ class CMMLResearchExtractor:
         
         clinical_outcomes = []
         
-        for i, paper in enumerate(all_papers[:15]):  # Limit to 15 papers
+        for i, paper in enumerate(all_papers[:min(len(all_papers), max_results)]):
             print(f"Processing paper {i+1}/{min(len(all_papers), 15)}: {paper['title'][:60]}...")
             
-            # Quick relevance check
-            paper_text = f"{paper['title']} {paper.get('abstract', '')} {paper.get('snippet', '')}".lower()
-            if 'cmml' not in paper_text and 'chronic myelomonocytic leukemia' not in paper_text:
-                print(f"  Skipping - not CMML relevant")
-                continue
+            # Relevance check: if LLM enabled, let AI decide; else use keyword filter
+            keyword_relevant = ('cmml' in f"{paper['title']} {paper.get('abstract', '')} {paper.get('snippet', '')}".lower() or 
+                                 'chronic myelomonocytic leukemia' in f"{paper['title']} {paper.get('abstract', '')} {paper.get('snippet', '')}".lower())
             
-            # If we have abstract from E-utilities, use it directly
+            # If we have abstract from E-utilities, use it directly; otherwise fetch
             if paper.get('abstract'):
                 paper_data = paper
             else:
-                # Try to get full abstract for papers from web scraping
                 full_paper = self.scraper.get_paper_details_eutils([paper['pmid']])
-                if full_paper:
-                    paper_data = full_paper[0]
-                else:
-                    paper_data = paper
+                paper_data = full_paper[0] if full_paper else paper
             
             if not paper_data.get('abstract') and not paper_data.get('snippet'):
                 print(f"  Skipping - no abstract available")
                 continue
             
-            # Extract clinical data
+            # Build content: prefer PMC full text when LLM is on, else abstract
             content = paper_data.get('full_content') or f"Title: {paper_data['title']}\n\nAbstract: {paper_data.get('abstract', paper_data.get('snippet', ''))}"
+            if self.use_llm and paper_data.get('pmcid'):
+                pmc_text = self.scraper.fetch_pmc_fulltext(paper_data['pmcid'])
+                if pmc_text:
+                    content = f"Title: {paper_data['title']}\n\nFullText: {pmc_text}"
+            # If LLM disabled, require keyword relevance; if enabled, rely on model
+            if not self.use_llm and not keyword_relevant:
+                print("  Skipping - not CMML relevant (keyword filter)")
+                continue
             extracted_data = self.extract_clinical_data(content)
             
             if not extracted_data:
@@ -526,7 +641,8 @@ class CMMLResearchExtractor:
             clinical_outcomes.append(outcome)
             print(f"  ✓ Extracted CMML data")
             
-            time.sleep(3)  # Rate limiting for API calls
+            if per_paper_sleep > 0:
+                time.sleep(per_paper_sleep)
         
         return clinical_outcomes
 
@@ -721,140 +837,148 @@ def test_gemini_api(api_key: str):
         return False
 
 def main():
-    """Main execution function"""
-    # Check if API key is set
-    if GEMINI_API_KEY == "your_gemini_api_key_here":
-        print("Please set your Gemini API key in the GEMINI_API_KEY variable")
-        return
-    
-    # Test Gemini API first
-    print("Testing Gemini API connection...")
-    if not test_gemini_api(GEMINI_API_KEY):
-        print("Gemini API test failed. Please check your API key.")
-        return
-    
+    """Main execution function with CLI controls"""
+    parser = argparse.ArgumentParser(description="CMML data extractor")
+    parser.add_argument("--drug", choices=["azacitidine", "decitabine", "hydroxyurea", "all"], default="all", help="Which drug to process")
+    parser.add_argument("--max", type=int, default=30, help="Max number of search results/papers to process per query")
+    parser.add_argument("--sleep", type=float, default=0.0, help="Seconds to sleep between processing papers (politeness)")
+    parser.add_argument("--append", action="store_true", help="Append/update existing JSON instead of overwriting fully")
+    args = parser.parse_args()
+
+    # Check API key
+    # If no API key, we will fall back to regex extraction automatically
+    if not GEMINI_API_KEY or GEMINI_API_KEY == "your_gemini_api_key_here":
+        print("GEMINI_API_KEY not set. Proceeding with regex-based extraction.")
+        api_ok = False
+    else:
+        print("Testing Gemini API connection...")
+        api_ok = test_gemini_api(GEMINI_API_KEY)
+        if not api_ok:
+            print("Gemini API test failed. Falling back to regex-based extraction.")
+
     # Initialize extractor
     try:
-        extractor = CMMLResearchExtractor(gemini_api_key=GEMINI_API_KEY)
+        extractor = CMMLResearchExtractor(gemini_api_key=GEMINI_API_KEY, use_llm=api_ok)
     except Exception as e:
         print(f"Failed to initialize extractor: {e}")
         return
-    
+
     print("\nCMML Clinical Data Extraction Starting...")
     print("Enhanced version with E-utilities API and fallback methods")
     print("=" * 50)
-    
-    # Process each drug
-    azacitidine_outcomes = extractor.process_drug_research("azacitidine", "hypomethylating")
-    decitabine_outcomes = extractor.process_drug_research("decitabine", "hypomethylating")
-    hydroxyurea_outcomes = extractor.process_drug_research("hydroxyurea", "cytoreductive")
-    
-    # Create comparative table
-    comparison_df = extractor.create_comparative_table(
-        azacitidine_outcomes, decitabine_outcomes, hydroxyurea_outcomes
-    )
-    
-    # Generate summaries
-    aza_summary = extractor.generate_drug_summary("Azacitidine", azacitidine_outcomes)
-    dec_summary = extractor.generate_drug_summary("Decitabine", decitabine_outcomes)
-    hyd_summary = extractor.generate_drug_summary("Hydroxyurea", hydroxyurea_outcomes)
-    
-    # Output results
-    print("\n" + "=" * 50)
-    print("COMPARATIVE RESULTS TABLE")
-    print("=" * 50)
-    print(comparison_df.to_string(index=False))
-    
-    print("\n" + "=" * 50)
-    print("DRUG SUMMARIES")
-    print("=" * 50)
-    print(f"\n{aza_summary}")
-    print(f"\n{dec_summary}")
-    print(f"\n{hyd_summary}")
-    
-    # Save results
-    comparison_df.to_csv("cmml_comparative_analysis.csv", index=False)
-    
-    # Save detailed outcomes with enhanced attribution
+
+    # Process selected drugs
+    azacitidine_outcomes: List[ClinicalOutcome] = []
+    decitabine_outcomes: List[ClinicalOutcome] = []
+    hydroxyurea_outcomes: List[ClinicalOutcome] = []
+
+    if args.drug in ("azacitidine", "all"):
+        azacitidine_outcomes = extractor.process_drug_research("azacitidine", "hypomethylating", max_results=args.max, per_paper_sleep=args.sleep)
+    if args.drug in ("decitabine", "all"):
+        decitabine_outcomes = extractor.process_drug_research("decitabine", "hypomethylating", max_results=args.max, per_paper_sleep=args.sleep)
+    if args.drug in ("hydroxyurea", "all"):
+        hydroxyurea_outcomes = extractor.process_drug_research("hydroxyurea", "cytoreductive", max_results=args.max, per_paper_sleep=args.sleep)
+
+    # Load existing JSON if append mode
+    output_dir = os.path.dirname(os.path.abspath(__file__))
+    output_file_path = os.path.join(output_dir, "cmml_detailed_outcomes.json")
+    existing = None
+    if args.append and os.path.exists(output_file_path):
+        try:
+            with open(output_file_path, "r") as rf:
+                existing = json.load(rf)
+        except Exception:
+            existing = None
+
+    # Create comparative table if all drugs processed
+    if args.drug == "all":
+        comparison_df = extractor.create_comparative_table(
+            azacitidine_outcomes, decitabine_outcomes, hydroxyurea_outcomes
+        )
+        print("\n" + "=" * 50)
+        print("COMPARATIVE RESULTS TABLE")
+        print("=" * 50)
+        print(comparison_df.to_string(index=False))
+        comparison_df.to_csv(os.path.join(output_dir, "cmml_comparative_analysis.csv"), index=False)
+
+    # Build JSON payload
     print("\nSaving detailed results with attributions...")
-    output_file_path = os.path.join(os.getcwd(), "cmml_detailed_outcomes.json")
-    print(f"Attempting to save cmml_detailed_outcomes.json to: {output_file_path}")
-    with open(output_file_path, "w") as f:
+    results = existing or {}
+    if not existing:
         results = {
             "extraction_metadata": {
                 "extraction_date": time.strftime("%Y-%m-%d %H:%M:%S"),
-                "total_papers_processed": len(azacitidine_outcomes) + len(decitabine_outcomes) + len(hydroxyurea_outcomes),
+                "total_papers_processed": 0,
                 "note": "All data includes direct quotes and source locations for verification"
             },
-            "azacitidine": [
-                {
-                    **vars(o),
-                    "reference_note": f"See PMID {o.pmid} - {o.data_source_location}",
-                    "verification_url": o.url
-                } for o in azacitidine_outcomes
-            ],
-            "decitabine": [
-                {
-                    **vars(o),
-                    "reference_note": f"See PMID {o.pmid} - {o.data_source_location}",
-                    "verification_url": o.url
-                } for o in decitabine_outcomes
-            ], 
-            "hydroxyurea": [
-                {
-                    **vars(o),
-                    "reference_note": f"See PMID {o.pmid} - {o.data_source_location}",
-                    "verification_url": o.url
-                } for o in hydroxyurea_outcomes
-            ]
+            "azacitidine": [],
+            "decitabine": [],
+            "hydroxyurea": []
         }
+
+    # Helper to serialize outcomes
+    def serialize(outcomes: List[ClinicalOutcome]):
+        return [
+            {
+                **vars(o),
+                "reference_note": f"See PMID {o.pmid} - {o.data_source_location}",
+                "verification_url": o.url
+            } for o in outcomes
+        ]
+
+    if args.drug in ("azacitidine", "all"):
+        results["azacitidine"] = serialize(azacitidine_outcomes) if not args.append else (results.get("azacitidine", []) + serialize(azacitidine_outcomes))
+    if args.drug in ("decitabine", "all"):
+        results["decitabine"] = serialize(decitabine_outcomes) if not args.append else (results.get("decitabine", []) + serialize(decitabine_outcomes))
+    if args.drug in ("hydroxyurea", "all"):
+        results["hydroxyurea"] = serialize(hydroxyurea_outcomes) if not args.append else (results.get("hydroxyurea", []) + serialize(hydroxyurea_outcomes))
+
+    # Update metadata
+    total = len(results.get("azacitidine", [])) + len(results.get("decitabine", [])) + len(results.get("hydroxyurea", []))
+    results["extraction_metadata"]["extraction_date"] = time.strftime("%Y-%m-%d %H:%M:%S")
+    results["extraction_metadata"]["total_papers_processed"] = total
+
+    with open(output_file_path, "w") as f:
         json.dump(results, f, indent=2, default=str)
-    
-    # Create a separate attribution summary file
-    with open("cmml_attribution_summary.txt", "w") as f:
+
+    # Attribution file (optional)
+    with open(os.path.join(output_dir, "cmml_attribution_summary.txt"), "w") as f:
         f.write("CMML CLINICAL DATA - ATTRIBUTION SUMMARY\n")
         f.write("=" * 50 + "\n\n")
-        
-        for drug_name, outcomes in [("Azacitidine", azacitidine_outcomes), 
-                                   ("Decitabine", decitabine_outcomes), 
-                                   ("Hydroxyurea", hydroxyurea_outcomes)]:
+        for drug_name, outcomes in [("Azacitidine", [ClinicalOutcome(**{k: v for k, v in x.items() if k in ClinicalOutcome().__dict__.keys()}) for x in results.get("azacitidine", [])]),
+                                   ("Decitabine", [ClinicalOutcome(**{k: v for k, v in x.items() if k in ClinicalOutcome().__dict__.keys()}) for x in results.get("decitabine", [])]),
+                                   ("Hydroxyurea", [ClinicalOutcome(**{k: v for k, v in x.items() if k in ClinicalOutcome().__dict__.keys()}) for x in results.get("hydroxyurea", [])])]:
             f.write(f"{drug_name.upper()}\n")
             f.write("-" * len(drug_name) + "\n")
-            
             for i, outcome in enumerate(outcomes, 1):
                 f.write(f"\n{i}. PMID {outcome.pmid}\n")
                 f.write(f"   Citation: {outcome.citation[:100]}...\n")
-                f.write(f"   Key Findings: {outcome.key_findings}\n")
-                f.write(f"   Patient Population: {outcome.patient_population}\n")
-                f.write(f"   Treatment: {outcome.treatment_details}\n")
-                f.write(f"   Data Location: {outcome.data_source_location}\n")
-                
-                # Add key metrics with attribution
-                if outcome.complete_response:
+                if outcome.key_findings:
+                    f.write(f"   Key Findings: {outcome.key_findings}\n")
+                if outcome.patient_population:
+                    f.write(f"   Patient Population: {outcome.patient_population}\n")
+                if outcome.treatment_details:
+                    f.write(f"   Treatment: {outcome.treatment_details}\n")
+                if outcome.data_source_location:
+                    f.write(f"   Data Location: {outcome.data_source_location}\n")
+                if outcome.complete_response is not None:
                     f.write(f"   Complete Response: {outcome.complete_response}%\n")
-                if outcome.partial_response:
+                if outcome.partial_response is not None:
                     f.write(f"   Partial Response: {outcome.partial_response}%\n")
-                if outcome.os_median:
+                if outcome.os_median is not None:
                     f.write(f"   Overall Survival: {outcome.os_median} months\n")
-                
-                # Add supporting quotes if available
                 if outcome.supporting_quotes:
-                    f.write(f"   Supporting Quotes:\n")
-                    for quote in outcome.supporting_quotes[:2]:  # Limit to 2 quotes
-                        f.write(f"     - \"{quote[:100]}...\"\n")
-                
+                    f.write("   Supporting Quotes:\n")
+                    for quote in outcome.supporting_quotes[:2]:
+                        f.write(f"     - \"{str(quote)[:100]}...\"\n")
                 f.write(f"   URL: {outcome.url}\n")
-            
             f.write("\n" + "=" * 50 + "\n")
-    
-    print(f"\nResults saved to:")
-    print(f"- cmml_comparative_analysis.csv (summary table)")
-    print(f"- cmml_detailed_outcomes.json (complete data with attributions)")
-    print(f"- cmml_attribution_summary.txt (readable reference guide)")
-    print(f"\nFor verification, each data point includes:")
-    print(f"  - Direct quotes from the source paper")
-    print(f"  - Specific location where data was found")
-    print(f"  - PMID and URL for easy access")
+
+    print("\nSaved:")
+    if args.drug == "all":
+        print("- cmml_comparative_analysis.csv (summary table)")
+    print("- cmml_detailed_outcomes.json (complete data with attributions)")
+    print("- cmml_attribution_summary.txt (readable reference guide)")
 
 if __name__ == "__main__":
     main()

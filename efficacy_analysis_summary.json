@@ -1,0 +1,45 @@
+{
+  "analysis_date": "2024-08-16",
+  "status": "Partial Complete - Azacitidine Done, Decitabine In Progress",
+  "azacitidine": {
+    "complete_response": {
+      "median": 19.0,
+      "mean": 23.78,
+      "studies": 30,
+      "range": "7.0-100.0%"
+    },
+    "overall_response_rate": {
+      "median": 44.0,
+      "mean": 49.1,
+      "studies": 53,
+      "range": "19.4-100.0%"
+    },
+    "overall_survival": {
+      "median": 19.85,
+      "mean": 22.88,
+      "studies": 38,
+      "range": "7.0-137.0 months"
+    },
+    "progression_free_survival": {
+      "median": 14.0,
+      "mean": 16.43,
+      "studies": 7,
+      "range": "6.0-40.0 months"
+    }
+  },
+  "decitabine": {
+    "status": "Extraction in progress",
+    "papers_available": 125,
+    "estimated_completion": "4-6 hours"
+  },
+  "combined_analysis": {
+    "status": "Pending decitabine completion",
+    "total_papers_when_complete": 294
+  },
+  "recommendations": [
+    "Complete decitabine extraction",
+    "Extract adverse events data",
+    "Analyze therapy duration/cycles",
+    "Generate combined azacitidine + decitabine statistics"
+  ]
+}

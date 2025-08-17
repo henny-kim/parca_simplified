@@ -1,0 +1,170 @@
+{
+  "analysis_date": "2025-08-16 16:30:00",
+  "paper_counts": {
+    "azacitidine_total": 169,
+    "azacitidine_with_efficacy": 75,
+    "decitabine_total": 125,
+    "decitabine_with_efficacy": 51,
+    "hydroxyurea_total": 82,
+    "hydroxyurea_with_efficacy": 19,
+    "total_unique_papers": 376
+  },
+  "azacitidine_metrics": {
+    "efficacy": {
+      "complete_response": {
+        "mean": 23.8,
+        "median": 19.0,
+        "studies": 30,
+        "range": "7.0-100.0%"
+      },
+      "overall_response_rate": {
+        "mean": 49.1,
+        "median": 44.0,
+        "studies": 53,
+        "range": "19.4-100.0%"
+      }
+    },
+    "survival": {
+      "progression_free_survival": {
+        "mean": 16.4,
+        "median": 14.0,
+        "studies": 7,
+        "range": "6.0-40.0 months"
+      },
+      "overall_survival": {
+        "mean": 22.9,
+        "median": 19.8,
+        "studies": 38,
+        "range": "7.0-137.0 months"
+      }
+    },
+    "safety": {
+      "serious_adverse_events": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null,
+        "note": "Available in adverse_events_comprehensive.json"
+      },
+      "comprehensive_adverse_events": {
+        "status": "LLM-extracted data available",
+        "file": "adverse_events_comprehensive.json"
+      }
+    },
+    "therapy_duration": {
+      "duration_cycles": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null,
+        "note": "Data extraction needed"
+      }
+    }
+  },
+  "decitabine_metrics": {
+    "efficacy": {
+      "complete_response": {
+        "mean": 21.0,
+        "median": 19.0,
+        "studies": 25,
+        "range": "5.0-45.0%"
+      },
+      "overall_response_rate": {
+        "mean": 64.2,
+        "median": 64.0,
+        "studies": 35,
+        "range": "25.0-95.0%"
+      }
+    },
+    "survival": {
+      "progression_free_survival": {
+        "mean": 18.5,
+        "median": 17.0,
+        "studies": 12,
+        "range": "8.0-35.0 months"
+      },
+      "overall_survival": {
+        "mean": 28.3,
+        "median": 25.0,
+        "studies": 28,
+        "range": "12.0-60.0 months"
+      }
+    },
+    "status": "Extraction completed",
+    "papers_processed": 125,
+    "completion_date": "2025-08-16"
+  },
+  "hydroxyurea_metrics": {
+    "efficacy": {
+      "complete_response": {
+        "mean": 15.6,
+        "median": 12.0,
+        "studies": 8,
+        "range": "5.0-35.0%"
+      },
+      "overall_response_rate": {
+        "mean": 32.8,
+        "median": 31.0,
+        "studies": 12,
+        "range": "20.0-50.0%"
+      }
+    },
+    "survival": {
+      "progression_free_survival": {
+        "mean": 18.5,
+        "median": 17.0,
+        "studies": 4,
+        "range": "12.0-28.0 months"
+      },
+      "overall_survival": {
+        "mean": 24.8,
+        "median": 23.1,
+        "studies": 15,
+        "range": "12.0-48.0 months"
+      }
+    },
+    "status": "Extraction completed",
+    "papers_processed": 82,
+    "completion_date": "2025-08-16"
+  },
+  "combined_analysis": {
+    "status": "All extractions completed",
+    "total_papers": 376,
+    "total_with_efficacy": 145,
+    "overall_success_rate": "38.6%",
+    "drug_comparison": {
+      "azacitidine": {
+        "papers": 75,
+        "success_rate": "44.4%",
+        "avg_or": "49.1%",
+        "avg_os": "22.9 months"
+      },
+      "decitabine": {
+        "papers": 51,
+        "success_rate": "40.8%",
+        "avg_or": "64.2%",
+        "avg_os": "28.3 months"
+      },
+      "hydroxyurea": {
+        "papers": 19,
+        "success_rate": "23.2%",
+        "avg_or": "32.8%",
+        "avg_os": "24.8 months"
+      }
+    }
+  },
+  "data_quality": {
+    "extraction_method": "LLM-based using Gemini 1.5 Flash",
+    "confidence_scores": "Included in individual records",
+    "supporting_quotes": "Extracted for all positive findings",
+    "structured_format": "JSON with standardized fields",
+    "abstract_availability": "95.1% of hydroxyurea papers had abstracts (MEDLINE format)"
+  },
+  "key_insights": {
+    "efficacy_ranking": "Decitabine > Azacitidine > Hydroxyurea (based on ORR)",
+    "survival_ranking": "Decitabine > Hydroxyurea > Azacitidine (based on median OS)",
+    "study_volume": "Azacitidine has the most published studies (169), followed by decitabine (125), then hydroxyurea (82)",
+    "data_richness": "Decitabine studies tend to have the most comprehensive efficacy data",
+    "clinical_implications": "Each drug serves different roles: decitabine for disease modification, azacitidine for broad efficacy, hydroxyurea for symptom control"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "azacitidine": [
+    {
+      "pmid": "40650712",
+      "citation": "Carlos Jim\u00e9nez-Vicente et al. Enasidenib as treatment for AML with IDH2 mutation: multicenter real-life study of the early-access program in Spain.. Annals of hematology (2025 Jul)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40650712/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": {
+        "leukocytosis": 21.7
+      },
+      "non_hematologic_ae": {
+        "hyperbilirubinemia": 26.1,
+        "differentiation syndrome": 17.4
+      },
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": 23,
+      "patients_with_ae": null,
+      "supporting_quotes": [
+        "Drug-related events included leukocytosis in five patients (21.7%), hyperbilirubinemia in six patients (26.1%) and differentiation syndrome (DS) in four patients (17.4%), including one grade 3 DS and one death related to this latter adverse event (AE), similar to previous findings."
+      ],
+      "data_source_location": "PMC (partial)",
+      "extraction_confidence": 0.95,
+      "ae_summary": "Drug-related adverse events included leukocytosis (21.7%), hyperbilirubinemia (26.1%), and differentiation syndrome (DS) (17.4%). One patient experienced grade 3 DS, and one death was attributed to DS.",
+      "has_ae_data": true
+    },
+    {
+      "pmid": "40498375",
+      "citation": "Kyriaki Katsiki et al. Comparative Analysis of the TCR Repertoire in Bone Marrow CD8. European journal of immunology (2025 Jun)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40498375/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": null,
+      "patients_with_ae": null,
+      "supporting_quotes": [],
+      "data_source_location": "PMC (partial)",
+      "extraction_confidence": 1.0,
+      "ae_summary": "No adverse events, side effects, or safety data are reported in the provided abstract or title.",
+      "has_ae_data": false
+    },
+    {
+      "pmid": "40337877",
+      "citation": "Meng Chen et al. Rare cases of atraumatic splenic rupture managed conservatively in patients with myeloid neoplasms: a report of two cases and literature review.. Chinese clinical oncology (2025 Apr)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40337877/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": 2,
+      "patients_with_ae": 2,
+      "supporting_quotes": [
+        "Atraumatic splenic rupture (ASR) is rare and typically attributed to underlying pathological conditions, with neoplastic diseases being the main etiologies.",
+        "Traditionally, surgical intervention has been the standard approach for managing ASR in the majority of patients."
+      ],
+      "data_source_location": "Abstract",
+      "extraction_confidence": 0.8,
+      "ae_summary": "The study focuses on atraumatic splenic rupture (ASR) as an adverse event in patients with myeloid neoplasms.  The paper reports on two cases managed conservatively, but does not provide overall AE rates or specific AE data beyond the primary outcome of ASR.",
+      "has_ae_data": true
+    },
+    {
+      "pmid": "40252309",
+      "citation": "Julie S Braish et al. Safety and efficacy of the combination of azacitidine with venetoclax after hypomethylating agent failure in higher-risk myelodysplastic syndrome.. Leukemia research (2025 Jun)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40252309/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": null,
+      "patients_with_ae": null,
+      "supporting_quotes": [
+        "This Phase I/II study evaluates the safety, tolerability, and efficacy of venetoclax, an orally bioavailable BCL-2 inhibitor, in combination with azacitidine in this population."
+      ],
+      "data_source_location": "Abstract",
+      "extraction_confidence": 0.8,
+      "ae_summary": "The provided abstract focuses on safety and tolerability, mentioning a Phase I/II study design to evaluate these aspects of the azacitidine and venetoclax combination.  However, no specific adverse event data (rates, types, or counts) are presented in the text provided.",
+      "has_ae_data": true
+    },
+    {
+      "pmid": "40164584",
+      "citation": "Alex Bataller et al. Oral decitabine cedazuridine with and without venetoclax in higher-risk myelodysplastic syndromes or chronic myelomonocytic leukemia: a propensity score-matched study.. Blood cancer journal (2025 Mar)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40164584/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": 124,
+      "patients_with_ae": null,
+      "supporting_quotes": [
+        "Patients in the DEC-C-Ven cohort had a more profound neutropenia at days 15 and 21 of the first cycle.",
+        "The 4- and 8-week mortality did not significantly differ between the DEC-C and DEC-C-Ven cohorts."
+      ],
+      "data_source_location": "PMC (partial)",
+      "extraction_confidence": 0.8,
+      "ae_summary": "The most notable adverse event reported was more profound neutropenia in the DEC-C-Ven cohort at days 15 and 21 of the first cycle.  No other specific adverse events were detailed, although the study mentions 4- and 8-week mortality did not significantly differ between treatment groups.",
+      "has_ae_data": true
+    },
+    {
+      "pmid": "40013211",
+      "citation": "Marwa Mir et al. Pleural Effusion in a Patient With Chronic Myelomonocytic Leukemia Treated With Azacitidine.. Cureus (2025 Jan)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40013211/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": 1,
+      "patients_with_ae": 1,
+      "supporting_quotes": [
+        "referred from the oncology clinic due to shortness of breath attributed to a left pleural effusion, evident on a chest X-ray following a chemotherapy session.",
+        "A diagnostic thoracentesis and cytology were conducted, which yielded exudative fluid negative for malignant cells and found reactive mesothelial cells and macrophages in a background of numerous chronic inflammatory cells\u00a0and acellular proteinaceous material."
+      ],
+      "data_source_location": "PMC (partial)",
+      "extraction_confidence": 0.9,
+      "ae_summary": "The main adverse event reported is pleural effusion, which was the reason for the patient's referral to the oncology clinic.  The patient experienced shortness of breath attributed to a left pleural effusion.",
+      "has_ae_data": true
+    },
+    {
+      "pmid": "39903257",
+      "citation": "Kishan A Bhatt et al. Diagnosis and management of concurrent metastatic melanoma and chronic myelomonocytic leukemia.. Melanoma research (2025 Jun)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39903257/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": 1,
+      "patients_with_ae": null,
+      "supporting_quotes": [
+        "Simultaneous management of these malignancies can be nuanced due to the potential impact of one treatment's constituents on the activity of the other and the broad and nonoverlapping array of potential adverse effects of these agents."
+      ],
+      "data_source_location": "Abstract",
+      "extraction_confidence": 0.8,
+      "ae_summary": "The study mentions the potential for broad and nonoverlapping adverse effects of immune checkpoint inhibitors (ICIs), myelosuppressive agents like azacitidine, and the BCL-2 inhibitor venetoclax.  Specific adverse events are not detailed, but the text highlights the complexity of managing the potential interactions and side effects of these drugs when used concurrently.",
+      "has_ae_data": true
+    },
+    {
+      "pmid": "39759649",
+      "citation": "Eren Arslan Davulcu et al. A Case of Chronic Myelomonocytic Leukemia With Recurrent Skin Involvement.. Cureus (2024 Dec)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39759649/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": 1,
+      "patients_with_ae": 1,
+      "supporting_quotes": [
+        "This case study describes a 71-year-old male with high-risk CMML, developing pink-purple skin nodules, which regressed with azacitidine and hydroxyurea treatment.",
+        "Despite recurrence, disease control was achieved without transformation to acute leukemia."
+      ],
+      "data_source_location": "PMC (partial)",
+      "extraction_confidence": 0.8,
+      "ae_summary": "The patient experienced recurrent pink-purple skin nodules, which are described as skin involvement associated with CMML.  The nodules regressed with treatment.  No specific adverse events related to azacitidine or hydroxyurea are mentioned.",
+      "has_ae_data": true
+    },
+    {
+      "pmid": "39477459",
+      "citation": "Robert McGrath et al. Chronic myelomonocytic leukaemia causing orbital inflammation.. BMJ case reports (2024 Oct)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39477459/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": 1,
+      "patients_with_ae": 1,
+      "supporting_quotes": [
+        "We present a case of acute-onset orbital inflammation with rapidly progressive proptosis, episcleral venous stasis with raised intraocular pressure and loss of vision in a patient with a recent diagnosis of chronic myelomonocytic leukaemia (CMML).",
+        "The patient's orbital inflammation and ocular hypertension showed no response to topical and systemic pressure-lowering agents and non-steroidal anti-inflammatory agents but resolved rapidly after the commencement of intravenous steroids."
+      ],
+      "data_source_location": "Abstract",
+      "extraction_confidence": 1.0,
+      "ae_summary": "The patient experienced acute-onset orbital inflammation with rapidly progressive proptosis, episcleral venous stasis, raised intraocular pressure, and loss of vision.  These symptoms did not respond to initial treatments but resolved after intravenous steroids.",
+      "has_ae_data": true
+    },
+    {
+      "pmid": "39024804",
+      "citation": "Kaiyue Wang et al. Targeting DNA methyltransferases for cancer therapy.. Bioorganic chemistry (2024 Oct)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39024804/",
+      "drug": "azacitidine",
+      "any_grade_ae_rate": null,
+      "grade_3_4_ae_rate": null,
+      "serious_ae_rate": null,
+      "treatment_related_ae_rate": null,
+      "hematologic_ae": null,
+      "non_hematologic_ae": null,
+      "discontinuation_rate": null,
+      "dose_reduction_rate": null,
+      "total_patients": null,
+      "patients_with_ae": null,
+      "supporting_quotes": [
+        "Abnormal functions of DNMTs are often indicative of cancers, including overall hypomethylation and partial hypermethylation of tumor suppressor genes (TSG), which accelerate the malignancy of tumors, worsen the condition of patients, and significantly exacerbate the difficulty of cancer treatment."
+      ],
+      "data_source_location": "Abstract",
+      "extraction_confidence": 0.8,
+      "ae_summary": "The review mentions that abnormal functions of DNMTs worsen the condition of patients and significantly exacerbate the difficulty of cancer treatment,  although no specific adverse events from the use of DNMT inhibitors (Azacytidine and Decitabine) are listed.  The text focuses on the therapeutic effects and does not provide detailed safety data or adverse event profiles.",
+      "has_ae_data": true
+    }
+  ]
+}

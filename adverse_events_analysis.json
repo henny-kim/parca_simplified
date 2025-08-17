@@ -1,0 +1,53 @@
+{
+  "analysis_date": "2025-08-16",
+  "total_papers_with_ae_data": 3,
+  "total_patients": 59,
+  "adverse_events": {
+    "myelosuppression": {
+      "papers": 1,
+      "patients": 5,
+      "paper_percentage": 33.3,
+      "patient_percentage": 8.5,
+      "pmids": ["2052066"],
+      "description": "Myelosuppression (in all 5 patients, requiring dose reduction in 2)"
+    },
+    "gastrointestinal": {
+      "papers": 1,
+      "patients": 5,
+      "paper_percentage": 33.3,
+      "patient_percentage": 8.5,
+      "pmids": ["2052066"],
+      "description": "Mild gastrointestinal symptoms"
+    },
+    "fatigue": {
+      "papers": 1,
+      "patients": 5,
+      "paper_percentage": 33.3,
+      "patient_percentage": 8.5,
+      "pmids": ["2052066"],
+      "description": "Fatigue"
+    },
+    "alopecia": {
+      "papers": 1,
+      "patients": 53,
+      "paper_percentage": 33.3,
+      "patient_percentage": 89.8,
+      "pmids": ["8839839"],
+      "description": "Alopecia 3% (vs 20% in VP16 arm)"
+    },
+    "pneumonitis": {
+      "papers": 1,
+      "patients": 1,
+      "paper_percentage": 33.3,
+      "patient_percentage": 1.7,
+      "pmids": ["26666606"],
+      "description": "Interstitial pneumonitis, respiratory failure"
+    }
+  },
+  "summary": {
+    "most_common_ae": "Alopecia (89.8% of patients)",
+    "most_frequent_ae": "Myelosuppression, Gastrointestinal, Fatigue (33.3% of papers each)",
+    "serious_ae": "Pneumonitis (rare, 1.7% of patients)",
+    "dose_modifications": "Myelosuppression requiring dose reduction in 40% of affected patients"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "_metadata": {
+    "analysis_date": "2025-08-16 19:16:00",
+    "comprehensive_paper_counts": {
+      "azacitidine": 169,
+      "decitabine": 125,
+      "hydroxyurea": 4,
+      "total_comprehensive": 298
+    },
+    "clinical_data_paper_counts": {
+      "azacitidine": 75,
+      "decitabine": 51,
+      "hydroxyurea": 3
+    },
+    "adverse_events_paper_counts": {
+      "azacitidine": 15,
+      "decitabine": 1,
+      "hydroxyurea": 0
+    }
+  },
+  "azacitidine": {
+    "efficacy": {
+      "cr_mean": 23.8,
+      "cr_median": 19.0,
+      "orr_mean": 49.1,
+      "orr_median": 44.0
+    },
+    "survival": {
+      "pfs_mean": 16.4,
+      "pfs_median": 14.0,
+      "os_mean": 22.9,
+      "os_median": 19.9
+    },
+    "safety": {
+      "sae_mean": null,
+      "sae_median": null,
+      "adverse_events_summary": "Myelosuppression: 16 papers, 49 patients; Infection: 10 papers, 155 patients; Death: 9 papers, 33 patients; Pulmonary: 7 papers, 7 patients; Skin: 6 papers, 7 patients; Gastrointestinal: 5 papers, 38 patients; Fatigue: 2 papers, 5 patients; Transfusion: 2 papers, 2 patients; Insomnia: 1 papers, 1 patients; Fever: 1 papers, 1 patients; Weight: 1 papers, 1 patients"
+    },
+    "therapy_duration": {
+      "cycles_mean": null,
+      "cycles_median": null
+    }
+  },
+  "decitabine": {
+    "efficacy": {
+      "cr_mean": 21.7,
+      "cr_median": 19.0,
+      "orr_mean": 45.2,
+      "orr_median": 42.0
+    },
+    "survival": {
+      "pfs_mean": 12.3,
+      "pfs_median": 12.3,
+      "os_mean": 18.3,
+      "os_median": 17.4
+    },
+    "safety": {
+      "sae_mean": null,
+      "sae_median": null,
+      "adverse_events_summary": "Neutropenia: 11 papers, 11 patients; Myelosuppression: 14 papers, 14 patients; Thrombocytopenia: 9 papers, 9 patients; Anemia: 8 papers, 8 patients; Infection: 7 papers, 7 patients; Gastrointestinal: 6 papers, 6 patients; Fatigue: 5 papers, 5 patients; Fever: 4 papers, 4 patients; Skin: 3 papers, 3 patients; Pulmonary: 2 papers, 2 patients; Neurological: 2 papers, 2 patients; Hepatic: 1 papers, 1 patients; Renal: 1 papers, 1 patients; Cardiac: 1 papers, 1 patients"
+    },
+    "therapy_duration": {
+      "cycles_mean": null,
+      "cycles_median": null
+    }
+  },
+  "hydroxyurea": {
+    "efficacy": {
+      "cr_mean": 15.0,
+      "cr_median": 15.0,
+      "orr_mean": 35.0,
+      "orr_median": 35.0
+    },
+    "survival": {
+      "pfs_mean": 10.3,
+      "pfs_median": 10.3,
+      "os_mean": 20.9,
+      "os_median": 20.9
+    },
+    "safety": {
+      "sae_mean": null,
+      "sae_median": null,
+      "adverse_events_summary": "Myelosuppression: 1 papers, 5 patients; Gastrointestinal: 1 papers, 5 patients; Fatigue: 1 papers, 5 patients; Alopecia: 1 papers, 5 patients; Skin: 1 papers, 5 patients"
+    },
+    "therapy_duration": {
+      "cycles_mean": null,
+      "cycles_median": null
+    }
+  },
+  "azacitidine_decitabine_combined": {
+    "efficacy": {
+      "cr_mean": 22.8,
+      "cr_median": 19.0,
+      "orr_mean": 47.2,
+      "orr_median": 43.0
+    },
+    "survival": {
+      "pfs_mean": 14.4,
+      "pfs_median": 13.2,
+      "os_mean": 20.6,
+      "os_median": 18.7
+    },
+    "safety": {
+      "sae_mean": null,
+      "sae_median": null,
+      "adverse_events_summary": "Combined adverse events from both drugs: Myelosuppression, Infection, Gastrointestinal symptoms, Fatigue, and other common side effects"
+    },
+    "therapy_duration": {
+      "cycles_mean": null,
+      "cycles_median": null
+    }
+  }
+}

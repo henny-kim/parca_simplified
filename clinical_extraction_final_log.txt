@@ -1,0 +1,168 @@
+Starting clinical efficacy extraction for 169 azacitidine papers...
+Rate limiting: 5 requests/minute (12s intervals), 50 requests/day max
+Estimated time: 10.0 minutes for first batch
+Daily limit allows processing ~50 papers per day
+Processing paper 1/169: PMID 40650712 (Request #1 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 2/169: PMID 40498375 (Request #2 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 3/169: PMID 40337877 (Request #3 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 4/169: PMID 40252309 (Request #4 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 5/169: PMID 40164584 (Request #5 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 6/169: PMID 40013211 (Request #6 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 7/169: PMID 39903257 (Request #7 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 8/169: PMID 39759649 (Request #8 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 9/169: PMID 39477459 (Request #9 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 10/169: PMID 39024804 (Request #10 today)
+    ○ No efficacy data found
+*** CHECKPOINT: 10/169 papers processed ***
+    Waiting 12 seconds for rate limiting...
+Processing paper 11/169: PMID 38939343 (Request #11 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 12/169: PMID 38879530 (Request #12 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 13/169: PMID 38711181 (Request #13 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 14/169: PMID 38595873 (Request #14 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 15/169: PMID 38387931 (Request #15 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 16/169: PMID 38176221 (Request #16 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 17/169: PMID 38091231 (Request #17 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 18/169: PMID 38003211 (Request #18 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 19/169: PMID 37994196 (Request #19 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 20/169: PMID 37550202 (Request #20 today)
+    ○ No efficacy data found
+*** CHECKPOINT: 20/169 papers processed ***
+    Waiting 12 seconds for rate limiting...
+Processing paper 21/169: PMID 37548390 (Request #21 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 22/169: PMID 37546162 (Request #22 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 23/169: PMID 37422688 (Request #23 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 24/169: PMID 37414632 (Request #24 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 25/169: PMID 37383892 (Request #25 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 26/169: PMID 37083373 (Request #26 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 27/169: PMID 37042080 (Request #27 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 28/169: PMID 36845813 (Request #28 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 29/169: PMID 36801588 (Request #29 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 30/169: PMID 36517990 (Request #30 today)
+    ○ No efficacy data found
+*** CHECKPOINT: 30/169 papers processed ***
+    Waiting 12 seconds for rate limiting...
+Processing paper 31/169: PMID 36506761 (Request #31 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 32/169: PMID 36455187 (Request #32 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 33/169: PMID 36282401 (Request #33 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 34/169: PMID 36153475 (Request #34 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 35/169: PMID 36150563 (Request #35 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 36/169: PMID 36104395 (Request #36 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 37/169: PMID 36059252 (Request #37 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 38/169: PMID 35852697 (Request #38 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 39/169: PMID 35834039 (Request #39 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 40/169: PMID 35707788 (Request #40 today)
+    ○ No efficacy data found
+*** CHECKPOINT: 40/169 papers processed ***
+    Waiting 12 seconds for rate limiting...
+Processing paper 41/169: PMID 35615323 (Request #41 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 42/169: PMID 35488900 (Request #42 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 43/169: PMID 35438802 (Request #43 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 44/169: PMID 35405632 (Request #44 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 45/169: PMID 34985762 (Request #45 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 46/169: PMID 34966690 (Request #46 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 47/169: PMID 34884286 (Request #47 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 48/169: PMID 34789825 (Request #48 today)
+    ○ No efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 49/169: PMID 34384334 (Request #49 today)
+    ✓ Efficacy data found
+    Waiting 12 seconds for rate limiting...
+Processing paper 50/169: PMID 34268023 (Request #50 today)
+    ○ No efficacy data found
+*** CHECKPOINT: 50/169 papers processed ***
+*** DAILY LIMIT REACHED (50 requests) ***
+Processed 50/169 papers
+Switch to new API key to continue processing remaining 119 papers
+
+============================================================
+CLINICAL EFFICACY EXTRACTION COMPLETED
+============================================================
+Total papers processed: 50
+Papers with efficacy data: 17/50 (34.0%)
+Results saved to clinical_efficacy_azacitidine.json

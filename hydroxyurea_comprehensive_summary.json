@@ -1,0 +1,41 @@
+{
+  "total_papers": 82,
+  "papers_with_efficacy": 19,
+  "success_rate": "23.2%",
+  "efficacy_metrics": {
+    "complete_response": {
+      "studies": 2,
+      "mean": 16.0,
+      "median": 16.0
+    },
+    "overall_response_rate": {
+      "studies": 7,
+      "mean": 48.142857142857146,
+      "median": 38.0
+    }
+  },
+  "survival_metrics": {
+    "progression_free_survival": {
+      "studies": 1,
+      "mean": 10.3,
+      "median": 10.3
+    },
+    "overall_survival": {
+      "studies": 14,
+      "mean": 19.645,
+      "median": 20.5
+    }
+  },
+  "patient_population": {
+    "total_patients": {
+      "studies": 15,
+      "mean": 219.4,
+      "median": 48.0
+    },
+    "cmml_patients": {
+      "studies": 14,
+      "mean": 216.57142857142858,
+      "median": 40.0
+    }
+  }
+}

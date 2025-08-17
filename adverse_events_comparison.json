@@ -1,0 +1,143 @@
+{
+  "analysis_date": "2025-08-16",
+  "summary": {
+    "hydroxyurea": {
+      "papers_with_ae_data": 3,
+      "total_patients": 59,
+      "adverse_events_summary": "Myelosuppression: 1 papers, 5 patients; Gastrointestinal: 1 papers, 5 patients; Fatigue: 1 papers, 5 patients; Alopecia: 1 papers, 53 patients; Pneumonitis: 1 papers, 1 patients"
+    },
+    "decitabine": {
+      "papers_with_ae_data": 0,
+      "total_patients": 0,
+      "adverse_events_summary": "Adverse event data not available (no abstracts in source papers)"
+    },
+    "azacitidine": {
+      "papers_with_ae_data": 60,
+      "total_patients": 300,
+      "adverse_events_summary": "Myelosuppression: 16 papers, 49 patients; Infection: 10 papers, 155 patients; Death: 9 papers, 33 patients; Pulmonary: 7 papers, 7 patients; Skin: 6 papers, 7 patients; Gastrointestinal: 5 papers, 38 patients; Fatigue: 2 papers, 5 patients; Transfusion: 2 papers, 2 patients; Insomnia: 1 papers, 1 patients; Fever: 1 papers, 1 patients; Weight: 1 papers, 1 patients"
+    }
+  },
+  "detailed_analysis": {
+    "hydroxyurea": {
+      "myelosuppression": {
+        "papers": 1,
+        "patients": 5,
+        "percentage": 8.5,
+        "description": "Dose reduction required in 40% of affected patients"
+      },
+      "gastrointestinal": {
+        "papers": 1,
+        "patients": 5,
+        "percentage": 8.5,
+        "description": "Mild gastrointestinal symptoms"
+      },
+      "fatigue": {
+        "papers": 1,
+        "patients": 5,
+        "percentage": 8.5,
+        "description": "Common side effect"
+      },
+      "alopecia": {
+        "papers": 1,
+        "patients": 53,
+        "percentage": 89.8,
+        "description": "3% incidence vs 20% in VP16 arm"
+      },
+      "pneumonitis": {
+        "papers": 1,
+        "patients": 1,
+        "percentage": 1.7,
+        "description": "Rare but serious complication"
+      }
+    },
+    "decitabine": {
+      "note": "No adverse event data available due to lack of abstracts in source papers"
+    },
+    "azacitidine": {
+      "myelosuppression": {
+        "papers": 16,
+        "patients": 49,
+        "percentage": 16.3,
+        "description": "Most common adverse event, including cytopenia, neutropenia, thrombocytopenia, anemia, leukopenia"
+      },
+      "infection": {
+        "papers": 10,
+        "patients": 155,
+        "percentage": 51.7,
+        "description": "High incidence including sepsis, febrile neutropenia, pneumonia, bacteremia"
+      },
+      "death": {
+        "papers": 9,
+        "patients": 33,
+        "percentage": 11.0,
+        "description": "Treatment-related mortality"
+      },
+      "pulmonary": {
+        "papers": 7,
+        "patients": 7,
+        "percentage": 2.3,
+        "description": "Respiratory complications including dyspnea, cough, pneumonitis"
+      },
+      "skin": {
+        "papers": 6,
+        "patients": 7,
+        "percentage": 2.3,
+        "description": "Skin reactions including rash, dermatitis, pruritus, erythema"
+      },
+      "gastrointestinal": {
+        "papers": 5,
+        "patients": 38,
+        "percentage": 12.7,
+        "description": "GI symptoms including nausea, vomiting, diarrhea, abdominal pain"
+      },
+      "fatigue": {
+        "papers": 2,
+        "patients": 5,
+        "percentage": 1.7,
+        "description": "Fatigue, tiredness, weakness, asthenia"
+      },
+      "transfusion": {
+        "papers": 2,
+        "patients": 2,
+        "percentage": 0.7,
+        "description": "Blood product requirements"
+      },
+      "insomnia": {
+        "papers": 1,
+        "patients": 1,
+        "percentage": 0.3,
+        "description": "Sleep disturbances"
+      },
+      "fever": {
+        "papers": 1,
+        "patients": 1,
+        "percentage": 0.3,
+        "description": "Pyrexia, hyperthermia"
+      },
+      "weight": {
+        "papers": 1,
+        "patients": 1,
+        "percentage": 0.3,
+        "description": "Weight loss, appetite changes"
+      }
+    }
+  },
+  "key_findings": {
+    "hydroxyurea_safety": {
+      "most_common": "Alopecia (89.8% of patients)",
+      "most_frequent": "Myelosuppression, GI symptoms, Fatigue (33.3% of papers each)",
+      "serious_events": "Pneumonitis (rare, 1.7% of patients)",
+      "dose_modifications": "Myelosuppression requiring dose reduction in 40% of affected patients"
+    },
+    "azacitidine_safety": {
+      "most_common": "Infection (51.7% of patients)",
+      "most_frequent": "Myelosuppression (26.7% of papers)",
+      "serious_events": "Death (11.0% of patients), Pulmonary complications (2.3% of patients)",
+      "dose_modifications": "Myelosuppression requiring dose reduction in multiple patients"
+    },
+    "data_limitations": {
+      "decitabine": "Limited adverse event data available",
+      "recommendation": "Future studies should include detailed adverse event reporting"
+    }
+  }
+}

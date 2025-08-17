@@ -1,0 +1,183 @@
+{
+  "analysis_date": "2025-08-16 14:41:30",
+  "adverse_events_by_drug": {
+    "azacitidine": {
+      "total_papers": 169,
+      "papers_with_ae_data": 18,
+      "any_grade_ae": {
+        "mean": 38.4,
+        "median": 38.4,
+        "studies": 1,
+        "range": "38.4-38.4%"
+      },
+      "grade_3_4_ae": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "serious_ae": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "treatment_related_ae": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "discontinuation_rate": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "dose_reduction_rate": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      }
+    },
+    "decitabine": {
+      "total_papers": 125,
+      "papers_with_ae_data": 1,
+      "any_grade_ae": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "grade_3_4_ae": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "serious_ae": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "treatment_related_ae": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "discontinuation_rate": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      },
+      "dose_reduction_rate": {
+        "mean": null,
+        "median": null,
+        "studies": 0,
+        "range": null
+      }
+    }
+  },
+  "combined_analysis": {
+    "azacitidine": {
+      "clinical_efficacy": {
+        "total_papers": 169,
+        "papers_with_efficacy": 75,
+        "status": "Complete"
+      },
+      "adverse_events": {
+        "total_papers": 169,
+        "papers_with_ae_data": 18,
+        "any_grade_ae": {
+          "mean": 38.4,
+          "median": 38.4,
+          "studies": 1,
+          "range": "38.4-38.4%"
+        },
+        "grade_3_4_ae": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "serious_ae": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "treatment_related_ae": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "discontinuation_rate": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "dose_reduction_rate": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        }
+      }
+    },
+    "decitabine": {
+      "clinical_efficacy": {
+        "status": "Extraction in progress"
+      },
+      "adverse_events": {
+        "total_papers": 125,
+        "papers_with_ae_data": 1,
+        "any_grade_ae": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "grade_3_4_ae": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "serious_ae": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "treatment_related_ae": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "discontinuation_rate": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        },
+        "dose_reduction_rate": {
+          "mean": null,
+          "median": null,
+          "studies": 0,
+          "range": null
+        }
+      }
+    },
+    "combined_analysis": {
+      "status": "Pending decitabine clinical efficacy completion",
+      "estimated_completion": "4-6 hours"
+    }
+  }
+}

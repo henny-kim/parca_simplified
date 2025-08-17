@@ -1,0 +1,30 @@
+{
+  "analysis_date": "2024-08-16",
+  "datasets_analyzed": [
+    "azacitidine"
+  ],
+  "summary": {
+    "azacitidine": {
+      "complete_response_rate": {
+        "median_percent": 19.0,
+        "mean_percent": 23.783333333333335,
+        "studies": 30
+      },
+      "overall_response_rate": {
+        "median_percent": 44.0,
+        "mean_percent": 49.098113207547165,
+        "studies": 53
+      },
+      "overall_survival": {
+        "median_months": 19.85,
+        "mean_months": 22.88421052631579,
+        "studies": 38
+      },
+      "progression_free_survival": {
+        "median_months": 14.0,
+        "mean_months": 16.42857142857143,
+        "studies": 7
+      }
+    }
+  }
+}

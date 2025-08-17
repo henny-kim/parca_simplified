@@ -1,0 +1,663 @@
+Starting clinical efficacy extraction for 169 azacitidine papers...
+Rate limiting: 5 requests/minute (12s intervals), 50 requests/day max
+Estimated time: 10.0 minutes for first batch
+Daily limit allows processing ~50 papers per day
+Resuming from checkpoint: 20 papers already processed
+Processing paper 21/169: PMID 37548390 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 22/169: PMID 37546162 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 23/169: PMID 37422688 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 24/169: PMID 37414632 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 25/169: PMID 37383892 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 26/169: PMID 37083373 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 27/169: PMID 37042080 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 28/169: PMID 36845813 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 29/169: PMID 36801588 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 30/169: PMID 36517990 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 31/169: PMID 36506761 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 32/169: PMID 36455187 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 33/169: PMID 36282401 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 34/169: PMID 36153475 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 35/169: PMID 36150563 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 36/169: PMID 36104395 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 37/169: PMID 36059252 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 38/169: PMID 35852697 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 39/169: PMID 35834039 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 40/169: PMID 35707788 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 41/169: PMID 35615323 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 42/169: PMID 35488900 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 43/169: PMID 35438802 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 44/169: PMID 35405632 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 45/169: PMID 34985762 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 46/169: PMID 34966690 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 47/169: PMID 34884286 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 48/169: PMID 34789825 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 49/169: PMID 34384334 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 50/169: PMID 34268023 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 51/169: PMID 34194799 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 52/169: PMID 34175902 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 53/169: PMID 33904891 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 54/169: PMID 33807279 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 55/169: PMID 33709786 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 56/169: PMID 33706667 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 57/169: PMID 33513373 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 58/169: PMID 33503305 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 59/169: PMID 33483617 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 60/169: PMID 33407852 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 61/169: PMID 33369023 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 62/169: PMID 33324479 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 63/169: PMID 33280448 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 64/169: PMID 33275673 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 65/169: PMID 33126392 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 66/169: PMID 33101773 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 67/169: PMID 33043739 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 68/169: PMID 32896704 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 69/169: PMID 32860582 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 70/169: PMID 32576961 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 71/169: PMID 32442785 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 72/169: PMID 32373459 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 73/169: PMID 32285126 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 74/169: PMID 31870430 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 75/169: PMID 31736132 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 76/169: PMID 31645386 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 77/169: PMID 31559392 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 78/169: PMID 31506740 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 79/169: PMID 31494229 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 80/169: PMID 31484886 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 81/169: PMID 31340618 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 82/169: PMID 31221030 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 83/169: PMID 30964202 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 84/169: PMID 30944097 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 85/169: PMID 30937199 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 86/169: PMID 30898482 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 87/169: PMID 30626790 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 88/169: PMID 30613922 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 89/169: PMID 30579366 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 90/169: PMID 30424699 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 91/169: PMID 30367269 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 92/169: PMID 30091166 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 93/169: PMID 30016552 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 94/169: PMID 29878489 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 95/169: PMID 29728305 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 96/169: PMID 29658352 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 97/169: PMID 29475821 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 98/169: PMID 29384408 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 99/169: PMID 29383443 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 100/169: PMID 29134664 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 101/169: PMID 29069007 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 102/169: PMID 28905323 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 103/169: PMID 28885734 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 104/169: PMID 28760301 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 105/169: PMID 28621841 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 106/169: PMID 28607470 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 107/169: PMID 28546581 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 108/169: PMID 28535394 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 109/169: PMID 28486043 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 110/169: PMID 28370097 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 111/169: PMID 28368509 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 112/169: PMID 28359286 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 113/169: PMID 28102729 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 114/169: PMID 28024498 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 115/169: PMID 27849645 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 116/169: PMID 27365372 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 117/169: PMID 27353473 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 118/169: PMID 27268068 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 119/169: PMID 27185207 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 120/169: PMID 26922775 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 121/169: PMID 26860635 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 122/169: PMID 26392142 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 123/169: PMID 26350487 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 124/169: PMID 26296092 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 125/169: PMID 25822018 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 126/169: PMID 25735917 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 127/169: PMID 25555161 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 128/169: PMID 25444072 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 129/169: PMID 25317956 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 130/169: PMID 25129095 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 131/169: PMID 24836762 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 132/169: PMID 24678397 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 133/169: PMID 24522248 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 134/169: PMID 24270737 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 135/169: PMID 23963888 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 136/169: PMID 23625339 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 137/169: PMID 23602358 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 138/169: PMID 23453287 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 139/169: PMID 23415110 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 140/169: PMID 23262795 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 141/169: PMID 23079062 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 142/169: PMID 22937326 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 143/169: PMID 22622173 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 144/169: PMID 22615103 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 145/169: PMID 22607959 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 146/169: PMID 22555082 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 147/169: PMID 22550562 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 148/169: PMID 22280532 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 149/169: PMID 21981697 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 150/169: PMID 21828134 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 151/169: PMID 21656746 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 152/169: PMID 21625315 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 153/169: PMID 21576646 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 154/169: PMID 21537084 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 155/169: PMID 21387357 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 156/169: PMID 20507806 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 157/169: PMID 20451404 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 158/169: PMID 20064151 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 159/169: PMID 19911860 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 160/169: PMID 19638460 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 161/169: PMID 19430863 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 162/169: PMID 18179966 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 163/169: PMID 17881052 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 164/169: PMID 17219444 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 165/169: PMID 16955510 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 166/169: PMID 16882708 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 167/169: PMID 12599231 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 168/169: PMID 9922042 (Request #21 today)
+    ✗ Error: Invalid format specifier
+Processing paper 169/169: PMID 8839838 (Request #21 today)
+    ✗ Error: Invalid format specifier
+
+============================================================
+CLINICAL EFFICACY EXTRACTION COMPLETED
+============================================================
+Total papers processed: 20
+Papers with efficacy data: 1/20 (5.0%)
+Results saved to clinical_efficacy_azacitidine.json
+Starting clinical efficacy extraction for 169 azacitidine papers...
+Rate limiting: 5 requests/minute (12s intervals), 50 requests/day max
+Estimated time: 10.0 minutes for first batch
+Daily limit allows processing ~50 papers per day
+Processing paper 1/169: PMID 40650712 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 2/169: PMID 40498375 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 3/169: PMID 40337877 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 4/169: PMID 40252309 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 5/169: PMID 40164584 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 6/169: PMID 40013211 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 7/169: PMID 39903257 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 8/169: PMID 39759649 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 9/169: PMID 39477459 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 10/169: PMID 39024804 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 11/169: PMID 38939343 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 12/169: PMID 38879530 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 13/169: PMID 38711181 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 14/169: PMID 38595873 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 15/169: PMID 38387931 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 16/169: PMID 38176221 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 17/169: PMID 38091231 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 18/169: PMID 38003211 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 19/169: PMID 37994196 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 20/169: PMID 37550202 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 21/169: PMID 37548390 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 22/169: PMID 37546162 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 23/169: PMID 37422688 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 24/169: PMID 37414632 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 25/169: PMID 37383892 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 26/169: PMID 37083373 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 27/169: PMID 37042080 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 28/169: PMID 36845813 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 29/169: PMID 36801588 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 30/169: PMID 36517990 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 31/169: PMID 36506761 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 32/169: PMID 36455187 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 33/169: PMID 36282401 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 34/169: PMID 36153475 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 35/169: PMID 36150563 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 36/169: PMID 36104395 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 37/169: PMID 36059252 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 38/169: PMID 35852697 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 39/169: PMID 35834039 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 40/169: PMID 35707788 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 41/169: PMID 35615323 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 42/169: PMID 35488900 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 43/169: PMID 35438802 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 44/169: PMID 35405632 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 45/169: PMID 34985762 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 46/169: PMID 34966690 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 47/169: PMID 34884286 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 48/169: PMID 34789825 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 49/169: PMID 34384334 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 50/169: PMID 34268023 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 51/169: PMID 34194799 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 52/169: PMID 34175902 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 53/169: PMID 33904891 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 54/169: PMID 33807279 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 55/169: PMID 33709786 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 56/169: PMID 33706667 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 57/169: PMID 33513373 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 58/169: PMID 33503305 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 59/169: PMID 33483617 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 60/169: PMID 33407852 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 61/169: PMID 33369023 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 62/169: PMID 33324479 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 63/169: PMID 33280448 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 64/169: PMID 33275673 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 65/169: PMID 33126392 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 66/169: PMID 33101773 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 67/169: PMID 33043739 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 68/169: PMID 32896704 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 69/169: PMID 32860582 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 70/169: PMID 32576961 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 71/169: PMID 32442785 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 72/169: PMID 32373459 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 73/169: PMID 32285126 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 74/169: PMID 31870430 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 75/169: PMID 31736132 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 76/169: PMID 31645386 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 77/169: PMID 31559392 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 78/169: PMID 31506740 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 79/169: PMID 31494229 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 80/169: PMID 31484886 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 81/169: PMID 31340618 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 82/169: PMID 31221030 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 83/169: PMID 30964202 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 84/169: PMID 30944097 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 85/169: PMID 30937199 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 86/169: PMID 30898482 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 87/169: PMID 30626790 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 88/169: PMID 30613922 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 89/169: PMID 30579366 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 90/169: PMID 30424699 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 91/169: PMID 30367269 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 92/169: PMID 30091166 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 93/169: PMID 30016552 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 94/169: PMID 29878489 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 95/169: PMID 29728305 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 96/169: PMID 29658352 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 97/169: PMID 29475821 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 98/169: PMID 29384408 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 99/169: PMID 29383443 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 100/169: PMID 29134664 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 101/169: PMID 29069007 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 102/169: PMID 28905323 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 103/169: PMID 28885734 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 104/169: PMID 28760301 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 105/169: PMID 28621841 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 106/169: PMID 28607470 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 107/169: PMID 28546581 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 108/169: PMID 28535394 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 109/169: PMID 28486043 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 110/169: PMID 28370097 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 111/169: PMID 28368509 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 112/169: PMID 28359286 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 113/169: PMID 28102729 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 114/169: PMID 28024498 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 115/169: PMID 27849645 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 116/169: PMID 27365372 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 117/169: PMID 27353473 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 118/169: PMID 27268068 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 119/169: PMID 27185207 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 120/169: PMID 26922775 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 121/169: PMID 26860635 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 122/169: PMID 26392142 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 123/169: PMID 26350487 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 124/169: PMID 26296092 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 125/169: PMID 25822018 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 126/169: PMID 25735917 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 127/169: PMID 25555161 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 128/169: PMID 25444072 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 129/169: PMID 25317956 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 130/169: PMID 25129095 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 131/169: PMID 24836762 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 132/169: PMID 24678397 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 133/169: PMID 24522248 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 134/169: PMID 24270737 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 135/169: PMID 23963888 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 136/169: PMID 23625339 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 137/169: PMID 23602358 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 138/169: PMID 23453287 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 139/169: PMID 23415110 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 140/169: PMID 23262795 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 141/169: PMID 23079062 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 142/169: PMID 22937326 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 143/169: PMID 22622173 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 144/169: PMID 22615103 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 145/169: PMID 22607959 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 146/169: PMID 22555082 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 147/169: PMID 22550562 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 148/169: PMID 22280532 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 149/169: PMID 21981697 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 150/169: PMID 21828134 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 151/169: PMID 21656746 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 152/169: PMID 21625315 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 153/169: PMID 21576646 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 154/169: PMID 21537084 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 155/169: PMID 21387357 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 156/169: PMID 20507806 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 157/169: PMID 20451404 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 158/169: PMID 20064151 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 159/169: PMID 19911860 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 160/169: PMID 19638460 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 161/169: PMID 19430863 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 162/169: PMID 18179966 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 163/169: PMID 17881052 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 164/169: PMID 17219444 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 165/169: PMID 16955510 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 166/169: PMID 16882708 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 167/169: PMID 12599231 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 168/169: PMID 9922042 (Request #1 today)
+    ✗ Error: Invalid format specifier
+Processing paper 169/169: PMID 8839838 (Request #1 today)
+    ✗ Error: Invalid format specifier
+
+============================================================
+CLINICAL EFFICACY EXTRACTION COMPLETED
+============================================================
+Total papers processed: 0
+Traceback (most recent call last):
+  File "/Users/hennykim/Downloads/pharma_arca/cmml_research/extract_clinical_efficacy_llm.py", line 267, in <module>
+    main()
+  File "/Users/hennykim/Downloads/pharma_arca/cmml_research/extract_clinical_efficacy_llm.py", line 263, in main
+    print(f"Papers with efficacy data: {with_efficacy}/{len(results)} ({(with_efficacy/len(results)*100):.1f}%)")
+ZeroDivisionError: division by zero

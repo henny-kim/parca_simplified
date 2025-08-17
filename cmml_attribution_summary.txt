@@ -1,0 +1,33 @@
+CMML CLINICAL DATA - ATTRIBUTION SUMMARY
+==================================================
+
+AZACITIDINE
+-----------
+
+1. PMID 37422688
+   Citation: Short Nicholas J, Muftuoglu Muharrem, Ong Faustine et al. A phase 1/2 study of azacitidine, venetocl...
+   Data Location: Abstract
+   Complete Response: 66.0%
+   Overall Survival: 8.1 months
+   URL: https://pubmed.ncbi.nlm.nih.gov/37422688/
+
+2. PMID 34985762
+   Citation: Patnaik Mrinal M, Tefferi Ayalew Chronic myelomonocytic leukemia: 2022 update on diagnosis, risk str...
+   Data Location: Abstract
+   URL: https://pubmed.ncbi.nlm.nih.gov/34985762/
+
+3. PMID 33275673
+   Citation: Patnaik Mrinal M, Lasho Terra Myelodysplastic syndrome/myeloproliferative neoplasm overlap syndromes...
+   Data Location: Abstract
+   Overall Survival: 36.0 months
+   URL: https://pubmed.ncbi.nlm.nih.gov/33275673/
+
+==================================================
+DECITABINE
+----------
+
+==================================================
+HYDROXYUREA
+-----------
+
+==================================================

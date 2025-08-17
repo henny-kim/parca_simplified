@@ -1,0 +1,173 @@
+[
+  {
+    "pmid": "40650712",
+    "citation": "Carlos Jim\u00e9nez-Vicente et al. Enasidenib as treatment for AML with IDH2 mutation: multicenter real-life study of the early-access program in Spain.. Annals of hematology (2025 Jul)",
+    "title": "Enasidenib as treatment for AML with IDH2 mutation: multicenter real-life study of the early-access program in Spain.",
+    "abstract": "Enasidenib is an oral IDH2 inhibitor that reduces the production of the oncometabolite 2-hydroxyglutarate, differentiating IDH2 mutated leukemic cells with initial promising results for acute myeloid leukemia (AML) and myelodysplastic syndrome (MDS) patients. We performed a retrospective study in Spain evaluating enasidenib in patients diagnosed with IDH2-mutated myeloid neoplasms (AML, MDS, myeloid sarcoma and chronic myelomonocytic leukemia (CMML). Twenty-three patients were included, with 20 having a refractory/relapsed (R/R) disease status. The median age was 73 years, and the majority patients were classified as adverse risk by the European LeukemiaNet 2022 criteria. The most frequent mutation was IDH2 R140 (69.6%), while 30.4% had R172 mutation. Enasidenib was administered as a single agent in 18 patients, in combination with azacitidine in four patients, and with low-dose cytarabine in another one. The median number of cycles administered was four, with an overall response rate (ORR) of 39.1% and a morphological complete remission (CR) rate of 26.1%. Median overall survival (OS) was 8.3 months. Patients who achieved a complete response had a better outcome than the rest of the patients in terms of OS (19.8 months (95%CI: 15.7-NR) vs. 4.2 (95%CI: 1.5-NR), p\u2009=\u20090.01). Drug-related events included leukocytosis in five patients (21.7%), hyperbilirubinemia in six patients (26.1%) and differentiation syndrome (DS) in four patients (17.4%), including one grade 3 DS and one death related to this latter adverse event (AE), similar to previous findings. Although enasidenib failed to demonstrate a clear overall survival advantage in phase 3 trials, the extended responses and long-term survivors observed herein underscore its therapeutic potential. Ultimately, our data support enasidenib's role as a targeted therapy for IDH2-mutated AML, indicating that expanded access to this agent is warranted to optimize outcomes in these challenging patient populations, especially for R/R AML patients.",
+    "has_adverse_event_data": false,
+    "adverse_events": {
+      "any_adverse_events": null,
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": null,
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "The study mentions that azacitidine was used in combination with enasidenib in four patients, but it does not provide any adverse event data specifically related to azacitidine in those patients or in CMML patients in general.  The adverse events listed are related to enasidenib."
+  },
+  {
+    "pmid": "40498375",
+    "citation": "Kyriaki Katsiki et al. Comparative Analysis of the TCR Repertoire in Bone Marrow CD8. European journal of immunology (2025 Jun)",
+    "title": "Comparative Analysis of the TCR Repertoire in Bone Marrow CD8",
+    "abstract": "Bone marrow CD8",
+    "has_adverse_event_data": false,
+    "adverse_events": {
+      "any_adverse_events": null,
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": null,
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "The provided abstract and title do not indicate that this paper contains any information regarding azacitidine treatment or adverse events in CMML patients.  The focus is on TCR repertoire analysis in bone marrow CD8 cells, not on treatment side effects."
+  },
+  {
+    "pmid": "40337877",
+    "citation": "Meng Chen et al. Rare cases of atraumatic splenic rupture managed conservatively in patients with myeloid neoplasms: a report of two cases and literature review.. Chinese clinical oncology (2025 Apr)",
+    "title": "Rare cases of atraumatic splenic rupture managed conservatively in patients with myeloid neoplasms: a report of two cases and literature review.",
+    "abstract": "Atraumatic splenic rupture (ASR) is rare and typically attributed to underlying pathological conditions, with neoplastic diseases being the main etiologies. Traditionally, surgical intervention has been the standard approach for managing ASR in the majority of patients. However, reports on the outcomes of conservative management, especially for ASR related to myeloid neoplasms, are scarce. Here, we present two case reports involving ASR associated with myeloid neoplasms. The first patient, suffering from chronic myelomonocytic leukemia (CMML) harboring CBL and ASXL1 mutations, developed ASR shortly after receiving treatment with the hypomethylating agent 5-azacytidine. The second patient, in the blast phase of myeloproliferative neoplasms (MPN), experienced ASR during the progression of their disease. In the initial case, despite experiencing intense abdominal pain and hypovolemic shock, the patient responded favorably to prompt fluid resuscitation and blood transfusion upon, thanks to a timely diagnosis. A non-operative management approach successfully averted the need for splenectomy or arterial embolism, leading to a favorable outcome. In the second case, the patient presented with progressive abdominal pain but remained hemodynamic stability throughout the ASR episode. We opted for a cautious approach, prioritizing resuscitation, close monitoring, and a watchful waiting strategy. Regrettably, the patient's condition deteriorated, marked by increasing splenomegaly, unchecked leukocytosis, and recurrent parenchymal hemorrhages. Here, we report two cases of ASR in myeloid neoplasms, demonstrating that patients may achieve acceptable outcomes with conservative management.",
+    "has_adverse_event_data": true,
+    "adverse_events": {
+      "any_adverse_events": "Atraumatic splenic rupture (ASR)",
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": [
+        "Atraumatic splenic rupture"
+      ],
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "Only one patient experienced an adverse event possibly related to azacitidine treatment.  The abstract does not provide details on the grading of the adverse event,  nor does it quantify serious adverse events, treatment discontinuation, or deaths related to azacitidine. The information is limited to a single case report of atraumatic splenic rupture. "
+  },
+  {
+    "pmid": "40252309",
+    "citation": "Julie S Braish et al. Safety and efficacy of the combination of azacitidine with venetoclax after hypomethylating agent failure in higher-risk myelodysplastic syndrome.. Leukemia research (2025 Jun)",
+    "title": "Safety and efficacy of the combination of azacitidine with venetoclax after hypomethylating agent failure in higher-risk myelodysplastic syndrome.",
+    "abstract": "Therapies for patients with higher-risk myelodysplastic syndromes (HR-MDS) who have failed hypomethylating agents (HMAs) are needed. This Phase I/II study evaluates the safety, tolerability, and efficacy of venetoclax, an orally bioavailable BCL-2 inhibitor, in combination with azacitidine in this population. We conducted a single-center, dose-escalation, Phase I/II trial (NCT04550442) involving 33 patients with HR-MDS or CMML (IPSS \u2265 1.5) who had progressed after prior HMA therapy. Patients received intravenous or subcutaneous azacitidine (SC) (75\u202fmg/m\u00b2 for 5 days) and venetoclax (100-400\u202fmg for 7-14 days in a 28-day cycle). The primary endpoints were safety/tolerability (Phase 1) and overall response rate (ORR) (Phase 2). Patients received a median of 3 cycles (range, 1-22). The maximum tolerated dose of venetoclax was 400\u202fmg. Common grade 3-4 adverse events included neutropenia (19\u202f%) and thrombocytopenia (10\u202f%). The 4-week early mortality rate was 9\u202f%. The ORR was 49\u202f%, and the median overall survival (OS) was 7 months (95\u202f% CI, 3.5-10.5). The median progression-free survival (PFS) was 6 months (95\u202f% CI, 3.0-9.0). Four patients (12\u202f%) underwent stem cell transplantation, with 3 of 4 alive at last follow-up (75\u202f%). Combining venetoclax with azacitidine is feasible for HR-MDS and CMML patients who failed prior HMA therapy. However, this combination did not significantly improve clinical outcomes in this patient population.",
+    "has_adverse_event_data": true,
+    "adverse_events": {
+      "any_adverse_events": "The abstract does not list all adverse events, only that neutropenia and thrombocytopenia were common grade 3-4 adverse events.",
+      "grade_3_4_events": "Neutropenia (19%), Thrombocytopenia (10%)",
+      "serious_adverse_events": "The 4-week early mortality rate was 9% (This is likely a serious adverse event, but the exact cause is not specified).",
+      "most_common_events": [
+        "Neutropenia",
+        "Thrombocytopenia"
+      ],
+      "treatment_discontinuation": "Not specified",
+      "treatment_related_deaths": "Not specified, but 9% early mortality rate within 4 weeks."
+    },
+    "extraction_notes": "The abstract reports combined adverse events for azacitidine and venetoclax.  It does not separate them.  The reported grade 3-4 events are the most specific data available related to azacitidine in the context of CMML patients within this study.  Early mortality is noted, but causality is not established."
+  },
+  {
+    "pmid": "40164584",
+    "citation": "Alex Bataller et al. Oral decitabine cedazuridine with and without venetoclax in higher-risk myelodysplastic syndromes or chronic myelomonocytic leukemia: a propensity score-matched study.. Blood cancer journal (2025 Mar)",
+    "title": "Oral decitabine cedazuridine with and without venetoclax in higher-risk myelodysplastic syndromes or chronic myelomonocytic leukemia: a propensity score-matched study.",
+    "abstract": "Hypomethylating agents (HMA) are indicated in the treatment of higher-risk myelodysplastic syndromes (MDS) and chronic myelomonocytic leukemia (CMML). The combination of hypomethylating agents with venetoclax (Ven) has demonstrated promising results in these diseases, although randomized clinical trials are needed for validation. In this retrospective study, we compared two matched cohorts of patients with MDS or CMML: one receiving oral decitabine-cedazuridine (DEC-C, n\u2009=\u200973) and one receiving DEC-C and Ven (DEC-C-Ven, n\u2009=\u200951), in three contemporary clinical trials. The aim is to determine the impact of the addition of Ven to HMA in MDS and CMML. Individuals were matched using a propensity score approach that was based on the IPSS-M score and age. All patients had excess blasts; 84% were diagnosed with MDS and 16% with CMML. Most patients had high- or very high-risk disease, according to the revised IPSS-R. The overall response rate was superior in the DEC-C-Ven cohort (90% vs 64%, P\u2009=\u20090.002). The median times to best response were 1.1 and 2.7 months for the DEC-C-Ven and DEC-C cohorts, respectively (P\u2009<\u20090.001). More patients underwent hematopoietic stem cell transplantation in the DEC-C-Ven cohort (47%) than in the DEC-C cohort (16%, P\u2009<\u20090.001). The 4- and 8-week mortality did not significantly differ between the DEC-C and DEC-C-Ven cohorts. Patients in the DEC-C-Ven cohort had a more profound neutropenia at days 15 and 21 of the first cycle. The median overall survival was 24 and 19 months for the DEC-C-Ven and DEC-C cohorts, respectively (P\u2009=\u20090.89), and the median event-free survival durations were 18 and 10 months (P\u2009=\u20090.026). In conclusion, the addition of Ven resulted in improved response rates and outcomes in specific subgroups; prospective clinical trials are needed to confirm these findings.",
+    "has_adverse_event_data": true,
+    "adverse_events": {
+      "any_adverse_events": "Neutropenia (more profound in the DEC-C-Ven cohort at days 15 and 21 of the first cycle).  The abstract does not list other AEs.",
+      "grade_3_4_events": "Not specified.",
+      "serious_adverse_events": "Not specified.",
+      "most_common_events": [
+        "Neutropenia"
+      ],
+      "treatment_discontinuation": "Not specified.",
+      "treatment_related_deaths": "Not specified. 4- and 8-week mortality did not significantly differ between cohorts."
+    },
+    "extraction_notes": "The study uses decitabine-cedazuridine (DEC-C).  The abstract mentions neutropenia as an adverse event, particularly more pronounced in the group receiving DEC-C plus venetoclax.  Specific details on other adverse events, grades, seriousness, treatment discontinuation, and treatment-related deaths are not provided in the abstract."
+  },
+  {
+    "pmid": "40013211",
+    "citation": "Marwa Mir et al. Pleural Effusion in a Patient With Chronic Myelomonocytic Leukemia Treated With Azacitidine.. Cureus (2025 Jan)",
+    "title": "Pleural Effusion in a Patient With Chronic Myelomonocytic Leukemia Treated With Azacitidine.",
+    "abstract": "Pleural effusion is an uncommon occurrence in chronic myelomonocytic leukemia (CMML) patients, and its mechanisms remain poorly understood. We report the case of a 66-year-old male with a known medical history of CMML, referred from the oncology clinic due to shortness of breath attributed to a left pleural effusion, evident on a chest X-ray following a chemotherapy session. A diagnostic thoracentesis and cytology were conducted, which yielded exudative fluid negative for malignant cells and found reactive mesothelial cells and macrophages in a background of numerous chronic inflammatory cells\u00a0and acellular proteinaceous material. However, due to the limited effectiveness of cytological examination in identifying malignant pleural effusions, the occurrence of leukemic effusions in CMML patients may be underestimated. This case underscores the importance of prompt recognition and management of pleural effusion in patients with underlying hematologic conditions like CMML.",
+    "has_adverse_event_data": true,
+    "adverse_events": {
+      "any_adverse_events": "Pleural effusion (shortness of breath)",
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": [
+        "Pleural effusion"
+      ],
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "The abstract reports a single case of pleural effusion in a CMML patient treated with azacitidine.  No other adverse events are mentioned, and no grading, severity, or frequency data is provided.  The causality of the pleural effusion to azacitidine is not explicitly stated, but the temporal relationship suggests a potential link."
+  },
+  {
+    "pmid": "39903257",
+    "citation": "Kishan A Bhatt et al. Diagnosis and management of concurrent metastatic melanoma and chronic myelomonocytic leukemia.. Melanoma research (2025 Jun)",
+    "title": "Diagnosis and management of concurrent metastatic melanoma and chronic myelomonocytic leukemia.",
+    "abstract": "While the association between chronic lymphocytic leukemia (CLL) and a higher incidence of melanoma is well documented, the diagnosis of concurrent high-risk chronic myelomonocytic leukemia (CMML) and metastatic melanoma (MM) has not previously been described. Moreover, the treatment of MM and CMML differ greatly in the mechanism of action of their corresponding antineoplastic therapies: treatment of MM frequently involves immune checkpoint inhibitors (ICI), while patients with CMML receive myelosuppressive agents. Simultaneous management of these malignancies can be nuanced due to the potential impact of one treatment's constituents on the activity of the other and the broad and nonoverlapping array of potential adverse effects of these agents. Here, we describe the clinical course of a patient who was diagnosed with concurrent MM and CMML and our approach to the challenging balance of delivering ICI concurrently with the hypomethylating agent azacitidine and the BCL-2 inhibitor venetoclax.",
+    "has_adverse_event_data": false,
+    "adverse_events": {
+      "any_adverse_events": null,
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": null,
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "The abstract mentions azacitidine as a treatment for CMML and acknowledges the potential adverse effects of such agents, but it does not provide any specific adverse event data related to azacitidine in CMML patients.  The study describes a case report, not a clinical trial with detailed adverse event reporting."
+  },
+  {
+    "pmid": "39759649",
+    "citation": "Eren Arslan Davulcu et al. A Case of Chronic Myelomonocytic Leukemia With Recurrent Skin Involvement.. Cureus (2024 Dec)",
+    "title": "A Case of Chronic Myelomonocytic Leukemia With Recurrent Skin Involvement.",
+    "abstract": "Chronic myelomonocytic leukemia is a clonal hematopoietic stem cell disorder with both myelodysplastic and myeloproliferative features, leading to a variable clinical presentation. Some types of skin involvement, such as leukemia cutis and blastic plasmacytoid dendritic cell neoplasia, are associated with poor prognosis. This case study describes a 71-year-old male with high-risk CMML, developing pink-purple skin nodules, which regressed with azacitidine and hydroxyurea treatment. Despite recurrence, disease control was achieved without transformation to acute leukemia. This case highlights the need for vigilant monitoring and adaptable treatment strategies in managing CMML with skin involvement.",
+    "has_adverse_event_data": false,
+    "adverse_events": {
+      "any_adverse_events": null,
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": null,
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "The abstract mentions that azacitidine was used in conjunction with hydroxyurea to treat skin nodules in a patient with CMML. However, no adverse events related to azacitidine treatment are reported in this case study."
+  },
+  {
+    "pmid": "39477459",
+    "citation": "Robert McGrath et al. Chronic myelomonocytic leukaemia causing orbital inflammation.. BMJ case reports (2024 Oct)",
+    "title": "Chronic myelomonocytic leukaemia causing orbital inflammation.",
+    "abstract": "We present a case of acute-onset orbital inflammation with rapidly progressive proptosis, episcleral venous stasis with raised intraocular pressure and loss of vision in a patient with a recent diagnosis of chronic myelomonocytic leukaemia (CMML). The patient's orbital inflammation and ocular hypertension showed no response to topical and systemic pressure-lowering agents and non-steroidal anti-inflammatory agents but resolved rapidly after the commencement of intravenous steroids. The patient was subsequently treated with the hypomethylating agent azacitidine with good systemic control of CMML with no further orbital inflammation. CMML is strongly associated with systemic inflammatory disease, possibly due to the upregulation of inflammatory pathways in the abnormal monocytes. CMML is a rare cause of orbital or ocular inflammation but should be considered in patients with persistent monocytosis.",
+    "has_adverse_event_data": true,
+    "adverse_events": {
+      "any_adverse_events": "No adverse events were reported in association with azacitidine treatment.",
+      "grade_3_4_events": "null",
+      "serious_adverse_events": "null",
+      "most_common_events": [
+        "null"
+      ],
+      "treatment_discontinuation": "null",
+      "treatment_related_deaths": "null"
+    },
+    "extraction_notes": "The abstract states that the patient had 'good systemic control of CMML' with azacitidine and no further orbital inflammation.  This implies the absence of reported adverse events related to azacitidine in this specific case."
+  },
+  {
+    "pmid": "39024804",
+    "citation": "Kaiyue Wang et al. Targeting DNA methyltransferases for cancer therapy.. Bioorganic chemistry (2024 Oct)",
+    "title": "Targeting DNA methyltransferases for cancer therapy.",
+    "abstract": "DNA methyltransferases (DNMTs) play a crucial role in genomic DNA methylation. In mammals, DNMTs regulate the dynamic patterns of DNA methylation in embryonic and adult cells. Abnormal functions of DNMTs are often indicative of cancers, including overall hypomethylation and partial hypermethylation of tumor suppressor genes (TSG), which accelerate the malignancy of tumors, worsen the condition of patients, and significantly exacerbate the difficulty of cancer treatment. Currently, nucleoside DNMT inhibitors such as Azacytidine and Decitabine have been approved by the FDA and EMA for the treatment of acute myeloid leukemia (AML), chronic myelomonocytic leukemia (CMML), and myelodysplastic syndrome (MDS). Therefore, targeting DNMTs is a very promising anti-tumor strategy. This review mainly summarizes the therapeutic effects of DNMT inhibitors on cancers. It aims to provide more possibilities for the treatment of cancers by discovering more DNMT inhibitors with high activity, high selectivity, and good drug-like properties in the future.",
+    "has_adverse_event_data": false,
+    "adverse_events": {
+      "any_adverse_events": null,
+      "grade_3_4_events": null,
+      "serious_adverse_events": null,
+      "most_common_events": null,
+      "treatment_discontinuation": null,
+      "treatment_related_deaths": null
+    },
+    "extraction_notes": "The provided abstract mentions Azacytidine as a treatment for CMML, but it does not contain any specific adverse event data related to its use in CMML patients.  The abstract is a general overview and does not present clinical trial data or detailed results."
+  }
+]

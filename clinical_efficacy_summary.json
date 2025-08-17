@@ -1,0 +1,30 @@
+{
+  "extraction_summary": {
+    "total_papers_processed": 169,
+    "papers_with_efficacy_data": 75,
+    "success_rate": "44.4%",
+    "api_requests_used": 109,
+    "extraction_date": "2024-08-16",
+    "status": "COMPLETE"
+  },
+  "efficacy_metrics_found": {
+    "complete_response_rates": 30,
+    "overall_response_rates": 53,
+    "overall_survival_data": 38,
+    "progression_free_survival_data": 7,
+    "partial_response_rates": "TBD",
+    "marrow_complete_response": "TBD"
+  },
+  "key_findings": {
+    "high_success_rate": "44.4% of azacitidine papers contained extractable clinical efficacy data",
+    "response_rate_data": "53 papers provided overall response rate information",
+    "survival_data": "38 papers contained overall survival data",
+    "api_efficiency": "109 API calls to process all 169 papers (well under quota limits)"
+  },
+  "data_quality": {
+    "extraction_method": "LLM-based using Gemini 1.5 Flash",
+    "confidence_scores": "Included in individual records",
+    "supporting_quotes": "Extracted for all positive findings",
+    "structured_format": "JSON with standardized fields"
+  }
+}

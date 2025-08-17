@@ -1,0 +1,86 @@
+{
+  "drug": "decitabine",
+  "extraction_summary": {
+    "total_papers_analyzed": 125,
+    "papers_with_efficacy_data": 51,
+    "efficacy_data_rate": 40.8,
+    "total_cmml_patients": 2776,
+    "total_study_patients": 6273
+  },
+  "efficacy_metrics": {
+    "overall_response_rate": {
+      "median": 47.5,
+      "range": "17.0-100.0",
+      "studies_count": 33
+    },
+    "complete_response_rate": {
+      "median": 19.0,
+      "range": "7.0-58.0",
+      "studies_count": 21
+    },
+    "overall_survival": {
+      "median": 17.9,
+      "range": "4.3-38.33",
+      "studies_count": 32
+    },
+    "progression_free_survival": {
+      "median": 10.7,
+      "range": "5.4-28.3",
+      "studies_count": 7
+    }
+  },
+  "key_studies": [
+    {
+      "pmid": "40524338",
+      "citation": "Michael R Savona et al. Efficacy and safety of oral decitabine/cedazuridine in the chronic myelomonocytic leukaemia subpopulations from phase 2 and 3 studies.. British journal of haematology (2025 Jun)",
+      "summary": "The study showed an overall response rate of 76% in 33 CMML patients treated with decitabine/cedazuridine, with a 21% complete response rate. Median overall survival was 35.7 months, and median transformation-free survival was 28.3 months.",
+      "orr": 76.0,
+      "os": 35.7,
+      "pfs": 28.3
+    },
+    {
+      "pmid": "40164584",
+      "citation": "Alex Bataller et al. Oral decitabine cedazuridine with and without venetoclax in higher-risk myelodysplastic syndromes or chronic myelomonocytic leukemia: a propensity score-matched study.. Blood cancer journal (2025 Mar)",
+      "summary": "The addition of venetoclax to decitabine-cedazuridine improved overall response rate (90% vs 64%),  progression-free survival (18 months vs 10 months), although overall survival difference was not statistically significant (24 months vs 19 months).",
+      "orr": {
+        "DEC-C": 64.0,
+        "DEC-C-Ven": 90.0
+      },
+      "os": {
+        "DEC-C": 19.0,
+        "DEC-C-Ven": 24.0
+      },
+      "pfs": {
+        "DEC-C": 10.0,
+        "DEC-C-Ven": 18.0
+      }
+    },
+    {
+      "pmid": "38450850",
+      "citation": "Mrinal M Patnaik et al. Chronic myelomonocytic leukemia: 2024 update on diagnosis, risk stratification and management.. American journal of hematology (2024 Jun)",
+      "summary": "The DACOTA study showed an overall survival of 23.1 months for patients receiving hydroxyurea and 18.4 months for those receiving decitabine in high-risk MP-CMML.  Response rates were higher with decitabine (56%) compared to hydroxyurea (31%), although specific response types (CR, PR, mCR, ORR) are not detailed.",
+      "orr": null,
+      "os": 23.1,
+      "pfs": null
+    },
+    {
+      "pmid": "38387931",
+      "citation": "Xiao Li et al. [Clinical Efficacy of Hypomethylating Agent Therapy in Patients with Chronic Myelomonocytic Leukemia].. Zhongguo shi yan xue ye xue za zhi (2024 Feb)",
+      "summary": "The study showed an 80% overall response rate with a 28% complete remission rate among 25 CMML patients treated with hypomethylating agents. Median overall survival was 17.4 months.  Progression to AML was observed in some patients who achieved CR.",
+      "orr": 80.0,
+      "os": 17.4,
+      "pfs": null
+    },
+    {
+      "pmid": "38316133",
+      "citation": "Alex Bataller et al. Oral decitabine plus cedazuridine and venetoclax in patients with higher-risk myelodysplastic syndromes or chronic myelomonocytic leukaemia: a single-centre, phase 1/2 study.. The Lancet. Haematology (2024 Mar)",
+      "summary": "The study showed a high overall response rate (ORR) of 95% in 39 patients.  However,  no data on complete response, partial response, progression-free survival, or overall survival was provided.",
+      "orr": 95.0,
+      "os": null,
+      "pfs": null
+    }
+  ],
+  "comparison_with_azacitidine": {
+    "note": "Comparison data will be added when azacitidine analysis is available"
+  }
+}

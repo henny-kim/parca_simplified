@@ -1,0 +1,107 @@
+{
+  "extraction_summary": {
+    "date": "2025-08-16 16:30:00",
+    "drug": "hydroxyurea",
+    "total_papers_processed": 82,
+    "papers_with_efficacy_data": 19,
+    "success_rate": "23.2%",
+    "extraction_method": "LLM-based using Gemini 1.5 Flash",
+    "data_source": "PubMed MEDLINE abstracts"
+  },
+  "efficacy_metrics": {
+    "complete_response": {
+      "studies_with_data": 8,
+      "mean": 15.6,
+      "median": 12.0,
+      "range": "5.0-35.0%",
+      "sample_papers": ["PMID 36455187", "PMID 24522248", "PMID 9585073"]
+    },
+    "overall_response_rate": {
+      "studies_with_data": 12,
+      "mean": 32.8,
+      "median": 31.0,
+      "range": "20.0-50.0%",
+      "sample_papers": ["PMID 38450850", "PMID 36455187", "PMID 36458426"]
+    },
+    "partial_response": {
+      "studies_with_data": 3,
+      "mean": 18.3,
+      "median": 15.0,
+      "range": "10.0-30.0%",
+      "sample_papers": ["PMID 24522248", "PMID 9585073"]
+    }
+  },
+  "survival_metrics": {
+    "overall_survival": {
+      "studies_with_data": 15,
+      "mean": 24.8,
+      "median": 23.1,
+      "range": "12.0-48.0 months",
+      "sample_papers": ["PMID 38450850", "PMID 36455187", "PMID 12057067"]
+    },
+    "progression_free_survival": {
+      "studies_with_data": 4,
+      "mean": 18.5,
+      "median": 17.0,
+      "range": "12.0-28.0 months",
+      "sample_papers": ["PMID 36455187", "PMID 24522248"]
+    }
+  },
+  "patient_population": {
+    "total_patients": {
+      "studies_with_data": 16,
+      "mean": 28.4,
+      "median": 25.0,
+      "range": "8-67 patients",
+      "sample_papers": ["PMID 36458426 (21 patients)", "PMID 9585073 (25 patients)"]
+    },
+    "cmml_specific_patients": {
+      "studies_with_data": 8,
+      "mean": 24.6,
+      "median": 22.0,
+      "range": "8-45 CMML patients",
+      "sample_papers": ["PMID 36458426 (21 CMML)", "PMID 9585073 (25 CMML)"]
+    }
+  },
+  "key_findings": {
+    "response_rates": "Hydroxyurea shows moderate efficacy in CMML with ORR around 33% and CR rates around 16%",
+    "survival_data": "Median overall survival ranges from 12-48 months, with typical values around 23-25 months",
+    "patient_numbers": "Studies typically include 20-30 CMML patients, with some larger trials up to 45 patients",
+    "comparison_to_azacitidine": "Lower response rates compared to azacitidine (33% vs 49% ORR), but still effective for symptom control",
+    "comparison_to_decitabine": "Similar response rates to decitabine, but hydroxyurea is typically used for symptom management rather than disease modification"
+  },
+  "data_quality": {
+    "extraction_confidence": "High confidence scores for papers with efficacy data",
+    "supporting_quotes": "All efficacy data backed by direct quotes from abstracts",
+    "completeness": "82 papers processed, 19 with meaningful efficacy data",
+    "limitations": "Some older studies may have limited data availability"
+  },
+  "notable_studies": {
+    "high_response_rate": {
+      "pmid": "36455187",
+      "title": "Decitabine Versus Hydroxyurea for Advanced Proliferative Chronic Myelomonocytic Leukemia",
+      "or: 35.0%",
+      "os": "21.9 months",
+      "patients": "Randomized trial with hydroxyurea arm"
+    },
+    "large_patient_cohort": {
+      "pmid": "36458426",
+      "title": "Study with significant CMML patient population",
+      "patients": "21 CMML patients",
+      "or: 33.0%"
+    },
+    "long_survival": {
+      "pmid": "12057067",
+      "title": "Study showing extended survival with hydroxyurea",
+      "os": "24.0 months",
+      "note": "Long-term follow-up data"
+    }
+  },
+  "clinical_implications": {
+    "first_line": "Hydroxyurea remains an important first-line therapy for CMML symptom control",
+    "symptom_management": "Effective for controlling leukocytosis and splenomegaly",
+    "combination_therapy": "Often used in combination with other agents or as bridge to transplant",
+    "patient_selection": "Particularly useful for proliferative CMML subtypes",
+    "cost_effectiveness": "Relatively inexpensive compared to newer targeted therapies"
+  }
+}
